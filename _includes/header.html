@@ -63,7 +63,7 @@
               {%- endif %}
 
               <!-- Other pages -->
-              {%- assign sorted_pages = site.pages | sort: "nav_order" -%}
+<!--               {%- assign sorted_pages = site.pages | sort: "nav_order" -%}
               {%- for p in sorted_pages -%}
               {%- if p.nav and p.autogen == nil -%}
               {%- if p.dropdown %}
@@ -93,7 +93,7 @@
               </li>
               {%- endif -%}
               {%- endif -%}
-              {% endfor -%}
+              {% endfor -%} -->
               {%- if site.enable_darkmode %}
 
               <!-- Toogle theme mode -->
