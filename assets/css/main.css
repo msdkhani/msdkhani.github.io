@@ -10,6 +10,10 @@
   font-weight: 100;
 }
 
+.round_tun {
+  border-radius: 2.25rem !important;
+}
+
 :root {
   --global-bg-color: #ffffff;
   --global-code-bg-color: rgba(181, 9, 172, 0.05);
