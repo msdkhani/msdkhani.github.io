@@ -41,7 +41,7 @@ layout: default
           </div>
 
           <!-- News -->
-          <div class="news">    
+          <div class="news card">    
           {% if page.news -%}
             <h2><a href="{{ '/news/' | relative_url }}" style="color: inherit;">news</a></h2>
             {%- include news.html %}
