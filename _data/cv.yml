@@ -2,96 +2,97 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
-    - name: Languages
-      value: English, German
+      value: Masoud Khani
 
 - title: Education
   type: time_table
   contents:
     - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+      institution: University of Wisconsin-Milwaukee
+      year: 2021
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
+        - Currently pursuing a Ph.D. in Biomedical and Health Informatics with a focus on machine learning and
+data analytics
+        - Currently maintaining a GPA of 4.0.
+
+    - title: Master of Science in Computer Science
+      institution: University of Wisconsin-Milwaukee
+      year: 2021
       description:
-        - Description 1.
-        - Description 2.
+        - Conducted research on medical image segmentation using machine learning techniques, resulting in a
+thesis titled ”Medical Image Segmentation using Machine Learning.”
+        - Graduated with a GPA of 3.9 and received the Outstanding Graduate Student Award in Computer
+Science.
+
+  - title: Bachelor of Computer Software Engineering
+      institution: Tehran Azad University
+      year: 2014-2018
+      description:
+        - Conducted research on fall detection in the elderly using machine learning techniques, resulting in a
+thesis titled ”Fall Detection in Elderly with Smartphones via Machine Learning Techniques.”
+        - Graduated with a GPA of 3.5.
 
 - title: Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Research Assistant
+      institution: University of Wisconsin Milwaukee - Biomedical Data and Language Processing (BioDLP) Lab.
+      year: 2021
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+        - Analyze data using machine-learning algorithms, including data mining, natural language processing, and
+knowledge representation and modeling.
+        - DImplement a pipeline for preprocessing the Healthcare Cost and Utilization Project (HCUP) dataset to
+reduce preprocessing wait time by 80%.
+        - Develop systems to integrate biomedical language processing into industrial applications such as
+electronic medical records (EMR) data to make accurate disease predictions.
+
+        - Build a pipeline to extract data from Froedtert Hospital and Children’s Hospital of Wisconsin and
+statistically analyze patients’ demographics.
+
+    - title: Project Assistant
+      institution: University of Wisconsin Milwaukee - Northwestern Mutual Data Science Institute
+      year: 2021
       description:
-        - Description 1.
-        - Description 2.
+        - Collect and analyze student enrollment and behavior data for each semester for data science disciplines.
+        - Develop an open-source repository for data science applications in different disciplines.
 
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
-      description:
-
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
-
-- title: Open Source Projects
+- title: PUBLICATIONS
   type: time_table
   contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+    - title: Tong, L., Khani, M., Lu, Q., Taylor, B., Osinski, K., Luo, J. (2023). Association between body-mass
+            index, patient characteristics, and obesity-related comorbidities among COVID-19 patients: A prospective
+            cohort study. Obesity Research Clinical Practice, 17(1), 47-57. DOI: 10.1016/j.orcp.2022.12.003
 
-- title: Honors and Awards
+      year: 2023
+      
+    - title: Feller, C. N., Adams, J. A., Friedland, D. R., Khani, M., Luo, J., Poetker, D. M. (2023). Impacts of
+             socioeconomic status on dentoalveolar trauma. WMJ, 122(1), 32-37
+
+      year: 2023  
+
+- title: Awards
   type: time_table
   contents:
-    - year: 1921
+    - year: 2020
       items: 
-        - Nobel Prize in Physics 
-        - Matteucci Medal
-    - year: 2029
-      items: 
-        - Max Planck Medal
+        -Chancellor’s Graduate Student Award ($ 6000)
 
-- title: Academic Interests
+- title: FOCUS AREA
   type: nested_list
   contents:
-    - title: Topic 1.
-      items: 
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
-      items:
-        - Description 1.
-        - Description 2.
+    - title: Utilizing machine learning techniques and optimization methods
+    - title: Analyzing the performance of machine learning models using statistical metrics
+    - title: Modeling and analyzing features in neural networks
+    - title: Analyze the big data using partitioning and approximation algorithms to provide visual representations
 
-- title: Other Interests
-  type: list
+- title: PROGRAMMING SKILLS
+  type: nested_list
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - title: Machine Learning Techniques: Tesnforflow 2.x, Keras, Scikit learn, PySpark , Ensemble traditional and
+pre-trained models, d Transfer Learning, LSTM and YOLO
+
+    - title: Languages: Python 3.x, R , Java
+    - title: Datebase: MySQL, PostgreSQL , Sql Server , BigQuery
+    - title: Data Visualization: MatplotLib, Seaborn, ggplot2, Tableau
+    - title: Big Data: Spark, Dask, Rapids, Ray
+    - title: Cloud Technologies: AWS EC2, S3, Google Colab, Google Compute, Google Big-Query
