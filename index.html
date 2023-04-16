@@ -71,7 +71,9 @@
               <li class="nav-item active">
                 <a class="nav-link" href="/">about<span class="sr-only">(current)</span></a>
               </li>
-              
+                
+              <!-- Blog -->
+                
 
               <!-- Other pages -->
               <li class="nav-item ">
@@ -220,7 +222,20 @@
         <div class="author">
         
 
-        </div>
+        Ling Tong, Masoud Khani, Qiang Lu, and
+          <span class="more-authors" title="click to view 3 more authors" onclick="
+                var element = $(this);
+                element.attr('title', '');
+                var more_authors_text = element.text() == '3 more authors' ? 'Bradley Taylor, Kristen Osinski, Jake Luo' : '3 more authors';
+                var cursorPosition = 0;
+                var textAdder = setInterval(function(){
+                  element.text(more_authors_text.substring(0, cursorPosition + 1));
+                  if (++cursorPosition == more_authors_text.length){
+                    clearInterval(textAdder);
+                  }
+              }, '10');
+              ">3 more authors</span>
+</div>
 
         <!-- Journal/Book title and date -->
         
@@ -246,7 +261,7 @@
           <div class="bibtex hidden">
             <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">Tong2023association</span><span class="p">,</span>
   <span class="na">title</span> <span class="p">=</span> <span class="s">{Association between body-mass index, patient characteristics, and obesity-related comorbidities among COVID-19 patients: A prospective cohort study}</span><span class="p">,</span>
-  <span class="na">author</span> <span class="p">=</span> <span class="s">{}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Tong, Ling and Khani, Masoud and Lu, Qiang and Taylor, Bradley and Osinski, Kristen and Luo, Jake}</span><span class="p">,</span>
   <span class="na">year</span> <span class="p">=</span> <span class="s">{2023}</span><span class="p">,</span>
 <span class="p">}</span></code></pre></figure>
           </div>
@@ -278,7 +293,20 @@
         <div class="author">
         
 
-        </div>
+        C. N. Feller, J. A. Adams, D. R. Friedland, and
+          <span class="more-authors" title="click to view 3 more authors" onclick="
+                var element = $(this);
+                element.attr('title', '');
+                var more_authors_text = element.text() == '3 more authors' ? 'M. Khani, J. Luo, D. M. Poetker' : '3 more authors';
+                var cursorPosition = 0;
+                var textAdder = setInterval(function(){
+                  element.text(more_authors_text.substring(0, cursorPosition + 1));
+                  if (++cursorPosition == more_authors_text.length){
+                    clearInterval(textAdder);
+                  }
+              }, '10');
+              ">3 more authors</span>
+</div>
 
         <!-- Journal/Book title and date -->
         
@@ -304,7 +332,7 @@
           <div class="bibtex hidden">
             <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">Feller2023impacts</span><span class="p">,</span>
   <span class="na">title</span> <span class="p">=</span> <span class="s">{Impacts of Socioeconomic Status on Dentoalveolar Trauma.}</span><span class="p">,</span>
-  <span class="na">author</span> <span class="p">=</span> <span class="s">{}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Feller, C. N. and Adams, J. A. and Friedland, D. R. and Khani, M. and Luo, J. and Poetker, D. M.}</span><span class="p">,</span>
   <span class="na">year</span> <span class="p">=</span> <span class="s">{2023}</span><span class="p">,</span>
 <span class="p">}</span></code></pre></figure>
           </div>
