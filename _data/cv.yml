@@ -11,38 +11,38 @@
       institution: University of Wisconsin-Milwaukee
       year: 2021
       description:
-        - Currently pursuing a Ph.D. in Biomedical and Health Informatics with a focus on machine learning and data analytics
+        - Currently pursuing a Ph.D. in Biomedical and Health Informatics with a focus on machine learning and data analytics.
         - Currently maintaining a GPA of 4.0.
     - title: Master of Science in Computer Science
       institution: University of Wisconsin-Milwaukee
       year: 2021
       description:
-        - Conducted research on medical image segmentation using machine learning techniques, resulting in a thesis titled ”Medical Image Segmentation using Machine Learning.”
+        - Conducted research on medical image segmentation using machine learning techniques, resulting in a thesis titled "Medical Image Segmentation using Machine Learning."
         - Graduated with a GPA of 3.9 and received the Outstanding Graduate Student Award in Computer Science.
     - title: Bachelor of Computer Software Engineering
       institution: Tehran Azad University
       year: 2014-2018
       description:
-        - Conducted research on fall detection in the elderly using machine learning techniques, resulting in a thesis titled ”Fall Detection in Elderly with Smartphones via Machine Learning Techniques.”
+        - Conducted research on fall detection in the elderly using machine learning techniques, resulting in a thesis titled "Fall Detection in Elderly with Smartphones via Machine Learning Techniques."
         - Graduated with a GPA of 3.5.
 
 - title: Experience
   type: time_table
   contents:
     - title: Research Assistant
-      institution: University of Wisconsin Milwaukee - Biomedical Data and Language Processing (BioDLP) Lab.
+      institution: University of Wisconsin Milwaukee - Biomedical Data and Language Processing (BioDLP) Lab
       year: 2021
       description:
-        - Analyze data using machine-learning algorithms, including data mining, natural language processing, and knowledge representation and modeling.
-        - DImplement a pipeline for preprocessing the Healthcare Cost and Utilization Project (HCUP) dataset to reduce preprocessing wait time by 80%.
-        - Develop systems to integrate biomedical language processing into industrial applications such as electronic medical records (EMR) data to make accurate disease predictions.
-        - Build a pipeline to extract data from Froedtert Hospital and Children’s Hospital of Wisconsin and statistically analyze patients’ demographics.
+        - Analyzed data using machine-learning algorithms, including data mining, natural language processing, and knowledge representation and modeling.
+        - Implemented a pipeline for preprocessing the Healthcare Cost and Utilization Project (HCUP) dataset to reduce preprocessing wait time by 80%.
+        - Developed systems to integrate biomedical language processing into industrial applications such as electronic medical records (EMR) data to make accurate disease predictions.
+        - Built a pipeline to extract data from Froedtert Hospital and Children’s Hospital of Wisconsin and statistically analyzed patients' demographics.
     - title: Project Assistant
       institution: University of Wisconsin Milwaukee - Northwestern Mutual Data Science Institute
       year: 2021
       description:
-        - Collect and analyze student enrollment and behavior data for each semester for data science disciplines.
-        - Develop an open-source repository for data science applications in different disciplines.
+        - Collected and analyzed student enrollment and behavior data for each semester for data science disciplines.
+        - Developed an open-source repository for data science applications in different disciplines.
 
 - title: PUBLICATIONS
   type: time_table
@@ -57,7 +57,7 @@
   contents:
     - year: 2020
       items: 
-        -Chancellor’s Graduate Student Award ($ 6000)
+        - Chancellor’s Graduate Student Award ($6000)
 
 - title: FOCUS AREA
   type: nested_list
@@ -65,14 +65,48 @@
     - title: Utilizing machine learning techniques and optimization methods
     - title: Analyzing the performance of machine learning models using statistical metrics
     - title: Modeling and analyzing features in neural networks
-    - title: Analyze the big data using partitioning and approximation algorithms to provide visual representations
+    - title: Analyzing big data using partitioning and approximation algorithms to provide visual representations.
 
 - title: PROGRAMMING SKILLS
   type: nested_list
   contents:
-    - title: Machine Learning Techniques: Tesnforflow 2.x, Keras, Scikit learn, PySpark , Ensemble traditional and pre-trained models, d Transfer Learning, LSTM and YOLO
-    - title: Languages: Python 3.x, R , Java
-    - title: Datebase: MySQL, PostgreSQL , Sql Server , BigQuery
-    - title: Data Visualization: MatplotLib, Seaborn, ggplot2, Tableau
-    - title: Big Data: Spark, Dask, Rapids, Ray
-    - title: Cloud Technologies: AWS EC2, S3, Google Colab, Google Compute, Google Big-Query
+    - title: Machine Learning Techniques
+      items: 
+        - TensorFlow 2.x
+        - Keras
+        - Scikit-learn
+        - PySpark
+        - Ensemble traditional and pre-trained models
+        - Transfer Learning
+        - LSTM 
+        - YOLO
+    - title: Languages
+      items:
+        - Python 3.x
+        - R 
+        - Java
+    - title: Databases
+      items:
+        - MySQL
+        - PostgreSQL 
+        - SQL Server 
+        - BigQuery
+    - title: Data Visualization
+      items:
+        - Matplotlib
+        - Seaborn
+        - ggplot2
+        - Tableau
+    - title: Big Data
+      items:
+        - Spark
+        - Dask
+        - Rapids
+        - Ray
+    - title: Cloud Technologies
+      items:
+        - AWS EC2
+        - AWS S3
+        - Google Colab
+        - Google Compute Engine
+        - Google BigQuery.
