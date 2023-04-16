@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: <a href='https://uwm.edu'>university of Wisconsin-Milwaukee</a>
 
 profile:
   align: right
