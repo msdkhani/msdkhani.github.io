@@ -9,13 +9,13 @@
   contents:
     - title: PhD
       institution: University of Wisconsin-Milwaukee
-      year: 2021
+      year: 2021 - Present
       description:
         - Currently pursuing a Ph.D. in Biomedical and Health Informatics with a focus on machine learning and data analytics.
         - Currently maintaining a GPA of 4.0.
     - title: Master of Science in Computer Science
       institution: University of Wisconsin-Milwaukee
-      year: 2021
+      year: 2020 - 2021
       description:
         - Conducted research on medical image segmentation using machine learning techniques, resulting in a thesis titled "Medical Image Segmentation using Machine Learning."
         - Graduated with a GPA of 3.9 and received the Outstanding Graduate Student Award in Computer Science.
@@ -47,9 +47,9 @@
 - title: PUBLICATIONS
   type: time_table
   contents:
-    - title: Tong, L., Khani, M., Lu, Q., Taylor, B., Osinski, K., Luo, J. (2023). Association between body-mass index, patient characteristics, and obesity-related comorbidities among COVID-19 patients. A prospective cohort study. Obesity Research Clinical Practice, 17(1), 47-57. DOI. 10.1016/j.orcp.2022.12.003
+    - description: Tong, L., Khani, M., Lu, Q., Taylor, B., Osinski, K., Luo, J. (2023). Association between body-mass index, patient characteristics, and obesity-related comorbidities among COVID-19 patients. A prospective cohort study. Obesity Research Clinical Practice, 17(1), 47-57. DOI. 10.1016/j.orcp.2022.12.003
       year: 2023 
-    - title: Feller, C. N., Adams, J. A., Friedland, D. R., Khani, M., Luo, J., Poetker, D. M. (2023). Impacts of socioeconomic status on dentoalveolar trauma. WMJ, 122(1), 32-37
+    - description: Feller, C. N., Adams, J. A., Friedland, D. R., Khani, M., Luo, J., Poetker, D. M. (2023). Impacts of socioeconomic status on dentoalveolar trauma. WMJ, 122(1), 32-37
       year: 2023  
 
 - title: Awards
@@ -62,10 +62,10 @@
 - title: FOCUS AREA
   type: nested_list
   contents:
-    - title: Utilizing machine learning techniques and optimization methods
-    - title: Analyzing the performance of machine learning models using statistical metrics
-    - title: Modeling and analyzing features in neural networks
-    - title: Analyzing big data using partitioning and approximation algorithms to provide visual representations.
+    - description: Utilizing machine learning techniques and optimization methods
+    - description: Analyzing the performance of machine learning models using statistical metrics
+    - description: Modeling and analyzing features in neural networks
+    - description: Analyzing big data using partitioning and approximation algorithms to provide visual representations.
 
 - title: PROGRAMMING SKILLS
   type: nested_list
