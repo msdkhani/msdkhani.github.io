@@ -62,11 +62,12 @@
 - title: FOCUS AREA
   type: nested_list
   contents:
-    items:
-      - Utilizing machine learning techniques and optimization methods
-      - Analyzing the performance of machine learning models using statistical metrics
-      - Modeling and analyzing features in neural networks
-      - Analyzing big data using partitioning and approximation algorithms to provide visual representations.
+    - title:
+      items:
+        - Utilizing machine learning techniques and optimization methods
+        - Analyzing the performance of machine learning models using statistical metrics
+        - Modeling and analyzing features in neural networks
+        - Analyzing big data using partitioning and approximation algorithms to provide visual representations.
 
 - title: PROGRAMMING SKILLS
   type: nested_list
