@@ -209,7 +209,7 @@
     
 
     <!-- Fallback to the original file -->
-    <img src="/assets/img/publication_preview/download.png" class="preview z-depth-1 rounded" width="auto" height="auto" alt="download.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+    <img src="/assets/img/publication_preview/SD.jpg" class="preview z-depth-1 rounded" width="auto" height="auto" alt="SD.jpg" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
 
   </picture>
 
@@ -224,7 +224,20 @@
         <div class="author">
         
 
-        </div>
+        Ling Tong, <em>Masoud Khani</em>, Bradley Taylor, and
+          <span class="more-authors" title="click to view 4 more authors" onclick="
+                var element = $(this);
+                element.attr('title', '');
+                var more_authors_text = element.text() == '4 more authors' ? 'Kristen Osinski, Jazzmyne Adams, David Friedland, Jake Luo' : '4 more authors';
+                var cursorPosition = 0;
+                var textAdder = setInterval(function(){
+                  element.text(more_authors_text.substring(0, cursorPosition + 1));
+                  if (++cursorPosition == more_authors_text.length){
+                    clearInterval(textAdder);
+                  }
+              }, '10');
+              ">4 more authors</span>
+</div>
 
         <!-- Journal/Book title and date -->
         
@@ -251,7 +264,7 @@
           <div class="bibtex hidden">
             <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">Tong2023Fall</span><span class="p">,</span>
   <span class="na">title</span> <span class="p">=</span> <span class="s">{Socioeconomic Disparities for Healthcare Utilization of Senior Adult Falls in Southeast Wisconsin, 2020-2022}</span><span class="p">,</span>
-  <span class="na">author</span> <span class="p">=</span> <span class="s">{}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Tong, Ling and Khani, Masoud and Taylor, Bradley and Osinski, Kristen and Adams, Jazzmyne and Friedland, David and Luo, Jake}</span><span class="p">,</span>
   <span class="na">year</span> <span class="p">=</span> <span class="s">{2023}</span><span class="p">,</span>
 <span class="p">}</span></code></pre></figure>
           </div>
