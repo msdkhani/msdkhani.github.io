@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2016-01-15 07:59:00-0400
+date: 2022-10
 inline: true
 related_posts: false
 ---
 
-A simple inline announcement with Markdown emoji!
+I presented our work for the AI in Aging and Age-related Diseases Conference, 2022, titled "A Visualization Model for Diagnosing Diabetic Retinopathy Severity and Discovering Plaque Patterns in Retinal Images"!
