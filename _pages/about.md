@@ -18,6 +18,7 @@ social: true  # includes social icons at the bottom of the page
 ---
 
 About Me
+About Me
 
 Hello! I’m Masoud Khani, a Ph.D. candidate in Biomedical and Health Informatics at the University of Wisconsin-Milwaukee. My academic journey began with a Master’s degree in Computer Science, leading me to pursue impactful, interdisciplinary research at the intersection of technology and healthcare.
 
