@@ -8,7 +8,6 @@ category: work
 ---
 
 
-
 <div class="caption">
     The PyWaveClus pipeline consists of three main steps: spike detection, feature extraction, and clustering.
 </div>
@@ -27,7 +26,6 @@ category: work
     <li><strong>Clustering:</strong> Grouping spikes likely originating from the same neuron.</li>
 </ul>
 
----
 
 <h5>1. Spike Detection</h5>
 <p>
@@ -67,7 +65,6 @@ spikes_waveforms = sd.extract_waveforms(spike_detection_results, recording_bp2)
     </div>
 </div>
 
----
 
 <h5>2. Feature Extraction</h5>
 <p>
@@ -97,7 +94,6 @@ features = fe.feature_extraction(spikes_waveforms)
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/feature_visualization.png" title="Feature Space Visualization" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
