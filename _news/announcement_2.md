@@ -1,32 +1,27 @@
 ---
 layout: post
 title: A long announcement with details
-date: 2015-11-07 16:11:00-0400
+date: 2025-21-01 16:11:00-0400
 inline: false
 related_posts: false
 ---
 
-Announcements and news can be much longer than just quick inline posts. In fact, they can have all the features available for the standard blog posts. See below.
+Our Research paper "Risk Prediction and Interpretation for Fall Events Using Explainable AI and Large Language Models", was accepted at International Conference on Medical and Health Informatics (ICMHI 2025) conference.
 
 ***
+Our paper, “Risk Prediction and Interpretation for Fall Events Using Explainable AI and Large Language Models,” has been accepted at the International Conference on Medical and Health Informatics (ICMHI 2025). This research leverages explainable AI (XAI) and Large Language Models (LLMs) to enhance the interpretation of SHAP (SHapley Additive exPlanations) values for fall risk prediction models, ensuring that healthcare providers can make informed, trust-based decisions.
 
-Jean shorts raw denim Vice normcore, art party High Life PBR skateboard stumptown vinyl kitsch. Four loko meh 8-bit, tousled banh mi tilde forage Schlitz dreamcatcher twee 3 wolf moon. Chambray asymmetrical paleo salvia, sartorial umami four loko master cleanse drinking vinegar brunch. <a href="https://www.pinterest.com">Pinterest</a> DIY authentic Schlitz, hoodie Intelligentsia butcher trust fund brunch shabby chic Kickstarter forage flexitarian. Direct trade <a href="https://en.wikipedia.org/wiki/Cold-pressed_juice">cold-pressed</a> meggings stumptown plaid, pop-up taxidermy. Hoodie XOXO fingerstache scenester Echo Park. Plaid ugh Wes Anderson, freegan pug selvage fanny pack leggings pickled food truck DIY irony Banksy.
+In many healthcare systems, predicting and preventing falls is crucial, particularly for elderly or high-risk patients. Our research focuses not only on generating accurate predictions but also on improving the interpretability of those predictions through LLM-driven explanations. By utilizing LLMs, clinicians receive simplified, natural-language interpretations of SHAP values that explain which features most contribute to a patient’s risk. This helps providers better understand AI-generated outputs, bridging the gap between complex data models and practical, real-world decision-making.
 
-#### Hipster list
+Key Innovations:
 <ul>
-    <li>brunch</li>
-    <li>fixie</li>
-    <li>raybans</li>
-    <li>messenger bag</li>
+    <li>Risk prediction models enhanced with SHAP value explanations for feature importance</li>
+	<li>Integration of LLMs to provide clear, human-readable explanations of model outputs, reducing cognitive load for clinicians</li>
+	<li>A focus on actionable AI, where predictions and their justifications empower healthcare providers to take preventative measures against fall events</li>
 </ul>
 
-Hoodie Thundercats retro, tote bag 8-bit Godard craft beer gastropub. Truffaut Tumblr taxidermy, raw denim Kickstarter sartorial dreamcatcher. Quinoa chambray slow-carb salvia readymade, bicycle rights 90's yr typewriter selfies letterpress cardigan vegan.
+Our system tackles one of the major challenges in healthcare AI: the black-box nature of machine learning models. By breaking down complex SHAP values using LLMs, we make it easier for clinicians to understand the “why” behind each prediction. This human-centric approach aligns with the goals of modern healthcare informatics—enabling transparency, trust, and timely interventions.
 
-***
+Why This Matters
 
-Pug heirloom High Life vinyl swag, single-origin coffee four dollar toast taxidermy reprehenderit fap distillery master cleanse locavore. Est anim sapiente leggings Brooklyn ea. Thundercats locavore excepteur veniam eiusmod. Raw denim Truffaut Schlitz, migas sapiente Portland VHS twee Bushwick Marfa typewriter retro id keytar.
-
-> We do not grow absolutely, chronologically. We grow sometimes in one dimension, and not in another, unevenly. We grow partially. We are relative. We are mature in one realm, childish in another.
-> —Anais Nin
-
-Fap aliqua qui, scenester pug Echo Park polaroid irony shabby chic ex cardigan church-key Odd Future accusamus. Blog stumptown sartorial squid, gastropub duis aesthetic Truffaut vero. Pinterest tilde twee, odio mumblecore jean shorts lumbersexual.
+Falls are a leading cause of injury and complications in healthcare settings, yet many predictive models provide limited insight into why a patient is classified as high-risk. Traditional approaches often leave clinicians guessing about which factors are driving risk scores. Our research directly addresses this issue by delivering interpretable predictions and easy-to-understand explanations, allowing clinicians to focus on prevention rather than reactive care.
