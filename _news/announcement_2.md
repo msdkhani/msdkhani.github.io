@@ -1,6 +1,6 @@
 ---
 layout: post
-title: A long announcement with details
+title: Our Research paper "Risk Prediction and Interpretation for Fall Events Using Explainable AI and Large Language Models", was accepted at International Conference on Medical and Health Informatics (ICMHI 2025) conference.
 date: 2025-01-21
 inline: false
 related_posts: false
