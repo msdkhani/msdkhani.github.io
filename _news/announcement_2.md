@@ -6,7 +6,6 @@ inline: false
 related_posts: false
 ---
 
-Our Research paper "Risk Prediction and Interpretation for Fall Events Using Explainable AI and Large Language Models", was accepted at International Conference on Medical and Health Informatics (ICMHI 2025) conference.
 
 ***
 Our paper, “Risk Prediction and Interpretation for Fall Events Using Explainable AI and Large Language Models,” has been accepted at the International Conference on Medical and Health Informatics (ICMHI 2025). This research leverages explainable AI (XAI) and Large Language Models (LLMs) to enhance the interpretation of SHAP (SHapley Additive exPlanations) values for fall risk prediction models, ensuring that healthcare providers can make informed, trust-based decisions.
