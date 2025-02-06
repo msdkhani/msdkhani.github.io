@@ -21,8 +21,6 @@
 <strong>Clustering:</strong> Grouping spikes likely originating from the same neuron.</li>
 </ul>
 
-<hr>
-
 <h5>1. Spike Detection</h5>
 <p>
     Neural spikes are often buried in noise, making robust detection essential. In PyWaveClus, spike detection relies on **wavelet-based thresholding**. 
@@ -64,8 +62,6 @@ spikes_waveforms = sd.extract_waveforms(spike_detection_results, recording_bp2)
     </div>
 </div>
 
-<hr>
-
 <h5>2. Feature Extraction</h5>
 <p>
     Once spikes are detected, we need to extract numerical features to represent their key characteristics. PyWaveClus supports two main methods:
@@ -96,18 +92,6 @@ features = fe.feature_extraction(spikes_waveforms)
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-8 mt-3 mt-md-0">
-        <figure>
-
-  <picture>
-    
-
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/feature_visualization.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="Feature Space Visualization" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-
-  </picture>
-
-</figure>
-
     </div>
 </div>
 
