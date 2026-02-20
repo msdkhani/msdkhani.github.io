@@ -4,5 +4,5 @@ permalink: /cv/
 title: cv
 nav: true
 nav_order: 4
-cv_pdf: Masoudk.pdf
+cv_pdf: MK_CV.pdf
 ---

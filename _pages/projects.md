@@ -2,7 +2,7 @@
 layout: page
 title: projects
 permalink: /projects/
-description: Intresting Work Projects.
+description: Research projects in AI for healthcare, neural signal processing, and clinical decision support.
 nav: true
 nav_order: 2
 display_categories: [work]

@@ -2,45 +2,55 @@
 layout: page
 permalink: /teaching/
 title: Teaching
-description: 
+description:
 nav: true
 nav_order: 5
 ---
 
+As a **Lecturer** at the University of Wisconsin-Milwaukee (UWM) College of Health Sciences, I design and teach graduate-level courses that blend data science, machine learning, and healthcare informatics. My teaching philosophy centers on providing students with both **rigorous theoretical foundations** and **hands-on practical experience**, preparing them to tackle real-world challenges in healthcare and data-driven industries.
 
-I am an instructor at the University of Wisconsin-Milwaukee (UWM), where I teach courses that blend my expertise in data science, machine learning, and healthcare informatics. Currently, I teach two key courses: Big Data Analysis and Introduction to Healthcare Informatics. These courses are designed to provide students with both theoretical knowledge and hands-on experience, preparing them to tackle real-world challenges in healthcare and data-driven industries.
+---
 
--------------------
-Big Data Analysis
+## Lecturer — UWM College of Health Sciences
+**Sep. 2024 – Dec. 2025**
 
-Big data isn’t just a buzzword—it’s a force driving innovation across industries. In this course, I guide students through the fascinating world of large-scale data processing and advanced analytics, where they learn to extract valuable insights from vast datasets.
+### Big Data & Healthcare Informatics (Graduate)
 
-The course starts with foundational principles of distributed systems and data frameworks such as Apache Hadoop and Spark. We focus on building scalable data pipelines, efficient data storage strategies, and parallel computing techniques. Students also dive into machine learning for big data, discovering how predictive models can drive decision-making in domains like healthcare, finance, and technology.
+Designed and delivered comprehensive curriculum covering distributed computing frameworks (**Apache Spark**), machine learning for large-scale health data, deep learning architectures, and production AI systems. Developed hands-on lab assignments implementing scalable data pipelines, predictive modeling, and real-world healthcare analytics applications for **60+ graduate students**.
 
-Key topics include:
-	•	Introduction to distributed systems and frameworks (Hadoop, Spark)
-	•	Data pipeline architecture and scalable processing
-	•	Cleaning, transforming, and managing large datasets
-	•	Machine learning techniques for high-dimensional data
-	•	Real-world case studies and hands-on projects
+**Key Topics:**
+- Introduction to distributed systems and frameworks (Hadoop, Spark)
+- Data pipeline architecture and scalable processing
+- Cleaning, transforming, and managing large datasets
+- Machine learning and deep learning techniques for high-dimensional health data
+- Real-world case studies and hands-on projects with healthcare datasets
 
-By working on projects with real-world datasets, students gain experience in solving data challenges that span various industries, including healthcare, e-commerce, and logistics.
+### Introduction to Healthcare Informatics (Graduate)
 
------------------------------
+Taught foundational course spanning health IT ecosystems, stakeholder analysis, **clinical decision support systems**, medical image processing, AI/ML in healthcare, data standards (**HL7, FHIR**), evaluation frameworks, and translational informatics. Emphasized interdisciplinary perspectives connecting technology, clinical practice, policy, and patient outcomes.
 
-Introduction to Healthcare Informatics
+**Key Topics:**
+- Understanding healthcare data ecosystems (EHRs, registries, health information exchanges)
+- Clinical decision support and AI in healthcare
+- Health data privacy, security, and ethical considerations
+- Standards and interoperability (HL7, FHIR) for data exchange
+- Medical image processing and neural signal analysis
+- Analyzing social determinants of health for improved care strategies
 
-Healthcare today relies heavily on data-driven innovation to enhance patient care, streamline operations, and support evidence-based decisions. In this course, I introduce students to the dynamic field of healthcare informatics, where technology meets medicine to drive better outcomes.
+---
 
-We explore how Electronic Health Records (EHR), health data standards, and clinical decision support systems (CDSS) shape modern healthcare. Students learn how data interoperability—through standards like HL7 and FHIR—enables efficient information sharing across hospitals and healthcare organizations. The course also emphasizes ethical data use, privacy, and security, which are critical concerns in healthcare data management.
+## Teaching Assistant — UWM
+**Aug. 2023 – Sep. 2024**
 
-Students engage in case studies that cover real-world innovations, including AI-driven diagnostics, predictive models for patient care, and analysis of social determinants of health to understand how external factors influence patient outcomes.
+- **Big Data & Healthcare Informatics** — Led lab sessions on applied healthcare data science, teaching graduate students to implement machine learning pipelines, develop simulation models, and analyze electronic health records using Python-based frameworks and distributed computing tools.
+- Contributed to curriculum development by designing assignments, creating coding tutorials, and developing assessment rubrics that emphasized real-world clinical applications of informatics methods.
 
-Key areas of focus include:
-	•	Understanding healthcare data ecosystems (EHRs, registries, health information exchanges)
-	•	Clinical decision support and AI in healthcare
-	•	Health data privacy, security, and ethical considerations
-	•	Standards and interoperability (HL7, FHIR) for data exchange
-	•	Analyzing social determinants of health for improved care strategies
+---
 
-This course equips students to become leaders in healthcare technology, bridging the gap between clinical practice and data science through hands-on projects and applied learning.
+## Research Mentorship
+
+I am committed to developing the next generation of researchers in biomedical informatics and AI for healthcare:
+
+- **Mentored 10+ undergraduate and graduate students** on research projects involving medical modeling, machine learning, and clinical data analysis
+- **Supervised 5+ students through completion of thesis projects** focused on machine learning, clinical data analysis, and health informatics
+- Guided students in research methodology, scientific writing, and conference presentation skills

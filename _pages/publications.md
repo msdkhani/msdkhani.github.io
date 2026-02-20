@@ -2,8 +2,8 @@
 layout: page
 permalink: /publications/
 title: publications
-description: My Research and Scholarly reviews
-years: [2025, 2024, 2023, 2021]
+description: Peer-reviewed publications in biomedical informatics, AI for healthcare, and clinical data science.
+years: [2026, 2025, 2024, 2023, 2022, 2021]
 nav: true
 nav_order: 1
 ---
