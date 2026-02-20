@@ -1,34 +1,56 @@
 /*******************************************************************************
- * Themes
+ * Themes — Modern design tokens
  ******************************************************************************/
-.footer_icons {font-size: 30px; font-weight: 100;}
-.round_tun {border-radius: 2.25rem!important;}
+.footer_icons {
+  font-size: 30px;
+  font-weight: 100;
+}
+
+.round_tun {
+  border-radius: 2.25rem !important;
+}
+
 :root {
   --global-bg-color: #{$white-color};
   --global-code-bg-color: #{$code-bg-color-light};
   --global-text-color: #{$black-color};
   --global-text-color-light: #{$grey-color};
   --global-theme-color: #{$blue-color};
-  --global-hover-color: #{$blue-color};
+  --global-hover-color: #{$purple-color};
   --global-footer-bg-color: #{$grey-color-dark};
   --global-footer-text-color: #{$grey-color-light};
   --global-footer-link-color: #{$white-color};
   --global-distill-app-color: #{$grey-color};
-  --global-divider-color: rgba(0,0,0,.1);
+  --global-divider-color: rgba(0, 0, 0, .08);
   --global-card-bg-color: #{$white-color};
 
+  // Modern design tokens
+  --global-gradient: linear-gradient(135deg, #{$blue-color} 0%, #{$purple-color} 100%);
+  --global-shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.04);
+  --global-shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.07), 0 2px 4px -1px rgba(0, 0, 0, 0.04);
+  --global-shadow-lg: 0 10px 25px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -2px rgba(0, 0, 0, 0.03);
+  --global-shadow-xl: 0 20px 40px -5px rgba(0, 0, 0, 0.1);
+  --global-radius: 12px;
+  --global-radius-sm: 8px;
+  --global-radius-lg: 20px;
+  --global-glass-bg: rgba(255, 255, 255, 0.72);
+  --global-glass-border: rgba(255, 255, 255, 0.3);
+  --global-transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
   .fa-sun {
-    display : none;
+    display: none;
   }
+
   .fa-moon {
     padding-left: 10px;
     padding-top: 12px;
-    display : block;
+    display: block;
   }
 
   .repo-img-light {
     display: block;
   }
+
   .repo-img-dark {
     display: none;
   }
@@ -37,29 +59,40 @@
 html[data-theme='dark'] {
   --global-bg-color: #{$grey-color-dark};
   --global-code-bg-color: #{$code-bg-color-dark};
-  --global-text-color: #{$grey-color-light};
-  --global-text-color-light: #{$grey-color-light};
+  --global-text-color: #E2E8F0;
+  --global-text-color-light: #94A3B8;
   --global-theme-color: #{$cyan-color};
-  --global-hover-color: #{$cyan-color};
-  --global-footer-bg-color: #{$grey-color-light};
-  --global-footer-text-color: #{$grey-color-dark};
-  --global-footer-link-color: #{$black-color};
-  --global-distill-app-color: #{$grey-color-light};
-  --global-divider-color: #424246;
+  --global-hover-color: #{$light-cyan-color};
+  --global-footer-bg-color: #1E293B;
+  --global-footer-text-color: #94A3B8;
+  --global-footer-link-color: #E2E8F0;
+  --global-distill-app-color: #94A3B8;
+  --global-divider-color: rgba(255, 255, 255, 0.08);
   --global-card-bg-color: #{$grey-900};
+
+  // Dark mode design tokens
+  --global-gradient: linear-gradient(135deg, #{$cyan-color} 0%, #{$purple-color} 100%);
+  --global-shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.2), 0 1px 2px rgba(0, 0, 0, 0.15);
+  --global-shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.25), 0 2px 4px -1px rgba(0, 0, 0, 0.15);
+  --global-shadow-lg: 0 10px 25px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.15);
+  --global-shadow-xl: 0 20px 40px -5px rgba(0, 0, 0, 0.4);
+  --global-glass-bg: rgba(15, 23, 42, 0.75);
+  --global-glass-border: rgba(255, 255, 255, 0.06);
 
   .fa-sun {
     padding-left: 10px;
     padding-top: 12px;
-    display : block;
+    display: block;
   }
+
   .fa-moon {
-    display : none;
+    display: none;
   }
 
   .repo-img-light {
     display: none;
   }
+
   .repo-img-dark {
     display: block;
   }

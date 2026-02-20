@@ -4,35 +4,35 @@
  ******************************************************************************/
 
 
-// Colors
-$red-color:           #FF3636 !default;
-$red-color-dark:      #B71C1C !default;
-$orange-color:        #F29105 !default;
-$blue-color:          #0076df !default;
-$blue-color-dark:     #00369f !default;
-$cyan-color:          #2698BA !default;
+// Colors — Modern indigo-violet palette
+$red-color:           #EF4444 !default;
+$red-color-dark:      #DC2626 !default;
+$orange-color:        #F59E0B !default;
+$blue-color:          #4F46E5 !default;     // Indigo — primary theme color
+$blue-color-dark:     #3730A3 !default;
+$cyan-color:          #6366F1 !default;     // Lighter indigo for dark mode
 $light-cyan-color:    lighten($cyan-color, 25%);
-$green-color:         #00ab37 !default;
-$green-color-lime:    #B7D12A !default;
-$green-color-dark:    #009f06 !default;
-$green-color-light:   #ddffdd !default;
-$green-color-bright:  #11D68B !default;
-$purple-color:        #B509AC !default;
+$green-color:         #10B981 !default;
+$green-color-lime:    #84CC16 !default;
+$green-color-dark:    #059669 !default;
+$green-color-light:   #D1FAE5 !default;
+$green-color-bright:  #34D399 !default;
+$purple-color:        #8B5CF6 !default;
 $light-purple-color:  lighten($purple-color, 25%);
-$pink-color:          #f92080 !default;
-$pink-color-light:    #ffdddd !default;
-$yellow-color:        #efcc00 !default;
+$pink-color:          #EC4899 !default;
+$pink-color-light:    #FCE7F3 !default;
+$yellow-color:        #F59E0B !default;
 
-$grey-color:          #828282 !default;
-$grey-color-light:    lighten($grey-color, 40%);
-$grey-color-dark:     #1C1C1D;
-$grey-900:            #212529;
+$grey-color:          #6B7280 !default;
+$grey-color-light:    #E5E7EB;
+$grey-color-dark:     #0F172A;       // Rich dark slate
+$grey-900:            #1E293B;       // Softer dark card bg
 
 $white-color: #ffffff !default;
-$black-color: #000000 !default;
+$black-color: #111827 !default;      // Softer than pure black
 
 
 // Theme colors
 
-$code-bg-color-light:     rgba($purple-color, 0.05);
-$code-bg-color-dark:      #2c3237 !default;
+$code-bg-color-light:     rgba($purple-color, 0.06);
+$code-bg-color-dark:      #1E293B !default;
