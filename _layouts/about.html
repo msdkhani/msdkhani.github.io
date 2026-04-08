@@ -79,7 +79,7 @@ layout: default
 
   <!-- NEWS SECTION -->
   {% if page.news -%}
-  <section class="content-section scroll-section">
+  <section class="content-section scroll-section" id="news-section">
     <div class="section-inner">
       <div class="section-header">
         <span class="label scroll-reveal-left">Updates</span>
@@ -94,7 +94,7 @@ layout: default
 
   <!-- PUBLICATIONS SECTION -->
   {% if page.selected_papers -%}
-  <section class="content-section scroll-section">
+  <section class="content-section scroll-section" id="publications-section">
     <div class="section-inner">
       <div class="section-header">
         <span class="label scroll-reveal-left">Research</span>
@@ -109,7 +109,7 @@ layout: default
 
   <!-- CONTACT SECTION -->
   {%- if page.social %}
-  <section class="content-section contact-section scroll-section">
+  <section class="content-section contact-section scroll-section" id="contact-section">
     <div class="section-inner center">
       <div class="section-header">
         <span class="label scroll-reveal-up">Connect</span>
@@ -888,6 +888,7 @@ layout: default
     transition: none;
   }
 }
+
 </style>
 
 <script>

@@ -6,7 +6,7 @@ subtitle: Ph.D. Candidate @ <a href='https://uwm.edu'>University of Wisconsin-Mi
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: Gemini_Generated_Image_lwxtvslwxtvslwxt.png
   image_circular: false # crops the image to make it circular
   address:
 
