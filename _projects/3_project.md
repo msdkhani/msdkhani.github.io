@@ -1,81 +1,42 @@
 ---
 layout: page
-title: project 3
-description: a project that redirects to another website
-img: assets/img/7.jpg
-redirect: https://unsplash.com
+title: "Explainable AI for Clinical Risk Prediction"
+description: "SHAP-based temporal risk pathways and LLM-driven natural language explanations for clinical prediction models."
+img: assets/img/publication_preview/ExplainableAI_BPPV.jpg
 importance: 3
 category: work
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+## Overview
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+This research addresses one of the most critical barriers to AI adoption in healthcare: the **black-box problem**. We develop frameworks that combine **explainable AI (XAI)** methods with **Large Language Models** to make clinical prediction models transparent, trustworthy, and actionable for healthcare providers.
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+### The Problem
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+Machine learning models can achieve impressive accuracy in predicting clinical outcomes — from fall risk to disease progression — but clinicians are often reluctant to trust predictions they cannot understand. Traditional feature importance methods (e.g., SHAP values) produce numerical outputs that are difficult to interpret without statistical expertise.
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, *bled* for your project, and then... you reveal its glory in the next row of images.
+### Our Approach
 
+We bridge the gap between complex AI outputs and clinical decision-making through a two-stage approach:
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+**Stage 1: Temporal Explainability**
+- Apply **SHAP (SHapley Additive exPlanations)** to temporal prediction models to identify which features contribute most to risk at different time points
+- Develop **temporal risk pathways** that reveal how feature importance evolves over a patient's care journey
+- Combine with **LIME** and **attention visualization** for multi-perspective explainability
 
+**Stage 2: LLM-Powered Interpretation**
+- Use large language models to translate numerical SHAP values into **clear, natural language explanations**
+- Generate **patient-specific risk narratives** that clinicians can review alongside predictions
+- Provide **actionable recommendations** tied to the most influential risk factors
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+### Applications
 
-{% raw %}
-```html
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-```
-{% endraw %}
+- **Fall Risk Prediction** — Identifying temporal risk pathways for elderly patient falls, published in *GeroScience* (2026)
+- **BPPV Risk Assessment** — Personalized explainable predictions for benign paroxysmal positional vertigo, published in *Health Information Science and Systems* (2024)
+- **Antidepressant Discontinuation** — Risk detection with interpretable feature importance, published in *Frontiers in AI* (2023)
+
+### Key Innovation
+
+Our system doesn't just explain *what* the model predicts — it explains *why* in terms clinicians can act on. By combining XAI methods with LLM interpretation, we reduce the cognitive load on healthcare providers and enable trust-based clinical decision-making.
+
+**Recognition:** This work contributed to the **AMIA Best Reviewer Award (2024)** and has been presented at **ICMHI 2025** and **AMIA Annual Symposium**.

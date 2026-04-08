@@ -1,80 +1,48 @@
 ---
 layout: page
-title: project 2
-description: a project with a background image
-img: assets/img/3.jpg
+title: "Sequential Pattern Transformer (SPT)"
+description: "A generative and interpretable framework for predicting disease trajectories using transformer architectures."
+img: assets/img/publication_preview/spt_preview.png
 importance: 2
 category: work
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+## Overview
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+The **Sequential Pattern Transformer (SPT)** is a novel deep learning framework designed to predict disease trajectories by modeling temporal patterns in patient health records. Unlike traditional approaches that treat health events as static features, SPT captures the **sequential, time-dependent nature** of disease progression.
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+### The Problem
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+Predicting how a patient's health will evolve over time is one of the most challenging problems in clinical informatics. Traditional machine learning models often flatten temporal data into static feature vectors, losing critical information about the **order and timing** of clinical events. This limits their ability to forecast future diagnoses, complications, and care needs.
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, *bled* for your project, and then... you reveal its glory in the next row of images.
+### Our Approach
 
+SPT leverages a **transformer architecture** — the same family of models behind modern large language models — but adapts it specifically for clinical event sequences:
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+- **Sequential Pattern Mining** — Extracts frequent temporal patterns from electronic health records to create a structured vocabulary of disease progressions
+- **Generative Prediction** — Produces probabilistic forecasts of future diagnoses, enabling clinicians to anticipate emerging conditions
+- **Interpretable Attention** — Attention weights reveal which prior events most influence each prediction, providing built-in explainability
 
+### Key Features
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+| Feature | Description |
+|---------|-------------|
+| **Temporal Encoding** | Time-aware positional embeddings that capture irregular intervals between clinical events |
+| **Multi-horizon Forecasting** | Predictions at multiple future time points (30-day, 90-day, 1-year) |
+| **Interpretability** | Attention-based explanations showing which historical events drive each prediction |
+| **Scalability** | Validated on datasets with millions of patient records |
 
-{% raw %}
-```html
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-```
-{% endraw %}
+### Technical Architecture
+
+The framework consists of three stages:
+
+1. **Pattern Discovery** — Sequential pattern mining identifies common disease progression pathways from large-scale EHR data
+2. **Sequence Encoding** — Patient histories are encoded as ordered sequences of clinical events with temporal embeddings
+3. **Transformer Prediction** — A modified transformer decoder generates probability distributions over future diagnoses
+
+### Impact
+
+SPT has been validated on real-world datasets and demonstrates superior performance compared to traditional approaches (LSTM, GRU) for disease trajectory prediction. The framework's interpretable design makes it suitable for clinical deployment where understanding the "why" behind predictions is essential for trust and adoption.
+
+**Published in:** *Neural Computing and Applications* (2025)
+[Read the paper →](https://doi.org/10.1007/s00521-025-11695-4)

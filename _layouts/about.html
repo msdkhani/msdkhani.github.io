@@ -2,77 +2,1136 @@
 layout: default
 ---
 
-<!-- about.html -->
-<div class="post">
-  <header class="post-header">
-    <h1 class="post-title">
-      {% if site.title == "blank" -%}<span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
-      {{ site.last_name }}{%- else -%}{{ site.title }}{%- endif %}
-    </h1>
-    <p class="desc">{{ page.subtitle }}</p>
-  </header>
+<!-- FULL-WIDTH SITE -->
+<div class="cosmic-page">
 
-  <article>
-    {% if page.profile -%}
-    <div class="profile float-{%- if page.profile.align == 'left' -%}left{%- else -%}right{%- endif -%}">
-      {%- if page.profile.image %}
-      {%- assign profile_image_path = page.profile.image | prepend: 'assets/img/' -%}
-
-      {% if page.profile.image_circular %}
-      {%- assign profile_image_class = "img-fluid z-depth-1 rounded-circle" -%}
-      {% else %}
-      {%- assign profile_image_class = "img-fluid z-depth-1 round_tun" -%}
-      {% endif %}
-
-      {% include figure.html
-      path=profile_image_path
-      class=profile_image_class
-      alt=page.profile.image -%}
-      {% endif -%}
-      {%- if page.profile.address %}
-      <div class="address">
-        {{ page.profile.address }}
+  <!-- HERO SECTION -->
+  <section class="hero-section">
+    <div class="hero-inner">
+      <div class="hero-content">
+        <div class="hero-badge scroll-reveal" data-delay="0">
+          <span class="badge-dot"></span>
+          <span>Healthcare AI Researcher</span>
+        </div>
+        
+        <h1 class="hero-title scroll-reveal" data-delay="100">
+          {% if site.title == "blank" -%}
+          Hi, I'm <span class="name-gradient">{{ site.first_name }}</span>
+          {%- else -%}{{ site.title }}{%- endif %}
+        </h1>
+        
+        <p class="hero-subtitle scroll-reveal" data-delay="200">{{ page.subtitle }}</p>
+        
+        <div class="hero-tags scroll-reveal stagger-container" data-delay="300">
+          <span class="tag stagger-item"><i class="fas fa-rocket"></i> Space</span>
+          <span class="tag stagger-item"><i class="fas fa-atom"></i> Quantum</span>
+          <span class="tag stagger-item"><i class="fas fa-terminal"></i> Code</span>
+          <span class="tag stagger-item"><i class="fas fa-brain"></i> AI</span>
+        </div>
+        
+        <div class="hero-buttons scroll-reveal" data-delay="400">
+          <a href="#about-section" class="btn-primary magnetic-btn">
+            View My Work
+            <i class="fas fa-arrow-right"></i>
+          </a>
+          <a href="{{ '/publications/' | relative_url }}" class="btn-outline magnetic-btn">
+            Publications
+          </a>
+        </div>
       </div>
-      {%- endif %}
+      
+      {% if page.profile.image %}
+      <div class="hero-image scroll-reveal-scale" data-delay="200">
+        {%- assign profile_image_path = page.profile.image | prepend: 'assets/img/' -%}
+        <div class="image-container">
+          <div class="orbit orbit-1"></div>
+          <div class="orbit orbit-2"></div>
+          <div class="orbit orbit-3"></div>
+          <img src="{{ profile_image_path | relative_url }}" alt="Profile" class="profile-img">
+        </div>
+        <div class="floating-icons">
+          <span class="f-icon i1"><i class="fas fa-dna"></i></span>
+          <span class="f-icon i2"><i class="fas fa-microchip"></i></span>
+          <span class="f-icon i3"><i class="fas fa-satellite"></i></span>
+        </div>
+      </div>
+      {% endif %}
     </div>
-    {%- endif %}
-
-    <div class="clearfix">
-      {{ content }}
+    
+    <div class="scroll-indicator scroll-reveal" data-delay="600">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
     </div>
+  </section>
 
-    <!-- News -->
-    {% if page.news -%}
-    <div style="margin-top: 2.5rem;">
-      <div class="news card">
-        <h2 style="color: inherit; margin-left: 3%; margin-top: 3%;">News</h2>
+  <!-- ABOUT SECTION -->
+  <section class="content-section scroll-section" id="about-section">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="label scroll-reveal-left">About</span>
+        <h2 class="scroll-reveal-up">Research & Expertise</h2>
+      </div>
+      <div class="section-body about-text scroll-reveal-up" data-delay="150">
+        {{ content }}
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWS SECTION -->
+  {% if page.news -%}
+  <section class="content-section scroll-section">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="label scroll-reveal-left">Updates</span>
+        <h2 class="scroll-reveal-up">Latest News</h2>
+      </div>
+      <div class="section-body scroll-reveal-up stagger-container" data-delay="150">
         {%- include news.html %}
       </div>
     </div>
-    {%- endif %}
+  </section>
+  {%- endif %}
 
-    <!-- Selected papers -->
-    {% if page.selected_papers -%}
-    <div style="margin-top: 2.5rem;">
-      <h2 style="color: inherit; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 700;">Selected publications
-      </h2>
-      {%- include selected_papers.html %}
+  <!-- PUBLICATIONS SECTION -->
+  {% if page.selected_papers -%}
+  <section class="content-section scroll-section">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="label scroll-reveal-left">Research</span>
+        <h2 class="scroll-reveal-up">Selected Publications</h2>
+      </div>
+      <div class="section-body scroll-reveal-up stagger-container" data-delay="150">
+        {%- include selected_papers.html %}
+      </div>
     </div>
-    {%- endif %}
+  </section>
+  {%- endif %}
 
-    <!-- Social -->
-    {%- if page.social %}
-    <div class="social" style="margin-top: 3rem;">
-      <div class="contact-icons">
+  <!-- CONTACT SECTION -->
+  {%- if page.social %}
+  <section class="content-section contact-section scroll-section">
+    <div class="section-inner center">
+      <div class="section-header">
+        <span class="label scroll-reveal-up">Connect</span>
+        <h2 class="scroll-reveal-up" data-delay="100">Let's Collaborate</h2>
+        <p class="desc scroll-reveal-up" data-delay="200">{{ site.contact_note }}</p>
+      </div>
+      <div class="social-icons scroll-reveal-scale" data-delay="300">
         {% include social.html %}
       </div>
-
-      <div class="contact-note">
-        {{ site.contact_note }}
-      </div>
-
     </div>
-    {%- endif %}
-  </article>
+  </section>
+  {%- endif %}
 
 </div>
+
+<style>
+/* =============================================
+   FULL-WIDTH DESIGN - Persian Theme
+   Persian Blue (#1D4ED8), Turquoise (#0D9488), Gold (#D97706)
+   ============================================= */
+
+.cosmic-page {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  background: transparent;
+  position: relative;
+  z-index: 2;
+}
+
+/* =============================================
+   HERO
+   ============================================= */
+.hero-section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 40px 60px;
+  position: relative;
+}
+
+.hero-inner {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.hero-content {
+  flex: 1;
+  max-width: 620px;
+}
+
+/* Badge */
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(29, 78, 216, 0.1);
+  border: 1px solid rgba(29, 78, 216, 0.25);
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-size: 14px;
+  color: #60a5fa;
+  margin-bottom: 28px;
+  backdrop-filter: blur(10px);
+}
+
+.badge-dot {
+  width: 8px;
+  height: 8px;
+  background: #1D4ED8;
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(1.3); }
+}
+
+/* Title */
+.hero-title {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: clamp(42px, 6vw, 68px);
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.1;
+  margin: 0 0 24px;
+  letter-spacing: -0.02em;
+}
+
+.name-gradient {
+  background: linear-gradient(135deg, #1D4ED8 0%, #0D9488 50%, #14B8A6 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% auto;
+  animation: gradientMove 4s ease infinite;
+}
+
+@keyframes gradientMove {
+  0%, 100% { background-position: 0% center; }
+  50% { background-position: 100% center; }
+}
+
+/* Subtitle */
+.hero-subtitle {
+  font-size: 17px;
+  line-height: 1.7;
+  color: #9ca3af;
+  margin: 0 0 28px;
+}
+
+/* Tags */
+.hero-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 32px;
+}
+
+.tag {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  font-size: 13px;
+  color: #9ca3af;
+  transition: all 0.3s ease;
+}
+
+.tag i {
+  color: #0D9488;
+}
+
+.tag:hover {
+  background: rgba(13, 148, 136, 0.1);
+  border-color: rgba(13, 148, 136, 0.3);
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+/* Buttons */
+.hero-buttons {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 32px;
+  background: linear-gradient(135deg, #1D4ED8 0%, #0D9488 100%);
+  color: #fff;
+  font-weight: 600;
+  font-size: 15px;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 20px 50px rgba(29, 78, 216, 0.35);
+  color: #fff;
+}
+
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  padding: 16px 32px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #fff;
+  font-weight: 500;
+  font-size: 15px;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+  border-color: #0D9488;
+  color: #14B8A6;
+  transform: translateY(-3px);
+}
+
+/* Hero Image */
+.hero-image {
+  position: relative;
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+}
+
+.image-container {
+  position: relative;
+  width: 340px;
+  height: 340px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-img {
+  width: 270px;
+  height: 270px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid transparent;
+  background: 
+    linear-gradient(#0a0a0f, #0a0a0f) padding-box,
+    linear-gradient(135deg, #1D4ED8, #0D9488, #14B8A6) border-box;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 0 80px rgba(29, 78, 216, 0.25);
+}
+
+.orbit {
+  position: absolute;
+  border-radius: 50%;
+  border: 1px dashed;
+  animation: spin 25s linear infinite;
+}
+
+.orbit-1 {
+  width: 100%;
+  height: 100%;
+  border-color: rgba(29, 78, 216, 0.25);
+}
+
+.orbit-2 {
+  width: 125%;
+  height: 125%;
+  border-color: rgba(13, 148, 136, 0.2);
+  animation-direction: reverse;
+  animation-duration: 35s;
+}
+
+.orbit-3 {
+  width: 150%;
+  height: 150%;
+  border-color: rgba(20, 184, 166, 0.12);
+  animation-duration: 45s;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Floating Icons */
+.floating-icons {
+  position: absolute;
+  inset: -30px;
+  pointer-events: none;
+}
+
+.f-icon {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(10, 10, 20, 0.8);
+  border: 1px solid rgba(13, 148, 136, 0.2);
+  border-radius: 14px;
+  color: #0D9488;
+  font-size: 18px;
+  backdrop-filter: blur(10px);
+  animation: iconFloat 5s ease-in-out infinite;
+}
+
+.i1 { top: 5%; left: -5%; animation-delay: 0s; }
+.i2 { top: 55%; right: -12%; animation-delay: 1.5s; }
+.i3 { bottom: 5%; left: 15%; animation-delay: 3s; }
+
+@keyframes iconFloat {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-10px) rotate(5deg); }
+}
+
+/* Scroll Indicator */
+.scroll-indicator {
+  position: absolute;
+  bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  color: #6b7280;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
+
+.scroll-line {
+  width: 1px;
+  height: 50px;
+  background: linear-gradient(to bottom, #0D9488, transparent);
+  animation: scrollAnim 2s ease infinite;
+}
+
+@keyframes scrollAnim {
+  0% { transform: scaleY(0); opacity: 0; transform-origin: top; }
+  50% { transform: scaleY(1); opacity: 1; }
+  100% { transform: scaleY(0); opacity: 0; transform-origin: bottom; }
+}
+
+/* =============================================
+   CONTENT SECTIONS
+   ============================================= */
+.content-section {
+  width: 100%;
+  padding: 100px 40px;
+  background: transparent;
+}
+
+.section-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.section-inner.center {
+  text-align: center;
+}
+
+.section-header {
+  margin-bottom: 40px;
+}
+
+.section-header .label {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  color: #0D9488;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  margin-bottom: 12px;
+}
+
+.section-header h2 {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: clamp(28px, 4vw, 40px);
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+}
+
+.section-header .desc {
+  color: #9ca3af;
+  font-size: 16px;
+  margin-top: 16px;
+  max-width: 500px;
+}
+
+.center .desc {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* About Text */
+.about-text {
+  color: #9ca3af;
+  font-size: 16px;
+  line-height: 1.85;
+}
+
+.about-text strong {
+  color: #14B8A6;
+  font-weight: 600;
+}
+
+.about-text a {
+  color: #14B8A6;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s;
+}
+
+.about-text a:hover {
+  border-color: #14B8A6;
+}
+
+/* Social Icons */
+.social-icons {
+  margin-top: 40px;
+}
+
+.social-icons .contact-icons {
+  font-size: 32px;
+}
+
+.social-icons .contact-icons a {
+  display: inline-block;
+  margin: 0 14px;
+  color: #6b7280;
+  transition: all 0.3s ease;
+}
+
+.social-icons .contact-icons a:hover {
+  color: #14B8A6;
+  transform: translateY(-5px);
+}
+
+/* Contact Section */
+.contact-section {
+  padding-bottom: 120px;
+}
+
+/* =============================================
+   SCROLL ANIMATIONS - Modern Reveal Effects
+   ============================================= */
+
+/* Base scroll reveal state - elements start hidden */
+.scroll-reveal,
+.scroll-reveal-up,
+.scroll-reveal-left,
+.scroll-reveal-right,
+.scroll-reveal-scale {
+  opacity: 0;
+  transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform, opacity;
+}
+
+.scroll-reveal {
+  transform: translateY(30px);
+}
+
+.scroll-reveal-up {
+  transform: translateY(60px);
+}
+
+.scroll-reveal-left {
+  transform: translateX(-40px);
+}
+
+.scroll-reveal-right {
+  transform: translateX(40px);
+}
+
+.scroll-reveal-scale {
+  transform: scale(0.9);
+}
+
+/* Revealed state */
+.scroll-reveal.revealed,
+.scroll-reveal-up.revealed,
+.scroll-reveal-left.revealed,
+.scroll-reveal-right.revealed,
+.scroll-reveal-scale.revealed {
+  opacity: 1;
+  transform: translateY(0) translateX(0) scale(1);
+}
+
+/* Stagger animations for child elements */
+.stagger-item {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.stagger-container.revealed .stagger-item {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger delays */
+.stagger-container.revealed .stagger-item:nth-child(1) { transition-delay: 0.05s; }
+.stagger-container.revealed .stagger-item:nth-child(2) { transition-delay: 0.1s; }
+.stagger-container.revealed .stagger-item:nth-child(3) { transition-delay: 0.15s; }
+.stagger-container.revealed .stagger-item:nth-child(4) { transition-delay: 0.2s; }
+.stagger-container.revealed .stagger-item:nth-child(5) { transition-delay: 0.25s; }
+.stagger-container.revealed .stagger-item:nth-child(6) { transition-delay: 0.3s; }
+
+/* Section scroll effects */
+.scroll-section {
+  position: relative;
+}
+
+.scroll-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(13, 148, 136, 0.5), transparent);
+  transition: width 1s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.scroll-section.in-view::before {
+  width: 80%;
+}
+
+/* Magnetic button hover effect */
+.magnetic-btn {
+  position: relative;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Parallax sections */
+.parallax-bg {
+  transform: translateY(var(--parallax-offset, 0));
+  transition: transform 0.1s linear;
+}
+
+/* Text reveal animation for headings */
+.text-reveal {
+  overflow: hidden;
+  display: inline-block;
+}
+
+.text-reveal span {
+  display: inline-block;
+  transform: translateY(100%);
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.text-reveal.revealed span {
+  transform: translateY(0);
+}
+
+/* Glow pulse on reveal */
+.glow-reveal {
+  position: relative;
+}
+
+.glow-reveal::after {
+  content: '';
+  position: absolute;
+  inset: -20px;
+  background: radial-gradient(circle, rgba(13, 148, 136, 0.15) 0%, transparent 70%);
+  opacity: 0;
+  transform: scale(0.8);
+  transition: all 0.6s ease;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.glow-reveal.revealed::after {
+  opacity: 1;
+  transform: scale(1);
+  animation: glowPulse 2s ease-out forwards;
+}
+
+@keyframes glowPulse {
+  0% { opacity: 1; transform: scale(1); }
+  100% { opacity: 0; transform: scale(1.5); }
+}
+
+/* Counter animation for numbers */
+.count-up {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Smooth scroll progress indicator */
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #1D4ED8, #0D9488, #14B8A6);
+  transform-origin: left;
+  transform: scaleX(var(--scroll-progress, 0));
+  z-index: 9999;
+  transition: transform 0.1s linear;
+}
+
+/* Section fade on scroll past */
+.scroll-section {
+  transition: opacity 0.3s ease;
+}
+
+/* Floating elements parallax */
+.f-icon {
+  transition: transform 0.3s ease;
+}
+
+/* Hero content entrance animation sequence */
+.hero-section .scroll-reveal.revealed {
+  animation: heroEntrance 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes heroEntrance {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* News items animation */
+.news .news-item {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.stagger-container.revealed .news .news-item {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.stagger-container.revealed .news .news-item:nth-child(1) { transition-delay: 0.1s; }
+.stagger-container.revealed .news .news-item:nth-child(2) { transition-delay: 0.2s; }
+.stagger-container.revealed .news .news-item:nth-child(3) { transition-delay: 0.3s; }
+.stagger-container.revealed .news .news-item:nth-child(4) { transition-delay: 0.4s; }
+.stagger-container.revealed .news .news-item:nth-child(5) { transition-delay: 0.5s; }
+
+/* Publications animation - target Jekyll Scholar's ol.bibliography li structure */
+.section-body.stagger-container .publications ol.bibliography li {
+  opacity: 0;
+  transform: translateY(25px);
+  transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), 
+              transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.section-body.stagger-container.revealed .publications ol.bibliography li {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.section-body.stagger-container.revealed .publications ol.bibliography li:nth-child(1) { transition-delay: 0.1s; }
+.section-body.stagger-container.revealed .publications ol.bibliography li:nth-child(2) { transition-delay: 0.2s; }
+.section-body.stagger-container.revealed .publications ol.bibliography li:nth-child(3) { transition-delay: 0.3s; }
+.section-body.stagger-container.revealed .publications ol.bibliography li:nth-child(4) { transition-delay: 0.4s; }
+.section-body.stagger-container.revealed .publications ol.bibliography li:nth-child(5) { transition-delay: 0.5s; }
+.section-body.stagger-container.revealed .publications ol.bibliography li:nth-child(6) { transition-delay: 0.6s; }
+.section-body.stagger-container.revealed .publications ol.bibliography li:nth-child(7) { transition-delay: 0.7s; }
+.section-body.stagger-container.revealed .publications ol.bibliography li:nth-child(8) { transition-delay: 0.8s; }
+
+/* Fallback: ensure publications are visible after page load even if JS fails */
+.publications {
+  min-height: 100px;
+}
+
+@keyframes fallbackReveal {
+  to {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+  }
+}
+
+/* Auto-reveal after 2.5s if JS doesn't trigger - backup safety net */
+.section-body.stagger-container .publications ol.bibliography li {
+  animation: fallbackReveal 0.6s ease 2.5s forwards;
+}
+
+/* Underline reveal for labels */
+.scroll-reveal-left.revealed .label,
+.section-header .label.scroll-reveal-left.revealed {
+  position: relative;
+}
+
+.section-header .label::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #0D9488, transparent);
+  transition: width 0.6s cubic-bezier(0.16, 1, 0.3, 1) 0.3s;
+}
+
+.section-header .label.revealed::after {
+  width: 100%;
+}
+
+/* =============================================
+   RESPONSIVE
+   ============================================= */
+@media (max-width: 1024px) {
+  .hero-inner {
+    flex-direction: column;
+    text-align: center;
+    gap: 50px;
+  }
+  
+  .hero-content {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .hero-tags, .hero-buttons {
+    justify-content: center;
+  }
+  
+  .image-container {
+    width: 280px;
+    height: 280px;
+  }
+  
+  .profile-img {
+    width: 230px;
+    height: 230px;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-section {
+    padding: 80px 20px 40px;
+  }
+  
+  .content-section {
+    padding: 60px 20px;
+  }
+  
+  .hero-title {
+    font-size: 34px;
+  }
+  
+  .hero-subtitle {
+    font-size: 15px;
+  }
+  
+  .btn-primary, .btn-outline {
+    padding: 14px 24px;
+    font-size: 14px;
+  }
+  
+  .image-container {
+    width: 220px;
+    height: 220px;
+  }
+  
+  .profile-img {
+    width: 180px;
+    height: 180px;
+  }
+  
+  .floating-icons {
+    display: none;
+  }
+  
+  .section-header h2 {
+    font-size: 26px;
+  }
+  
+  /* Reduce animation distance on mobile */
+  .scroll-reveal-up {
+    transform: translateY(40px);
+  }
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  .scroll-reveal,
+  .scroll-reveal-up,
+  .scroll-reveal-left,
+  .scroll-reveal-right,
+  .scroll-reveal-scale,
+  .stagger-item {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  
+  // =============================================
+  // SCROLL REVEAL ANIMATION SYSTEM
+  // =============================================
+  
+  const revealElements = document.querySelectorAll(
+    '.scroll-reveal, .scroll-reveal-up, .scroll-reveal-left, .scroll-reveal-right, .scroll-reveal-scale, .stagger-container'
+  );
+  
+  const sectionElements = document.querySelectorAll('.scroll-section');
+  
+  // Create intersection observer for reveal animations
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const el = entry.target;
+        const delay = parseInt(el.dataset.delay) || 0;
+        
+        setTimeout(() => {
+          el.classList.add('revealed');
+        }, delay);
+        
+        // Unobserve after revealing (one-time animation)
+        revealObserver.unobserve(el);
+      }
+    });
+  }, {
+    threshold: 0.05,
+    rootMargin: '0px 0px -20px 0px'
+  });
+  
+  // Create observer for sections (for line animation)
+  const sectionObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in-view');
+      }
+    });
+  }, {
+    threshold: 0.1
+  });
+  
+  // Observe all reveal elements
+  revealElements.forEach(el => revealObserver.observe(el));
+  sectionElements.forEach(el => sectionObserver.observe(el));
+  
+  // =============================================
+  // HERO ENTRANCE - Trigger immediately on load
+  // =============================================
+  
+  const heroElements = document.querySelectorAll('.hero-section .scroll-reveal, .hero-section .scroll-reveal-scale, .hero-section .stagger-container');
+  heroElements.forEach(el => {
+    const delay = parseInt(el.dataset.delay) || 0;
+    setTimeout(() => {
+      el.classList.add('revealed');
+    }, 100 + delay);
+  });
+  
+  // =============================================
+  // SCROLL PROGRESS INDICATOR
+  // =============================================
+  
+  const progressBar = document.createElement('div');
+  progressBar.className = 'scroll-progress';
+  document.body.appendChild(progressBar);
+  
+  function updateScrollProgress() {
+    const scrollTop = window.scrollY;
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const progress = docHeight > 0 ? scrollTop / docHeight : 0;
+    document.documentElement.style.setProperty('--scroll-progress', progress);
+  }
+  
+  // =============================================
+  // PARALLAX EFFECT FOR FLOATING ICONS
+  // =============================================
+  
+  const floatingIcons = document.querySelectorAll('.f-icon');
+  const heroImage = document.querySelector('.hero-image');
+  
+  function updateParallax() {
+    const scrollY = window.scrollY;
+    const maxScroll = window.innerHeight;
+    
+    if (scrollY < maxScroll) {
+      floatingIcons.forEach((icon, index) => {
+        const speed = 0.1 + (index * 0.05);
+        const offset = scrollY * speed;
+        icon.style.transform = `translateY(${offset}px) rotate(${offset * 0.1}deg)`;
+      });
+      
+      // Subtle parallax on hero image
+      if (heroImage) {
+        heroImage.style.transform = `translateY(${scrollY * 0.1}px)`;
+      }
+    }
+  }
+  
+  // =============================================
+  // MAGNETIC BUTTON EFFECT
+  // =============================================
+  
+  const magneticButtons = document.querySelectorAll('.magnetic-btn');
+  
+  magneticButtons.forEach(btn => {
+    btn.addEventListener('mousemove', (e) => {
+      const rect = btn.getBoundingClientRect();
+      const x = e.clientX - rect.left - rect.width / 2;
+      const y = e.clientY - rect.top - rect.height / 2;
+      
+      btn.style.transform = `translate(${x * 0.15}px, ${y * 0.15}px)`;
+    });
+    
+    btn.addEventListener('mouseleave', () => {
+      btn.style.transform = 'translate(0, 0)';
+    });
+  });
+  
+  // =============================================
+  // SMOOTH SCROLL FOR NAVIGATION
+  // =============================================
+  
+  document.querySelector('.btn-primary')?.addEventListener('click', function(e) {
+    e.preventDefault();
+    document.querySelector('#about-section')?.scrollIntoView({ 
+      behavior: 'smooth',
+      block: 'start'
+    });
+  });
+  
+  // =============================================
+  // SCROLL EVENT LISTENER (THROTTLED)
+  // =============================================
+  
+  let ticking = false;
+  
+  function onScroll() {
+    if (!ticking) {
+      window.requestAnimationFrame(() => {
+        updateScrollProgress();
+        updateParallax();
+        ticking = false;
+      });
+      ticking = true;
+    }
+  }
+  
+  window.addEventListener('scroll', onScroll, { passive: true });
+  
+  // Initial calls
+  updateScrollProgress();
+  
+  // =============================================
+  // STAGGER ANIMATION FOR NEWS/PUB ITEMS
+  // =============================================
+  
+  const staggerContainers = document.querySelectorAll('.stagger-container');
+  
+  staggerContainers.forEach(container => {
+    // Target news items
+    const newsItems = container.querySelectorAll('.news-item');
+    newsItems.forEach((item, index) => {
+      item.style.transitionDelay = `${0.1 + (index * 0.1)}s`;
+    });
+    
+    // Target publication items (Jekyll Scholar structure: ol.bibliography li)
+    const pubItems = container.querySelectorAll('.publications ol.bibliography li');
+    pubItems.forEach((item, index) => {
+      item.style.transitionDelay = `${0.1 + (index * 0.1)}s`;
+    });
+  });
+  
+  // =============================================
+  // FALLBACK: Ensure all content is visible
+  // =============================================
+  
+  setTimeout(() => {
+    document.querySelectorAll('.scroll-reveal, .scroll-reveal-up, .scroll-reveal-left, .scroll-reveal-right, .scroll-reveal-scale, .stagger-container').forEach(el => {
+      el.classList.add('revealed');
+    });
+    document.querySelectorAll('.scroll-section').forEach(el => {
+      el.classList.add('in-view');
+    });
+  }, 3000);
+  
+  // =============================================
+  // TEXT SPLIT ANIMATION (for special headings)
+  // =============================================
+  
+  const splitTexts = document.querySelectorAll('.text-split');
+  
+  splitTexts.forEach(el => {
+    const text = el.textContent;
+    el.innerHTML = '';
+    text.split('').forEach((char, i) => {
+      const span = document.createElement('span');
+      span.textContent = char === ' ' ? '\u00A0' : char;
+      span.style.transitionDelay = `${i * 0.03}s`;
+      el.appendChild(span);
+    });
+  });
+  
+  // =============================================
+  // COUNTER ANIMATION FOR NUMBERS
+  // =============================================
+  
+  function animateCounter(el) {
+    const target = parseInt(el.dataset.target);
+    const duration = 2000;
+    const start = performance.now();
+    
+    function update(currentTime) {
+      const elapsed = currentTime - start;
+      const progress = Math.min(elapsed / duration, 1);
+      const easeOut = 1 - Math.pow(1 - progress, 3);
+      const current = Math.floor(easeOut * target);
+      
+      el.textContent = current.toLocaleString();
+      
+      if (progress < 1) {
+        requestAnimationFrame(update);
+      } else {
+        el.textContent = target.toLocaleString();
+      }
+    }
+    
+    requestAnimationFrame(update);
+  }
+  
+  // Observe counter elements
+  const counterObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        animateCounter(entry.target);
+        counterObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.5 });
+  
+  document.querySelectorAll('.count-up').forEach(el => counterObserver.observe(el));
+  
+});
+</script>

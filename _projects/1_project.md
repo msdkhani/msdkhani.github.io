@@ -1,8 +1,8 @@
 ---
 layout: page
-title: PyWaveClus: Python Spike Detection and Clustering
-description: The Python Implementation of Waveclause with artifacts removal.
-img: assets/img/12.jpg
+title: "PyWaveClus: Python Spike Detection and Clustering"
+description: "The Python Implementation of Waveclause with artifacts removal."
+img: assets/img/publication_preview/pywaveclus_preview.png
 importance: 1
 category: work
 ---

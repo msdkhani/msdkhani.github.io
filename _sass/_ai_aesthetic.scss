@@ -1,0 +1,559 @@
+/*******************************************************************************
+ * MODERN DESIGN - Persian Theme
+ * Persian Blue (#1D4ED8), Turquoise (#0D9488), Gold (#D97706)
+ ******************************************************************************/
+
+/* Particles - Background animation */
+#particles-js {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    background: radial-gradient(ellipse at top, #0f0f1a 0%, #0a0a0f 50%, #050508 100%);
+}
+
+body, html {
+    overflow-x: hidden;
+    background: #0a0a0f !important;
+}
+
+.main-content {
+    z-index: 1;
+    position: relative;
+    background: transparent;
+}
+
+/* =============================================
+   NAVBAR - Glassmorphic
+   ============================================= */
+.navbar {
+    background: rgba(10, 10, 18, 0.85) !important;
+    backdrop-filter: blur(20px) saturate(180%) !important;
+    -webkit-backdrop-filter: blur(20px) saturate(180%) !important;
+    border-bottom: 1px solid rgba(13, 148, 136, 0.1) !important;
+    z-index: 1000;
+}
+
+.navbar .nav-link {
+    color: #9ca3af !important;
+    transition: all 0.2s ease;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+    color: #14B8A6 !important;
+}
+
+.navbar-brand {
+    color: #fff !important;
+}
+
+/* =============================================
+   CARDS - Glass effect
+   ============================================= */
+.card, .news.card {
+    background: rgba(18, 18, 28, 0.6) !important;
+    backdrop-filter: blur(20px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.06) !important;
+    border-radius: 20px !important;
+}
+
+/* =============================================
+   PUBLICATIONS PAGE
+   ============================================= */
+.publications {
+    padding-bottom: 40px;
+}
+
+.publications h2.year {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: #0D9488;
+    margin: 48px 0 24px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid rgba(13, 148, 136, 0.2);
+}
+
+.publications ol.bibliography {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.publications ol.bibliography li {
+    background: rgba(18, 18, 28, 0.5);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 16px;
+    padding: 24px !important;
+    margin-bottom: 16px;
+    transition: all 0.3s ease;
+}
+
+.publications ol.bibliography li:hover {
+    background: rgba(13, 148, 136, 0.05);
+    border-color: rgba(13, 148, 136, 0.25);
+    transform: translateY(-3px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.publications .title {
+    font-size: 17px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+.publications .author {
+    font-size: 14px;
+    color: #9ca3af;
+    margin-bottom: 6px;
+}
+
+.publications .author em {
+    color: #14B8A6;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.publications .periodical {
+    font-size: 14px;
+    color: #6b7280;
+    font-style: italic;
+}
+
+.publications .links {
+    margin-top: 12px;
+}
+
+.publications .links .btn {
+    background: rgba(13, 148, 136, 0.1) !important;
+    border: 1px solid rgba(13, 148, 136, 0.2) !important;
+    color: #14B8A6 !important;
+    font-size: 12px;
+    padding: 6px 14px;
+    border-radius: 20px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    transition: all 0.3s ease;
+}
+
+.publications .links .btn:hover {
+    background: rgba(13, 148, 136, 0.2) !important;
+    transform: translateY(-2px);
+}
+
+.publications .abbr abbr {
+    background: linear-gradient(135deg, #1D4ED8, #0D9488) !important;
+    color: #fff !important;
+    font-weight: 600;
+    padding: 4px 12px;
+    border-radius: 6px;
+    font-size: 11px;
+}
+
+.publications .abbr abbr a {
+    color: #fff !important;
+}
+
+.publications .preview-img {
+    border-radius: 12px;
+    opacity: 0.9;
+    transition: all 0.3s ease;
+}
+
+.publications ol.bibliography li:hover .preview-img {
+    opacity: 1;
+    transform: scale(1.02);
+}
+
+/* =============================================
+   PROJECTS PAGE - 3 Column Grid Layout
+   ============================================= */
+.projects {
+    padding-bottom: 40px;
+}
+
+/* Override Masonry with CSS Grid - 3 columns */
+.projects .grid {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 24px !important;
+    width: 100% !important;
+    height: auto !important;
+    position: relative !important;
+}
+
+/* Hide masonry sizer element */
+.projects .grid-sizer {
+    display: none !important;
+}
+
+/* Grid items - equal sizing, override Masonry inline styles */
+.projects .grid-item {
+    width: 100% !important;
+    position: relative !important;
+    left: auto !important;
+    top: auto !important;
+    right: auto !important;
+    margin: 0 !important;
+}
+
+/* Card container - fixed aspect ratio */
+.projects .grid-item > a {
+    display: block;
+    height: 100%;
+}
+
+.projects .grid-item .card {
+    height: 100%;
+    min-height: 380px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Card image - fixed height */
+.projects .grid-item .card figure {
+    height: 180px;
+    margin: 0;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.projects .grid-item .card figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Card body - flex grow to fill remaining space */
+.projects .grid-item .card .card-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.projects .grid-item .card .card-title {
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.projects .grid-item .card .card-text {
+    flex: 1;
+    font-size: 14px;
+    line-height: 1.6;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* Responsive: 2 columns on tablet */
+@media (max-width: 992px) {
+    .projects .grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    
+    .projects .grid-item .card {
+        min-height: 360px;
+    }
+}
+
+/* Responsive: 1 column on mobile */
+@media (max-width: 576px) {
+    .projects .grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    
+    .projects .grid-item .card {
+        min-height: auto;
+    }
+    
+    .projects .grid-item .card figure {
+        height: 200px;
+    }
+}
+
+.projects h2.category {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #0D9488;
+    margin: 40px 0 24px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid rgba(13, 148, 136, 0.2);
+}
+
+.projects .card {
+    background: rgba(18, 18, 28, 0.6) !important;
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.06) !important;
+    border-radius: 16px !important;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.projects .card:hover {
+    border-color: rgba(13, 148, 136, 0.25) !important;
+    transform: translateY(-5px);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
+}
+
+.projects .card img {
+    transition: all 0.4s ease;
+}
+
+.projects .card:hover img {
+    transform: scale(1.05);
+}
+
+.projects .card-title {
+    color: #fff !important;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 600;
+}
+
+.projects .card-text {
+    color: #9ca3af;
+}
+
+/* =============================================
+   TEACHING PAGE
+   ============================================= */
+.card-item {
+    background: rgba(18, 18, 28, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 16px;
+    transition: all 0.3s ease;
+}
+
+.card-item:hover {
+    border-color: rgba(13, 148, 136, 0.2);
+    background: rgba(13, 148, 136, 0.03);
+}
+
+/* =============================================
+   REPOSITORIES PAGE
+   ============================================= */
+.repo {
+    background: rgba(18, 18, 28, 0.5) !important;
+    border: 1px solid rgba(255, 255, 255, 0.06) !important;
+    border-radius: 16px !important;
+    transition: all 0.3s ease;
+}
+
+.repo:hover {
+    border-color: rgba(13, 148, 136, 0.2) !important;
+    transform: translateY(-3px);
+}
+
+/* Footer */
+footer.fixed-bottom {
+    background: rgba(10, 10, 15, 0.9) !important;
+    backdrop-filter: blur(20px) !important;
+    border-top: 1px solid rgba(13, 148, 136, 0.1) !important;
+}
+
+footer.fixed-bottom .container {
+    color: #6b7280;
+}
+
+footer a {
+    color: #14B8A6 !important;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0a0a0f;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #1D4ED8, #0D9488);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, #0D9488, #1D4ED8);
+}
+
+/* Selection */
+::selection {
+    background: rgba(13, 148, 136, 0.3);
+    color: #fff;
+}
+
+/* Progress bar */
+progress::-webkit-progress-value {
+    background: linear-gradient(90deg, #1D4ED8, #0D9488);
+}
+
+.progress-bar {
+    background: linear-gradient(90deg, #1D4ED8, #0D9488);
+    box-shadow: 0 0 20px rgba(13, 148, 136, 0.5);
+}
+
+/* =============================================
+   GLOBAL TEXT COLORS
+   ============================================= */
+p, li, td, th, span, div {
+    color: #d1d5db;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #fff;
+}
+
+a {
+    color: #14B8A6;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: #2DD4BF;
+}
+
+strong, b {
+    color: #14B8A6;
+}
+
+/* Tables */
+table {
+    background: rgba(18, 18, 28, 0.4);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+table th {
+    background: rgba(13, 148, 136, 0.1);
+    color: #0D9488;
+    font-weight: 600;
+}
+
+table td {
+    border-color: rgba(255, 255, 255, 0.06);
+}
+
+/* Blockquotes */
+blockquote {
+    background: rgba(13, 148, 136, 0.05);
+    border-left: 3px solid #0D9488;
+    border-radius: 0 12px 12px 0;
+    padding: 16px 20px;
+    color: #d1d5db;
+}
+
+/* Code */
+code {
+    background: rgba(13, 148, 136, 0.15);
+    color: #5EEAD4;
+    padding: 2px 8px;
+    border-radius: 6px;
+}
+
+pre {
+    background: rgba(10, 10, 20, 0.8) !important;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+}
+
+/* Images */
+img {
+    border-radius: 12px;
+}
+
+/* =============================================
+   CV PAGE - Dark theme overrides
+   ============================================= */
+.cv .card,
+.cv-card,
+.cv .list-group-item {
+    background: rgba(18, 18, 28, 0.9) !important;
+    border-color: rgba(255, 255, 255, 0.08) !important;
+    color: #d1d5db !important;
+}
+
+.cv .card {
+    border-radius: 16px !important;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    box-shadow: none !important;
+}
+
+.cv .card-body,
+.cv .list-group-item {
+    background: transparent !important;
+}
+
+.cv .list-group-item {
+    border: none !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06) !important;
+    padding: 12px 16px !important;
+}
+
+.cv .list-group-item:last-child {
+    border-bottom: none !important;
+}
+
+.cv .badge {
+    background: linear-gradient(135deg, #1D4ED8, #0D9488) !important;
+    color: #fff !important;
+    font-weight: 500;
+}
+
+.cv h3,
+.cv h4,
+.cv .card-title {
+    color: #14B8A6 !important;
+}
+
+.cv p,
+.cv li,
+.cv td,
+.cv th {
+    color: #d1d5db !important;
+}
+
+.cv a {
+    color: #14B8A6 !important;
+}
+
+.cv a:hover {
+    color: #2DD4BF !important;
+}
+
+.cv strong {
+    color: #fff !important;
+}
+
+.cv em {
+    color: #9ca3af !important;
+}
+
+.cv table {
+    background: transparent !important;
+}
+
+.cv th {
+    background: transparent !important;
+    color: #9ca3af !important;
+    font-weight: 500;
+    border: none !important;
+}
+
+.cv td {
+    background: transparent !important;
+    border: none !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04) !important;
+}

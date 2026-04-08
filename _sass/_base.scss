@@ -201,11 +201,17 @@ blockquote {
 .navbar {
   box-shadow: none;
   border-bottom: 1px solid var(--global-divider-color);
-  background-color: var(--global-glass-bg);
+  background-color: rgba(255, 255, 255, 0.8);
   backdrop-filter: saturate(180%) blur(20px);
   -webkit-backdrop-filter: saturate(180%) blur(20px);
   opacity: 1;
-  transition: background-color var(--global-transition), box-shadow var(--global-transition);
+  transition: all var(--global-transition);
+  z-index: 1000;
+}
+
+html[data-theme='dark'] .navbar {
+  background-color: rgba(10, 10, 18, 0.85);
+  border-bottom-color: rgba(59, 130, 246, 0.1);
 }
 
 .navbar .dropdown-menu {
@@ -221,7 +227,7 @@ blockquote {
 
   a:hover {
     color: var(--global-hover-color);
-    background-color: rgba(79, 70, 229, 0.06);
+    background-color: rgba(13, 148, 136, 0.06);
   }
 
   .dropdown-divider {
@@ -238,7 +244,7 @@ blockquote {
 
   &:hover {
     color: var(--global-hover-color);
-    background-color: rgba(79, 70, 229, 0.06);
+    background-color: rgba(13, 148, 136, 0.06);
   }
 }
 
@@ -268,12 +274,12 @@ blockquote {
 
     &:hover {
       color: var(--global-hover-color);
-      background-color: rgba(79, 70, 229, 0.06);
+      background-color: rgba(13, 148, 136, 0.06);
     }
   }
 
   .navbar-nav .nav-item.active>.nav-link {
-    background-color: rgba(79, 70, 229, 0.08);
+    background-color: rgba(13, 148, 136, 0.08);
     font-weight: 600;
     color: var(--global-theme-color);
 
@@ -426,27 +432,69 @@ footer.sticky-bottom {
   font-size: 0.9rem;
 }
 
-// CV
+// CV - Dark theme
 
 .cv {
   margin-bottom: 40px;
 
   .card {
-    background-color: var(--global-card-bg-color);
-    border: 1px solid var(--global-divider-color);
-    border-radius: var(--global-radius);
+    background: rgba(18, 18, 28, 0.9) !important;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    border-radius: 16px !important;
+    box-shadow: none !important;
+
+    .card-body {
+      background: transparent !important;
+    }
 
     .list-group-item {
-      background-color: inherit;
-      border-color: var(--global-divider-color);
+      background: transparent !important;
+      border: none !important;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06) !important;
+      color: #d1d5db !important;
+      padding: 12px 16px !important;
+
+      &:last-child {
+        border-bottom: none !important;
+      }
 
       .badge {
-        color: var(--global-card-bg-color) !important;
-        background-color: var(--global-theme-color) !important;
+        background: linear-gradient(135deg, #1D4ED8, #0D9488) !important;
+        color: #fff !important;
         border-radius: 20px;
         padding: 0.35em 0.8em;
         font-weight: 500;
       }
+    }
+  }
+
+  h3, h4 {
+    color: #14B8A6 !important;
+  }
+
+  p, li {
+    color: #d1d5db !important;
+  }
+
+  a {
+    color: #14B8A6 !important;
+    
+    &:hover {
+      color: #2DD4BF !important;
+    }
+  }
+
+  table {
+    background: transparent !important;
+
+    th, td {
+      background: transparent !important;
+      border: none !important;
+      color: #d1d5db !important;
+    }
+
+    th {
+      color: #9ca3af !important;
     }
   }
 }
@@ -495,13 +543,13 @@ footer.sticky-bottom {
       font-size: 0.9rem;
 
       a {
-        background-color: rgba(79, 70, 229, 0.06);
+        background-color: rgba(13, 148, 136, 0.06);
         padding: 0.3rem 0.8rem;
         border-radius: 20px;
         transition: all var(--global-transition);
 
         &:hover {
-          background-color: rgba(79, 70, 229, 0.12);
+          background-color: rgba(13, 148, 136, 0.12);
           color: var(--global-theme-color);
         }
       }
@@ -522,7 +570,7 @@ footer.sticky-bottom {
     transition: background-color var(--global-transition);
 
     &:hover {
-      background-color: rgba(79, 70, 229, 0.02);
+      background-color: rgba(13, 148, 136, 0.02);
     }
 
     .post-meta {
@@ -560,7 +608,7 @@ footer.sticky-bottom {
 
       &:hover {
         color: var(--global-theme-color);
-        background-color: rgba(79, 70, 229, 0.06);
+        background-color: rgba(13, 148, 136, 0.06);
         border-color: var(--global-theme-color);
       }
     }
@@ -619,7 +667,7 @@ footer.sticky-bottom {
 
   .grid-sizer,
   .grid-item {
-    width: 250px;
+    width: 100%;
     margin-bottom: 10px;
   }
 
@@ -683,16 +731,30 @@ footer.sticky-bottom {
       transition: all var(--global-transition);
 
       &:hover {
-        background-color: rgba(79, 70, 229, 0.03);
+        background-color: rgba(13, 148, 136, 0.03);
         border-left-color: var(--global-theme-color);
         box-shadow: var(--global-shadow-sm);
       }
 
       .preview {
-        width: 100%;
-        min-width: 80px;
-        max-width: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .preview-img {
+        max-width: 100%;
+        height: auto;
+        max-height: 120px;
+        object-fit: contain;
         border-radius: var(--global-radius-sm);
+        opacity: 0.95;
+        transition: opacity var(--global-transition), transform var(--global-transition);
+
+        &:hover {
+          opacity: 1;
+          transform: scale(1.02);
+        }
       }
 
       .abbr {
@@ -881,14 +943,14 @@ html.transition *:after {
     a {
       color: var(--global-text-color-light);
       text-decoration: none;
-      background-color: rgba(79, 70, 229, 0.06);
+      background-color: rgba(13, 148, 136, 0.06);
       padding: 0.2rem 0.6rem;
       border-radius: 12px;
       transition: all var(--global-transition);
 
       &:hover {
         color: var(--global-theme-color);
-        background-color: rgba(79, 70, 229, 0.12);
+        background-color: rgba(13, 148, 136, 0.12);
       }
     }
   }
@@ -974,7 +1036,7 @@ html.transition *:after {
         border-radius: 8px;
 
         &:hover {
-          background-color: rgba(79, 70, 229, 0.03);
+          background-color: rgba(13, 148, 136, 0.03);
         }
       }
     }
@@ -1110,6 +1172,6 @@ html[data-theme='dark'] {
 
 // Selection highlight
 ::selection {
-  background-color: rgba(79, 70, 229, 0.2);
+  background-color: rgba(13, 148, 136, 0.2);
   color: var(--global-text-color);
 }

@@ -1,80 +1,50 @@
 ---
 layout: page
-title: project 5
-description: a project with a background image
-img: assets/img/1.jpg
+title: "LLM-Based Clinical Decision Support"
+description: "Leveraging large language models for clinical text understanding, synthetic data generation, and retrieval-augmented clinical applications."
+img: assets/img/publication_preview/LLMCARE.png
 importance: 3
-category: fun
+category: work
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+## Overview
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+This project explores the application of **Large Language Models (LLMs)** in healthcare — from clinical text understanding and medical question answering to synthetic data generation and safety evaluation. We develop LLM-based agentic systems that enhance clinical workflows while maintaining rigorous safety and reliability standards.
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+### The Problem
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+Healthcare generates vast amounts of unstructured text — clinical notes, discharge summaries, pathology reports, research literature — that contain critical information for patient care. Traditional NLP methods struggle with the complexity and nuance of medical language. Meanwhile, modern LLMs show remarkable capabilities but raise concerns about hallucination, bias, and safety in clinical settings.
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, *bled* for your project, and then... you reveal its glory in the next row of images.
+### Our Approach
 
+We develop and evaluate LLM applications across several domains:
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+**Retrieval-Augmented Generation (RAG)**
+- Build knowledge-grounded clinical assistants that retrieve relevant evidence before generating responses
+- Integrate clinical guidelines, drug databases, and research literature into LLM workflows
+- Reduce hallucination risk through evidence-based response generation
 
+**Synthetic Data Generation**
+- Generate realistic synthetic clinical data for training and validation when real patient data is unavailable or restricted
+- Develop privacy-preserving data augmentation techniques for rare conditions and underrepresented populations
+- Validate synthetic data quality against real-world distributions
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+**Clinical Education**
+- Design LLM-enhanced simulation platforms for medical training
+- Create interactive clinical scenarios with adaptive difficulty and personalized feedback
+- Support case-based learning with AI-generated patient presentations
 
-{% raw %}
-```html
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-```
-{% endraw %}
+**Safety Evaluation Frameworks**
+- Systematic evaluation of LLM reliability in clinical contexts
+- Bias detection across demographics and clinical specialties
+- Hallucination detection and mitigation strategies specific to medical applications
+
+### Key Technologies
+
+- **Fine-tuning**: LoRA and QLoRA for efficient adaptation to clinical domains
+- **Frameworks**: LangChain, Hugging Face, OpenAI API, NVIDIA NeMo
+- **Evaluation**: Custom clinical safety benchmarks, multi-annotator validation protocols
+
+### Impact
+
+This research was supported by the **NMDSI Student Scholars Award ($7,500)** and contributes to the development of trustworthy AI systems that can augment — not replace — clinical expertise.

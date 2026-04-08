@@ -1,51 +1,61 @@
 ---
 layout: default
 ---
-<!-- _layouts/post.html -->
+<!-- _layouts/post.html - Cosmic Full Width -->
 {%- assign year = page.date | date: "%Y" -%}
 {%- assign tags = page.tags | join: "" -%}
 {%- assign categories = page.categories | join: "" -%}
 
 {% if page._styles %}
-<!-- Page/Post style -->
 <style type="text/css">
   {{ page._styles }}
 </style>
 {% endif %}
 
-<div class="post">
-
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-meta">{{ page.date | date: "%B %-d, %Y" }}{%- if page.author -%} • {{ page.author }}{%- endif -%}{%- if page.meta -%} • {{ page.meta }}{%- endif -%}</p>
-    <p class="post-tags">
-      <a href="{{ year | prepend: '/blog/' | prepend: site.baseurl}}"> <i class="fas fa-calendar fa-sm"></i> {{ year }} </a>
-      {%- if tags != "" %}
-      &nbsp; &middot; &nbsp;
-        {% for tag in page.tags -%}
-        <a href="{{ tag | slugify | prepend: '/blog/tag/' | prepend: site.baseurl}}">
-          <i class="fas fa-hashtag fa-sm"></i> {{ tag }}</a> &nbsp;
+<div class="cosmic-page">
+  <section class="post-hero">
+    <div class="post-hero-inner">
+      <div class="post-meta-top">
+        <a href="{{ year | prepend: '/blog/' | prepend: site.baseurl}}" class="meta-item">
+          <i class="fas fa-calendar"></i> {{ page.date | date: "%B %-d, %Y" }}
+        </a>
+        {%- if page.author %}
+        <span class="meta-item"><i class="fas fa-user"></i> {{ page.author }}</span>
+        {%- endif %}
+      </div>
+      <h1 class="post-title">{{ page.title }}</h1>
+      <div class="post-tags-list">
+        {%- if tags != "" %}
+          {% for tag in page.tags -%}
+          <a href="{{ tag | slugify | prepend: '/blog/tag/' | prepend: site.baseurl}}" class="tag-pill">
+            <i class="fas fa-hashtag"></i> {{ tag }}
+          </a>
           {% endfor -%}
-      {% endif %}
-
-      {%- if categories != "" %}
-      &nbsp; &middot; &nbsp;
-        {% for category in page.categories -%}
-        <a href="{{ category | slugify | prepend: '/blog/category/' | prepend: site.baseurl}}">
-          <i class="fas fa-tag fa-sm"></i> {{ category }}</a> &nbsp;
+        {% endif %}
+        {%- if categories != "" %}
+          {% for category in page.categories -%}
+          <a href="{{ category | slugify | prepend: '/blog/category/' | prepend: site.baseurl}}" class="tag-pill category">
+            <i class="fas fa-folder"></i> {{ category }}
+          </a>
           {% endfor -%}
-      {% endif %}
+        {% endif %}
+      </div>
+    </div>
+  </section>
 
-    </p>
-  </header>
-
-  <article class="post-content">
-    {{ content }}
-  </article>
+  <section class="post-body">
+    <article class="post-body-inner">
+      {{ content }}
+    </article>
+  </section>
 
   {%- if site.related_blog_posts.enabled -%}
     {%- if page.related_posts == null or page.related_posts -%}
-      {% include related_posts.html %}
+    <section class="related-section">
+      <div class="related-inner">
+        {% include related_posts.html %}
+      </div>
+    </section>
     {%- endif %}
   {%- endif %}
 
@@ -55,5 +65,174 @@ layout: default
   {%- if site.giscus.repo and page.giscus_comments -%}
     {% include giscus.html %}
   {%- endif -%}
-
 </div>
+
+<style>
+.cosmic-page {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  background: transparent;
+  position: relative;
+  z-index: 2;
+}
+
+.post-hero {
+  padding: 120px 40px 50px;
+  text-align: center;
+}
+
+.post-hero-inner {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.post-meta-top {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.meta-item {
+  font-size: 14px;
+  color: #6b7280;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.meta-item i {
+  color: #0D9488;
+}
+
+.meta-item a {
+  color: #6b7280;
+  text-decoration: none;
+}
+
+.meta-item a:hover {
+  color: #14B8A6;
+}
+
+.post-title {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: clamp(32px, 5vw, 48px);
+  font-weight: 700;
+  color: #fff;
+  margin: 0 0 24px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.post-tags-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tag-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  background: rgba(13, 148, 136, 0.1);
+  border: 1px solid rgba(13, 148, 136, 0.2);
+  border-radius: 20px;
+  font-size: 13px;
+  color: #14B8A6;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.tag-pill:hover {
+  background: rgba(13, 148, 136, 0.2);
+  transform: translateY(-2px);
+  color: #14B8A6;
+}
+
+.tag-pill.category {
+  background: rgba(29, 78, 216, 0.1);
+  border-color: rgba(29, 78, 216, 0.2);
+  color: #60A5FA;
+}
+
+.tag-pill.category:hover {
+  background: rgba(29, 78, 216, 0.2);
+  color: #60A5FA;
+}
+
+.post-body {
+  padding: 40px 40px 80px;
+}
+
+.post-body-inner {
+  max-width: 800px;
+  margin: 0 auto;
+  color: #d1d5db;
+  font-size: 17px;
+  line-height: 1.85;
+}
+
+.post-body-inner h2,
+.post-body-inner h3,
+.post-body-inner h4 {
+  color: #fff;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  margin-top: 2.5rem;
+}
+
+.post-body-inner a {
+  color: #14B8A6;
+}
+
+.post-body-inner a:hover {
+  color: #2DD4BF;
+}
+
+.post-body-inner blockquote {
+  border-left: 3px solid #0D9488;
+  background: rgba(13, 148, 136, 0.05);
+  padding: 20px 24px;
+  margin: 24px 0;
+  border-radius: 0 12px 12px 0;
+}
+
+.post-body-inner code {
+  background: rgba(13, 148, 136, 0.15);
+  padding: 2px 8px;
+  border-radius: 6px;
+  font-size: 0.9em;
+}
+
+.post-body-inner pre {
+  background: rgba(10, 10, 20, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 20px;
+  overflow-x: auto;
+}
+
+.related-section {
+  padding: 40px 40px 80px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.related-inner {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+@media (max-width: 640px) {
+  .post-hero {
+    padding: 100px 20px 40px;
+  }
+  .post-body {
+    padding: 30px 20px 60px;
+  }
+  .post-meta-top {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+</style>

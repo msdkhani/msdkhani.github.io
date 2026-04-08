@@ -1,80 +1,54 @@
 ---
 layout: page
-title: project 4
-description: another without an image
-img:
+title: "Digital Twins for Healthcare"
+description: "Patient-specific computational models for real-time risk stratification and dynamic intervention planning."
+img: assets/img/publication_preview/fall_geroscience.png
 importance: 3
-category: fun
+category: work
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+## Overview
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+**Digital twins** are virtual replicas of individual patients that integrate multimodal clinical data to simulate health trajectories, evaluate interventions, and support personalized medicine. This project develops computational frameworks that combine **agent-based modeling**, **discrete-event simulation**, and **machine learning** to create dynamic, patient-specific models.
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+### The Problem
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+Healthcare decisions are often based on population-level evidence that may not reflect an individual patient's unique circumstances. Clinicians need tools that can:
+- Predict how a *specific* patient's condition will evolve
+- Simulate the likely outcomes of different treatment options
+- Account for the complex interactions between comorbidities, medications, and social determinants
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, *bled* for your project, and then... you reveal its glory in the next row of images.
+### Our Approach
 
+We build digital twin frameworks using a **hybrid simulation-ML architecture**:
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+**Agent-Based Modeling (ABM)**
+- Each patient is modeled as an autonomous agent with individual health states, risk factors, and care trajectories
+- Agents interact with healthcare system components (clinics, specialists, interventions) modeled as entities in the simulation
+- Population-level dynamics emerge from individual patient behaviors and system constraints
 
+**Discrete-Event Simulation (DES)**
+- Clinical encounters, procedures, and transitions are modeled as discrete events with stochastic timing
+- Resource allocation and care pathway bottlenecks are captured to evaluate system-wide impacts
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+**Machine Learning Integration**
+- Predictive models inform agent state transitions using real-world EHR data
+- Transformer-based architectures capture complex temporal dependencies in patient histories
+- Risk stratification models are continuously updated with incoming data
 
-{% raw %}
-```html
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-```
-{% endraw %}
+### Applications
+
+- **Fall Risk Stratification** — Real-time risk assessment for elderly patients using multimodal data (EHR, sensors, imaging)
+- **What-If Scenario Analysis** — Comparing intervention strategies before implementation
+- **Population Health Simulation** — Modeling disease burden and intervention impact at scale
+
+### Technical Capabilities
+
+| Capability | Details |
+|-----------|---------|
+| **Multimodal Data Fusion** | EHR, wearable sensors, imaging, social determinants |
+| **Stochastic Simulation** | Monte Carlo methods for uncertainty quantification |
+| **Real-Time Updates** | Online learning from streaming patient data |
+| **Scalability** | Validated on cohorts of 7M+ patients |
+
+This research is supported by **NIH-funded projects** through the Advancing Healthier Wisconsin Endowment and the CTSI Pilot-BERD program.

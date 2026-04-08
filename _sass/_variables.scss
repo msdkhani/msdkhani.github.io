@@ -1,38 +1,36 @@
 /*******************************************************************************
- * Variables used throughout the theme.
- * To adjust anything, simply edit the variables below and rebuild the theme.
+ * PERSIAN THEME - Inspired by Persian Art & Architecture
+ * Colors from Isfahan tiles, Persian carpets, and ancient manuscripts
  ******************************************************************************/
 
-
-// Colors — Modern indigo-violet palette
-$red-color:           #EF4444 !default;
-$red-color-dark:      #DC2626 !default;
-$orange-color:        #F59E0B !default;
-$blue-color:          #4F46E5 !default;     // Indigo — primary theme color
-$blue-color-dark:     #3730A3 !default;
-$cyan-color:          #6366F1 !default;     // Lighter indigo for dark mode
-$light-cyan-color:    lighten($cyan-color, 25%);
-$green-color:         #10B981 !default;
-$green-color-lime:    #84CC16 !default;
-$green-color-dark:    #059669 !default;
+// Persian Core Colors
+$red-color:           #DC2626 !default;     // Persian Red
+$red-color-dark:      #B91C1C !default;
+$orange-color:        #D97706 !default;     // Persian Gold/Amber
+$blue-color:          #1D4ED8 !default;     // Persian Blue - primary
+$blue-color-dark:     #1E40AF !default;
+$cyan-color:          #0D9488 !default;     // Persian Turquoise for dark mode
+$light-cyan-color:    #14B8A6;              // Light Persian Turquoise
+$green-color:         #059669 !default;     // Persian Green
+$green-color-lime:    #10B981 !default;
+$green-color-dark:    #047857 !default;
 $green-color-light:   #D1FAE5 !default;
-$green-color-bright:  #34D399 !default;
-$purple-color:        #8B5CF6 !default;
-$light-purple-color:  lighten($purple-color, 25%);
-$pink-color:          #EC4899 !default;
-$pink-color-light:    #FCE7F3 !default;
-$yellow-color:        #F59E0B !default;
+$green-color-bright:  #14B8A6 !default;     // Turquoise
+$purple-color:        #0D9488 !default;     // Using turquoise instead of purple
+$light-purple-color:  #5EEAD4;              // Light turquoise
+$pink-color:          #14B8A6 !default;     // Using turquoise
+$pink-color-light:    #CCFBF1 !default;
+$yellow-color:        #D97706 !default;     // Persian Gold
 
+// Space Greys
 $grey-color:          #6B7280 !default;
 $grey-color-light:    #E5E7EB;
-$grey-color-dark:     #0F172A;       // Rich dark slate
-$grey-900:            #1E293B;       // Softer dark card bg
+$grey-color-dark:     #030712;              // Deep space black
+$grey-900:            #0a0a0f;              // Dark void
 
 $white-color: #ffffff !default;
-$black-color: #111827 !default;      // Softer than pure black
-
+$black-color: #030712 !default;
 
 // Theme colors
-
-$code-bg-color-light:     rgba($purple-color, 0.06);
-$code-bg-color-dark:      #1E293B !default;
+$code-bg-color-light:     rgba($cyan-color, 0.08);
+$code-bg-color-dark:      rgba(13, 148, 136, 0.15) !default;

@@ -1,35 +1,277 @@
 ---
 layout: default
 ---
-<!-- _layouts/cv.html -->
-        <div class="post">
+<!-- _layouts/cv.html - Cosmic Full Width -->
+<div class="cosmic-page">
+  <section class="cv-hero">
+    <div class="cv-hero-inner">
+      <h1 class="cv-title">
+        {{ page.title }}
+        {% if page.cv_pdf %}
+        <a href="{{ page.cv_pdf | prepend: 'assets/pdf/' | relative_url}}" target="_blank" rel="noopener noreferrer" class="pdf-btn">
+          <i class="fas fa-file-pdf"></i> Download PDF
+        </a>
+        {% endif %}
+      </h1>
+      {% if page.description %}
+      <p class="cv-description">{{ page.description }}</p>
+      {% endif %}
+    </div>
+  </section>
 
-          <header class="post-header">
-            <h1 class="post-title">{{ page.title }} {% if page.cv_pdf %}<a href="{{ page.cv_pdf | prepend: 'assets/pdf/' | relative_url}}" target="_blank" rel="noopener noreferrer" class="float-right"><i class="fas fa-file-pdf"></i></a>{% endif %}</h1>
-            <p class="post-description">{{ page.description }}</p>
-          </header>
-
-          <article>
-            <div class="cv">
-              {% for entry in site.data.cv %}
-                <div class="card mt-3 p-3">
-                  <h3 class="card-title font-weight-medium">{{ entry.title }}</h3>
-                  <div>
-                  {% if entry.type == "list" %}
-                    {% include cv/list.html %}
-                  {% elsif entry.type == "map" %}
-                    {% include cv/map.html %}
-                  {% elsif entry.type == "nested_list" %}
-                    {% include cv/nested_list.html %}
-                  {% elsif entry.type == "time_table" %}
-                   {% include cv/time_table.html %}
-                  {% else %}
-                    {{ entry.contents }}
-                  {% endif %}
-                  </div>
-                </div>
-              {% endfor %}
-              </div>
-          </article>
-
+  <section class="cv-content">
+    <div class="cv-content-inner">
+      {% for entry in site.data.cv %}
+      <div class="cv-card">
+        <h3 class="cv-card-title">{{ entry.title }}</h3>
+        <div class="cv-card-body">
+          {% if entry.type == "list" %}
+            {% include cv/list.html %}
+          {% elsif entry.type == "map" %}
+            {% include cv/map.html %}
+          {% elsif entry.type == "nested_list" %}
+            {% include cv/nested_list.html %}
+          {% elsif entry.type == "time_table" %}
+            {% include cv/time_table.html %}
+          {% else %}
+            {{ entry.contents }}
+          {% endif %}
         </div>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+</div>
+
+<style>
+.cosmic-page {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  background: transparent;
+  position: relative;
+  z-index: 2;
+}
+
+.cv-hero {
+  padding: 120px 40px 50px;
+  text-align: center;
+}
+
+.cv-hero-inner {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.cv-title {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: clamp(36px, 5vw, 52px);
+  font-weight: 700;
+  background: linear-gradient(135deg, #1D4ED8 0%, #0D9488 50%, #14B8A6 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.pdf-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  background: linear-gradient(135deg, #1D4ED8 0%, #0D9488 100%);
+  color: #fff !important;
+  -webkit-text-fill-color: #fff !important;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.pdf-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 35px rgba(13, 148, 136, 0.3);
+}
+
+.cv-description {
+  font-size: 18px;
+  color: #9ca3af;
+  margin: 0;
+}
+
+.cv-content {
+  padding: 40px 40px 100px;
+}
+
+.cv-content-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.cv-card {
+  background: rgba(18, 18, 28, 0.9) !important;
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  border-radius: 16px !important;
+  padding: 28px;
+  margin-bottom: 24px;
+  transition: all 0.3s ease;
+}
+
+.cv-card:hover {
+  border-color: rgba(13, 148, 136, 0.25) !important;
+  transform: translateY(-2px);
+}
+
+.cv-card-title {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #14B8A6 !important;
+  margin: 0 0 20px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.cv-card-body {
+  color: #d1d5db !important;
+}
+
+.cv-card-body ul {
+  margin: 0;
+  padding-left: 20px;
+  list-style: none;
+}
+
+.cv-card-body ul li {
+  margin-bottom: 12px;
+  line-height: 1.7;
+  color: #d1d5db !important;
+  position: relative;
+  padding-left: 16px;
+}
+
+.cv-card-body ul li::before {
+  content: "○";
+  position: absolute;
+  left: 0;
+  color: #0D9488;
+  font-size: 10px;
+}
+
+.cv-card-body a {
+  color: #14B8A6 !important;
+}
+
+.cv-card-body a:hover {
+  color: #2DD4BF !important;
+}
+
+.cv-card-body .badge {
+  background: linear-gradient(135deg, #1D4ED8, #0D9488) !important;
+  color: #fff !important;
+}
+
+/* Override any nested cards or Bootstrap elements */
+.cv-card .card,
+.cv-card-body .card {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.cv-card .list-group,
+.cv-card-body .list-group {
+  background: transparent !important;
+}
+
+.cv-card .list-group-item,
+.cv-card-body .list-group-item {
+  background: transparent !important;
+  border: none !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06) !important;
+  color: #d1d5db !important;
+  padding: 12px 0 !important;
+}
+
+.cv-card .list-group-item:last-child {
+  border-bottom: none !important;
+}
+
+/* Time table styling */
+.cv-card table,
+.cv-card-body table {
+  width: 100%;
+  background: transparent !important;
+  border: none !important;
+}
+
+.cv-card th,
+.cv-card td,
+.cv-card-body th,
+.cv-card-body td {
+  background: transparent !important;
+  border: none !important;
+  color: #d1d5db !important;
+  padding: 10px 0 !important;
+  vertical-align: top;
+}
+
+.cv-card th,
+.cv-card-body th {
+  color: #9ca3af !important;
+  font-weight: 500;
+  width: 120px;
+  white-space: nowrap;
+}
+
+/* Map/nested list styling */
+.cv-card h4,
+.cv-card-body h4 {
+  color: #fff !important;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 16px 0 8px;
+}
+
+.cv-card h4:first-child,
+.cv-card-body h4:first-child {
+  margin-top: 0;
+}
+
+.cv-card p,
+.cv-card-body p {
+  color: #d1d5db !important;
+  margin-bottom: 8px;
+}
+
+.cv-card strong,
+.cv-card-body strong {
+  color: #fff !important;
+}
+
+.cv-card em,
+.cv-card-body em {
+  color: #9ca3af !important;
+}
+
+@media (max-width: 640px) {
+  .cv-hero {
+    padding: 100px 20px 40px;
+  }
+  .cv-content {
+    padding: 30px 20px 60px;
+  }
+  .cv-title {
+    flex-direction: column;
+  }
+  .cv-card {
+    padding: 20px;
+  }
+}
+</style>

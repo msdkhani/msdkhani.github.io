@@ -41,7 +41,7 @@
   contents:
     - title: Ph.D., Biomedical and Health Informatics
       institution: University of Wisconsin–Milwaukee, Milwaukee, WI
-      year: Sep. 2021 – Present (Expected Aug. 2026)
+      year: Sep. 2021 – Present
       description:
         - "Dissertation: Medical modeling, simulation, and AI for clinical decision support"
         - "Focus: Agent-based models, discrete-event simulation, transformer-based disease trajectory modeling, LLMs in medicine, and explainable AI for healthcare"
