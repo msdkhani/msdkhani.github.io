@@ -93,6 +93,9 @@
 
 <body class="fixed-top-nav ">
 
+  <!-- Cosmic Canvas - GPU-rendered nebulae and atmospheric effects -->
+  <canvas id="cosmic-canvas"></canvas>
+
   <!-- Particles Animation Background -->
   <div id="particles-js"></div>
 
@@ -201,7 +204,7 @@
           <div class="orbit orbit-1"></div>
           <div class="orbit orbit-2"></div>
           <div class="orbit orbit-3"></div>
-          <img src="/assets/img/prof_pic.jpg" alt="Profile" class="profile-img">
+          <img src="/assets/img/Gemini_Generated_Image_lwxtvslwxtvslwxt.png" alt="Profile" class="profile-img">
         </div>
         <div class="floating-icons">
           <span class="f-icon i1"><i class="fas fa-dna"></i></span>
@@ -250,7 +253,7 @@
   </section>
 
   <!-- NEWS SECTION -->
-  <section class="content-section scroll-section">
+  <section class="content-section scroll-section" id="news-section">
     <div class="section-inner">
       <div class="section-header">
         <span class="label scroll-reveal-left">Updates</span>
@@ -333,7 +336,7 @@
   </section>
 
   <!-- PUBLICATIONS SECTION -->
-  <section class="content-section scroll-section">
+  <section class="content-section scroll-section" id="publications-section">
     <div class="section-inner">
       <div class="section-header">
         <span class="label scroll-reveal-left">Research</span>
@@ -1894,7 +1897,7 @@
   </section>
 
   <!-- CONTACT SECTION -->
-  <section class="content-section contact-section scroll-section">
+  <section class="content-section contact-section scroll-section" id="contact-section">
     <div class="section-inner center">
       <div class="section-header">
         <span class="label scroll-reveal-up">Connect</span>
@@ -2680,6 +2683,7 @@
     transition: none;
   }
 }
+
 </style>
 
 <script>
