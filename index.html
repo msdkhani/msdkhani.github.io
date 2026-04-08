@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <!-- Head -->
-  <head>
+<!-- Head -->
+
+<head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">    <!-- Metadata, OpenGraph and Schema.org -->
     
 
@@ -15,6 +16,43 @@
     <meta name="description" content="Computational scientist specializing in medical modeling, digital twins, and AI for healthcare. Expert in hybrid simulation-ML frameworks, agent-based modeling, and LLMs for clinical decision support.
 ">
     <meta name="keywords" content="biomedical informatics, AI for healthcare, digital twins, LLMs, agent-based modeling, medical simulation, explainable AI, clinical decision support">
+
+    <!-- OpenGraph -->
+    <meta property="og:site_name" content="Masoud  Khani">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Masoud  Khani | about">
+    <meta property="og:url" content="https://msdkhani.github.io/">
+    <meta property="og:description" content="Computational scientist specializing in medical modeling, digital twins, and AI for healthcare. Expert in hybrid simulation-ML frameworks, agent-based modeling, and LLMs for clinical decision support.
+">
+    
+    <meta property="og:locale" content="en">
+
+    <!-- Twitter card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="about">
+    <meta name="twitter:description" content="Computational scientist specializing in medical modeling, digital twins, and AI for healthcare. Expert in hybrid simulation-ML frameworks, agent-based modeling, and LLMs for clinical decision support.
+">
+    
+    
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+      {
+        "author":
+        {
+          "@type": "Person",
+          "name": "Masoud  Khani"
+        },
+        "url": "https://msdkhani.github.io/",
+        "@type": "WebSite",
+        "description": "Computational scientist specializing in medical modeling, digital twins, and AI for healthcare. Expert in hybrid simulation-ML frameworks, agent-based modeling, and LLMs for clinical decision support.
+",
+        "headline": "about",
+        "sameAs": ["https://orcid.org/0000-0002-7106-5957", "https://scholar.google.com/citations?user=ZG0Wlq0AAAAJ", "https://github.com/msdkhani", "https://www.linkedin.com/in/masoudmk"],
+        "name": "Masoud  Khani",
+        "@context": "https://schema.org"
+      }
+    </script>
 
 
     <meta name="google-site-verification" content="zWFCM4aoMY_AYMY1R6S6dfkl-WM8lG4QYOsZHqzRxHw">
@@ -29,14 +67,14 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha256-i1+4qU2G2860dGGIOJscdC30s9beBXjFfzjWLjBRsBg=" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@500;600;700;800&amp;family=Material+Icons&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@500;600;700;800&amp;family=JetBrains+Mono:wght@400;500;600&amp;family=Fira+Code:wght@400;500&amp;family=Material+Icons&amp;display=swap">
 
     <!-- Code Syntax Highlighting -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/github.css" media="" id="highlight_theme_light">
 
     <!-- Styles -->
     
-    <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%F0%9F%92%BB&lt;/text&gt;&lt;/svg&gt;">
+    <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%F0%9F%9A%80&lt;/text&gt;&lt;/svg&gt;">
     
     <link rel="stylesheet" href="/assets/css/main.css">
     <link rel="canonical" href="https://msdkhani.github.io/">
@@ -49,12 +87,16 @@
     <script src="/assets/js/dark_mode.js"></script>
     
 
-  </head>
+</head>
 
-  <!-- Body -->
-  <body class="fixed-top-nav ">
+<!-- Body -->
 
-    <!-- Header -->
+<body class="fixed-top-nav ">
+
+  <!-- Particles Animation Background -->
+  <div id="particles-js"></div>
+
+  <!-- Header -->
     <header>
 
       <!-- Nav Bar -->
@@ -93,14 +135,6 @@
               <li class="nav-item ">
                 <a class="nav-link" href="/teaching/">Teaching</a>
               </li>
-              <li class="nav-item dropdown ">
-               
-                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="/publications/">publications</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="/projects/">projects</a>
-                </div>
-              </li>
 
               <!-- Toogle theme mode -->
               <li class="toggle-container">
@@ -123,61 +157,106 @@
     </header>
 
 
-    <!-- Content -->
-    <div class="container mt-5">
-      <!-- about.html -->
-<div class="post">
-  <header class="post-header">
-    <h1 class="post-title">
-      <span class="font-weight-bold">Masoud</span> 
-      Khani
-    </h1>
-    <p class="desc">Ph.D. Candidate @ <a href="https://uwm.edu" rel="external nofollow noopener" target="_blank">University of Wisconsin-Milwaukee</a> | Engineer I @ <a href="https://www.mcw.edu/" rel="external nofollow noopener" target="_blank">Medical College of Wisconsin</a></p>
-  </header>
+  <!-- Content -->
+  <div class="main-content">
+    <!-- FULL-WIDTH SITE -->
+<div class="cosmic-page">
 
-  <article>
-    <div class="profile float-right">
-
-      <figure>
-
-  <picture>
-    
-
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/prof_pic.jpg" class="img-fluid z-depth-1 round_tun" width="auto" height="auto" alt="prof_pic.jpg" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-
-  </picture>
-
-</figure>
-
+  <!-- HERO SECTION -->
+  <section class="hero-section">
+    <div class="hero-inner">
+      <div class="hero-content">
+        <div class="hero-badge scroll-reveal" data-delay="0">
+          <span class="badge-dot"></span>
+          <span>Healthcare AI Researcher</span>
+        </div>
+        
+        <h1 class="hero-title scroll-reveal" data-delay="100">
+          Hi, I'm <span class="name-gradient">Masoud</span>
+        </h1>
+        
+        <p class="hero-subtitle scroll-reveal" data-delay="200">Ph.D. Candidate @ <a href="https://uwm.edu" rel="external nofollow noopener" target="_blank">University of Wisconsin-Milwaukee</a> | Engineer I @ <a href="https://www.mcw.edu/" rel="external nofollow noopener" target="_blank">Medical College of Wisconsin</a></p>
+        
+        <div class="hero-tags scroll-reveal stagger-container" data-delay="300">
+          <span class="tag stagger-item"><i class="fas fa-rocket"></i> Space</span>
+          <span class="tag stagger-item"><i class="fas fa-atom"></i> Quantum</span>
+          <span class="tag stagger-item"><i class="fas fa-terminal"></i> Code</span>
+          <span class="tag stagger-item"><i class="fas fa-brain"></i> AI</span>
+        </div>
+        
+        <div class="hero-buttons scroll-reveal" data-delay="400">
+          <a href="#about-section" class="btn-primary magnetic-btn">
+            View My Work
+            <i class="fas fa-arrow-right"></i>
+          </a>
+          <a href="/publications/" class="btn-outline magnetic-btn">
+            Publications
+          </a>
+        </div>
+      </div>
+      
+      
+      <div class="hero-image scroll-reveal-scale" data-delay="200">
+<div class="image-container">
+          <div class="orbit orbit-1"></div>
+          <div class="orbit orbit-2"></div>
+          <div class="orbit orbit-3"></div>
+          <img src="/assets/img/prof_pic.jpg" alt="Profile" class="profile-img">
+        </div>
+        <div class="floating-icons">
+          <span class="f-icon i1"><i class="fas fa-dna"></i></span>
+          <span class="f-icon i2"><i class="fas fa-microchip"></i></span>
+          <span class="f-icon i3"><i class="fas fa-satellite"></i></span>
+        </div>
+      </div>
+      
     </div>
+    
+    <div class="scroll-indicator scroll-reveal" data-delay="600">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
 
-    <div class="clearfix">
-      <p>I am a <strong>computational scientist</strong> and Ph.D. candidate in <strong>Biomedical and Health Informatics</strong> at the University of Wisconsin-Milwaukee (UWM), with expertise in developing <strong>hybrid simulation-ML frameworks</strong>, patient-specific <strong>digital twins</strong>, and <strong>explainable AI systems</strong> for clinical decision support. I also serve as Engineer I at the <strong>Medical College of Wisconsin (MCW) ReyLab</strong>, where I investigate mechanisms of human episodic memory and advance epilepsy diagnosis through engineering of real-time neural analysis pipelines.</p>
+  <!-- ABOUT SECTION -->
+  <section class="content-section scroll-section" id="about-section">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="label scroll-reveal-left">About</span>
+        <h2 class="scroll-reveal-up">Research &amp; Expertise</h2>
+      </div>
+      <div class="section-body about-text scroll-reveal-up" data-delay="150">
+        <p>I am a computational scientist and Ph.D. candidate in <strong>Biomedical and Health Informatics</strong> at the University of Wisconsin-Milwaukee, with expertise in hybrid simulation-ML frameworks, patient-specific digital twins, and explainable AI for clinical decision support. I also serve as Engineer I at the <strong>Medical College of Wisconsin ReyLab</strong>, where I investigate mechanisms of human episodic memory and advance epilepsy diagnosis through real-time neural analysis pipelines.</p>
 
-<p>My research combines <strong>agent-based modeling</strong>, <strong>discrete-event simulation</strong>, <strong>transformer architectures</strong>, and <strong>Large Language Models (LLMs)</strong> to address challenges in disease trajectory prediction, risk stratification, and intervention evaluation. I am the lead developer of <strong>MCWs (MicroWire sorter)</strong>, an open-source spike-sorting framework for human intracerebral recordings. I have a strong record of interdisciplinary collaboration and translating computational methods into clinically actionable tools through stakeholder-centered design and rigorous validation.</p>
+<p>My research combines <strong>agent-based modeling</strong>, <strong>discrete-event simulation</strong>, <strong>transformer architectures</strong>, and <strong>large language models</strong> to tackle disease trajectory prediction, risk stratification, and intervention evaluation. I am the lead developer of <a href="https://www.biorxiv.org/content/10.1101/2025.07.09.663285" rel="external nofollow noopener" target="_blank">MCWs (MicroWire sorter)</a>, an open-source spike-sorting framework for human intracerebral recordings.</p>
 
 <p><strong>Research Interests:</strong></p>
 
 <ul>
   <li>
-<strong>Medical Modeling &amp; Simulation</strong> — Agent-based models, discrete-event simulation, hybrid ML-simulation approaches for clinical decision support, and computational frameworks for population health</li>
+<strong>Medical Modeling &amp; Simulation</strong> — Agent-based models, discrete-event simulation, and hybrid ML-simulation for clinical decision support</li>
   <li>
-<strong>Digital Twins for Healthcare</strong> — Patient-specific modeling, real-time risk stratification using multimodal data (EHR, sensors, imaging), and dynamic “what-if” scenario analysis for intervention planning</li>
+<strong>Digital Twins for Healthcare</strong> — Patient-specific modeling, real-time risk stratification, and dynamic “what-if” scenario analysis</li>
   <li>
-<strong>Large Language Models in Medicine</strong> — Clinical text understanding, synthetic data generation, retrieval-augmented generation, safety evaluation frameworks, and LLM-enhanced clinical education</li>
+<strong>Large Language Models in Medicine</strong> — Clinical text understanding, synthetic data generation, RAG, and safety evaluation</li>
   <li>
-<strong>Responsible AI for Healthcare</strong> — Explainability (SHAP, LIME, attention mechanisms), fairness assessment, algorithmic bias mitigation, and stakeholder-centered design</li>
+<strong>Responsible AI</strong> — Explainability (SHAP, LIME, attention), fairness assessment, and stakeholder-centered design</li>
 </ul>
 
-<p>My work is supported by <strong>NIH-funded projects</strong> and recognized with the <strong>NMDSI Student Scholars Award ($7,500)</strong>, <strong>Chancellor’s Graduate Student Awards ($8,500 total)</strong>, and the <strong>AMIA Best Reviewer Award (2024)</strong>. I have contributed to <strong>23+ publications</strong> in collaboration with academic medical centers and multi-institutional research networks.</p>
+<p>My work is supported by NIH-funded projects and recognized with the <strong>NMDSI Student Scholars Award</strong> ($7,500), <strong>Chancellor’s Graduate Student Awards</strong> ($8,500 total), and the <strong>AMIA Best Reviewer Award</strong> (2024). I have contributed to <strong>23+ publications</strong> across academic medical centers and multi-institutional research networks.</p>
 
+      </div>
     </div>
+  </section>
 
-    <!-- News -->
-    <div style="margin-top: 2.5rem;">
-      <div class="news card">
-        <h2 style="color: inherit; margin-left: 3%; margin-top: 3%;">News</h2>
+  <!-- NEWS SECTION -->
+  <section class="content-section scroll-section">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="label scroll-reveal-left">Updates</span>
+        <h2 class="scroll-reveal-up">Latest News</h2>
+      </div>
+      <div class="section-body scroll-reveal-up stagger-container" data-delay="150">
           <div class="news">
             <div class="table-responsive" style="margin-left: 3%;margin-top: 3%;">
               <table class="table table-sm table-borderless">
@@ -251,40 +330,45 @@
 
       </div>
     </div>
+  </section>
 
-    <!-- Selected papers -->
-    <div style="margin-top: 2.5rem;">
-      <h2 style="color: inherit; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 700;">Selected publications
-      </h2>
+  <!-- PUBLICATIONS SECTION -->
+  <section class="content-section scroll-section">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="label scroll-reveal-left">Research</span>
+        <h2 class="scroll-reveal-up">Selected Publications</h2>
+      </div>
+      <div class="section-body scroll-reveal-up stagger-container" data-delay="150">
           <div class="publications">
             <ol class="bibliography">
 <li>
 <!-- _layouts/bib.html -->
-      <div class="row">
-        <div class="col-sm-2 preview">
+<div class="row">
+  <div class="col-sm-2 preview">
 <figure>
 
   <picture>
     
 
     <!-- Fallback to the original file -->
-    <img src="/assets/img/publication_preview/XAI_review.png" class="preview z-depth-1 rounded" width="auto" height="auto" alt="XAI_review.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+    <img src="/assets/img/publication_preview/XAI_review.png" class="preview-img img-fluid" width="auto" height="auto" alt="XAI_review.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
 
   </picture>
 
 </figure>
 </div>
 
-        <!-- Entry bib key -->
-        <div id="Khani2026UserCenteredXAI" class="col-sm-8">
-        <!-- Title -->
-        <div class="title">User-Centered Explainable AI in Healthcare: A Literature Review</div>
-        <!-- Author -->
-        <div class="author">
-        
+  <!-- Entry bib key -->
+  <div id="Khani2026UserCenteredXAI" class="col-sm-8">
+    <!-- Title -->
+    <div class="title">User-Centered Explainable AI in Healthcare: A Literature Review</div>
+    <!-- Author -->
+    <div class="author">
+      
 
-        <em>Masoud Khani</em>, <a href="https://scholar.google.com/citations?user=PLACEHOLDER" rel="external nofollow noopener" target="_blank">David R. Friedland</a>, <a href="https://scholar.google.com/citations?user=PLACEHOLDER" rel="external nofollow noopener" target="_blank">Jazzmyne Adams</a>, and
-          <span class="more-authors" title="click to view 3 more authors" onclick="
+      <em>Masoud Khani</em>, <a href="https://scholar.google.com/citations?user=PLACEHOLDER" rel="external nofollow noopener" target="_blank">David R. Friedland</a>, <a href="https://scholar.google.com/citations?user=PLACEHOLDER" rel="external nofollow noopener" target="_blank">Jazzmyne Adams</a>, and
+      <span class="more-authors" title="click to view 3 more authors" onclick="
                 var element = $(this);
                 element.attr('title', '');
                 var more_authors_text = element.text() == '3 more authors' ? 'Michael S. Harris, Qiang Lu, Jake Luo' : '3 more authors';
@@ -298,66 +382,66 @@
               ">3 more authors</span>
 </div>
 
-        <!-- Journal/Book title and date -->
-        
-        
-        <div class="periodical">
-          <em>ACM Computing Surveys</em>, 2026
-        </div>
-        <div class="periodical">
-          Under review (submitted Feb 8, 2026)
-        </div>
+    <!-- Journal/Book title and date -->
+    
+    
+    <div class="periodical">
+      <em>ACM Computing Surveys</em>, 2026
+    </div>
+    <div class="periodical">
+      Under review (submitted Feb 8, 2026)
+    </div>
 
-          <!-- Links/Buttons -->
-          <div class="links">
-            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
-          </div>
-          
-          <div class="badges">
-            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
-              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
-          </div>
+    <!-- Links/Buttons -->
+    <div class="links">
+      <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+    </div>
+    
+    <div class="badges">
+      <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+      <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+    </div>
 
-          <!-- Hidden bibtex block -->
-          <div class="bibtex hidden">
-            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">Khani2026UserCenteredXAI</span><span class="p">,</span>
+    <!-- Hidden bibtex block -->
+    <div class="bibtex hidden">
+      <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">Khani2026UserCenteredXAI</span><span class="p">,</span>
   <span class="na">title</span> <span class="p">=</span> <span class="s">{User-Centered Explainable AI in Healthcare: A Literature Review}</span><span class="p">,</span>
   <span class="na">author</span> <span class="p">=</span> <span class="s">{Khani, Masoud and Friedland, David R. and Adams, Jazzmyne and Harris, Michael S. and Lu, Qiang and Luo, Jake}</span><span class="p">,</span>
   <span class="na">journal</span> <span class="p">=</span> <span class="s">{ACM Computing Surveys}</span><span class="p">,</span>
   <span class="na">year</span> <span class="p">=</span> <span class="s">{2026}</span><span class="p">,</span>
   <span class="na">note</span> <span class="p">=</span> <span class="s">{Under review (submitted Feb 8, 2026)}</span><span class="p">,</span>
 <span class="p">}</span></code></pre></figure>
-          </div>
-        </div>
-      </div>
+    </div>
+  </div>
+</div>
 </li>
 <li>
 <!-- _layouts/bib.html -->
-      <div class="row">
-        <div class="col-sm-2 preview">
+<div class="row">
+  <div class="col-sm-2 preview">
 <figure>
 
   <picture>
     
 
     <!-- Fallback to the original file -->
-    <img src="/assets/img/publication_preview/fall_geroscience.png" class="preview z-depth-1 rounded" width="auto" height="auto" alt="fall_geroscience.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+    <img src="/assets/img/publication_preview/fall_geroscience.png" class="preview-img img-fluid" width="auto" height="auto" alt="fall_geroscience.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
 
   </picture>
 
 </figure>
 </div>
 
-        <!-- Entry bib key -->
-        <div id="Khani2026FallGeroScience" class="col-sm-8">
-        <!-- Title -->
-        <div class="title">Explainable AI reveals temporal risk pathways in fall prediction: extracting clinical insights from multi-horizon machine learning models</div>
-        <!-- Author -->
-        <div class="author">
-        
+  <!-- Entry bib key -->
+  <div id="Khani2026FallGeroScience" class="col-sm-8">
+    <!-- Title -->
+    <div class="title">Explainable AI reveals temporal risk pathways in fall prediction: extracting clinical insights from multi-horizon machine learning models</div>
+    <!-- Author -->
+    <div class="author">
+      
 
-        <em>Masoud Khani</em>, <a href="https://scholar.google.com/citations?user=PLACEHOLDER" rel="external nofollow noopener" target="_blank">David R. Friedland</a>, Michael Widlansky, and
-          <span class="more-authors" title="click to view 6 more authors" onclick="
+      <em>Masoud Khani</em>, <a href="https://scholar.google.com/citations?user=PLACEHOLDER" rel="external nofollow noopener" target="_blank">David R. Friedland</a>, Michael Widlansky, and
+      <span class="more-authors" title="click to view 6 more authors" onclick="
                 var element = $(this);
                 element.attr('title', '');
                 var more_authors_text = element.text() == '6 more authors' ? 'Michael S. Harris, Jazzmyne Adams, Lei Fan, Hyunkyoung Oh, Qiang Lu, Jake Luo' : '6 more authors';
@@ -371,66 +455,67 @@
               ">6 more authors</span>
 </div>
 
-        <!-- Journal/Book title and date -->
-        
-        
-        <div class="periodical">
-          <em>GeroScience</em>, 2026
-        </div>
-        <div class="periodical">
-          
-        </div>
+    <!-- Journal/Book title and date -->
+    
+    
+    <div class="periodical">
+      <em>GeroScience</em>, 2026
+    </div>
+    <div class="periodical">
+      
+    </div>
 
-          <!-- Links/Buttons -->
-          <div class="links">
-            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
-            <a href="https://doi.org/10.1007/s11357-026-02117-x" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a>
-          </div>
-          
-          <div class="badges">
-            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
-              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
-          </div>
+    <!-- Links/Buttons -->
+    <div class="links">
+      <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+      <a href="https://doi.org/10.1007/s11357-026-02117-x" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a>
+    </div>
+    
+    <div class="badges">
+      <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.1007/s11357-026-02117-x"></span>
+      <span class="__dimensions_badge_embed__" data-doi="10.1007/s11357-026-02117-x" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+    </div>
 
-          <!-- Hidden bibtex block -->
-          <div class="bibtex hidden">
-            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">Khani2026FallGeroScience</span><span class="p">,</span>
+    <!-- Hidden bibtex block -->
+    <div class="bibtex hidden">
+      <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">Khani2026FallGeroScience</span><span class="p">,</span>
   <span class="na">title</span> <span class="p">=</span> <span class="s">{Explainable AI reveals temporal risk pathways in fall prediction: extracting clinical insights from multi-horizon machine learning models}</span><span class="p">,</span>
   <span class="na">author</span> <span class="p">=</span> <span class="s">{Khani, Masoud and Friedland, David R. and Widlansky, Michael and Harris, Michael S. and Adams, Jazzmyne and Fan, Lei and Oh, Hyunkyoung and Lu, Qiang and Luo, Jake}</span><span class="p">,</span>
   <span class="na">journal</span> <span class="p">=</span> <span class="s">{GeroScience}</span><span class="p">,</span>
   <span class="na">year</span> <span class="p">=</span> <span class="s">{2026}</span><span class="p">,</span>
+  <span class="na">doi</span> <span class="p">=</span> <span class="s">{10.1007/s11357-026-02117-x}</span><span class="p">,</span>
 <span class="p">}</span></code></pre></figure>
-          </div>
-        </div>
-      </div>
+    </div>
+  </div>
+</div>
 </li>
 <li>
 <!-- _layouts/bib.html -->
-      <div class="row">
-        <div class="col-sm-2 preview">
+<div class="row">
+  <div class="col-sm-2 preview">
 <figure>
 
   <picture>
     
 
     <!-- Fallback to the original file -->
-    <img src="/assets/img/publication_preview/SPT.png" class="preview z-depth-1 rounded" width="auto" height="auto" alt="SPT.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+    <img src="/assets/img/publication_preview/SPT.png" class="preview-img img-fluid" width="auto" height="auto" alt="SPT.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
 
   </picture>
 
 </figure>
 </div>
 
-        <!-- Entry bib key -->
-        <div id="Shalmani2026SPT" class="col-sm-8">
-        <!-- Title -->
-        <div class="title">Sequential pattern transformer (SPT): a generative and interpretable framework for predicting disease trajectories</div>
-        <!-- Author -->
-        <div class="author">
-        
+  <!-- Entry bib key -->
+  <div id="Shalmani2026SPT" class="col-sm-8">
+    <!-- Title -->
+    <div class="title">Sequential pattern transformer (SPT): a generative and interpretable framework for predicting disease trajectories</div>
+    <!-- Author -->
+    <div class="author">
+      
 
-        Mohammad Assadi Shalmani, <em>Masoud Khani</em>, <a href="https://scholar.google.com/citations?user=PLACEHOLDER" rel="external nofollow noopener" target="_blank">Amirsajjad Taleban</a>, and
-          <span class="more-authors" title="click to view 5 more authors" onclick="
+      Mohammad Assadi Shalmani, <em>Masoud Khani</em>, <a href="https://scholar.google.com/citations?user=PLACEHOLDER" rel="external nofollow noopener" target="_blank">Amirsajjad Taleban</a>, and
+      <span class="more-authors" title="click to view 5 more authors" onclick="
                 var element = $(this);
                 element.attr('title', '');
                 var more_authors_text = element.text() == '5 more authors' ? 'Zihao Yi, Jennifer T. Fink, Christopher E. Weber, Qiang Lu, Jake Luo' : '5 more authors';
@@ -444,66 +529,67 @@
               ">5 more authors</span>
 </div>
 
-        <!-- Journal/Book title and date -->
-        
-        
-        <div class="periodical">
-          <em>Neural Computing and Applications</em>, 2026
-        </div>
-        <div class="periodical">
-          
-        </div>
+    <!-- Journal/Book title and date -->
+    
+    
+    <div class="periodical">
+      <em>Neural Computing and Applications</em>, 2026
+    </div>
+    <div class="periodical">
+      
+    </div>
 
-          <!-- Links/Buttons -->
-          <div class="links">
-            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
-            <a href="https://doi.org/10.1007/s00521-025-11695-4" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a>
-          </div>
-          
-          <div class="badges">
-            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
-              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
-          </div>
+    <!-- Links/Buttons -->
+    <div class="links">
+      <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+      <a href="https://doi.org/10.1007/s00521-025-11695-4" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a>
+    </div>
+    
+    <div class="badges">
+      <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.1007/s00521-025-11695-4"></span>
+      <span class="__dimensions_badge_embed__" data-doi="10.1007/s00521-025-11695-4" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+    </div>
 
-          <!-- Hidden bibtex block -->
-          <div class="bibtex hidden">
-            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">Shalmani2026SPT</span><span class="p">,</span>
+    <!-- Hidden bibtex block -->
+    <div class="bibtex hidden">
+      <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">Shalmani2026SPT</span><span class="p">,</span>
   <span class="na">title</span> <span class="p">=</span> <span class="s">{Sequential pattern transformer (SPT): a generative and interpretable framework for predicting disease trajectories}</span><span class="p">,</span>
   <span class="na">author</span> <span class="p">=</span> <span class="s">{Shalmani, Mohammad Assadi and Khani, Masoud and Taleban, Amirsajjad and Yi, Zihao and Fink, Jennifer T. and Weber, Christopher E. and Lu, Qiang and Luo, Jake}</span><span class="p">,</span>
   <span class="na">journal</span> <span class="p">=</span> <span class="s">{Neural Computing and Applications}</span><span class="p">,</span>
   <span class="na">year</span> <span class="p">=</span> <span class="s">{2026}</span><span class="p">,</span>
+  <span class="na">doi</span> <span class="p">=</span> <span class="s">{10.1007/s00521-025-11695-4}</span><span class="p">,</span>
 <span class="p">}</span></code></pre></figure>
-          </div>
-        </div>
-      </div>
+    </div>
+  </div>
+</div>
 </li>
 <li>
 <!-- _layouts/bib.html -->
-      <div class="row">
-        <div class="col-sm-2 preview">
+<div class="row">
+  <div class="col-sm-2 preview">
 <figure>
 
   <picture>
     
 
     <!-- Fallback to the original file -->
-    <img src="/assets/img/publication_preview/food_deserts.png" class="preview z-depth-1 rounded" width="auto" height="auto" alt="food_deserts.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+    <img src="/assets/img/publication_preview/food_deserts.png" class="preview-img img-fluid" width="auto" height="auto" alt="food_deserts.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
 
   </picture>
 
 </figure>
 </div>
 
-        <!-- Entry bib key -->
-        <div id="Yi2026FoodDeserts" class="col-sm-8">
-        <!-- Title -->
-        <div class="title">From food deserts to nutritional equity: exposing socioeconomic drivers of hypertension</div>
-        <!-- Author -->
-        <div class="author">
-        
+  <!-- Entry bib key -->
+  <div id="Yi2026FoodDeserts" class="col-sm-8">
+    <!-- Title -->
+    <div class="title">From food deserts to nutritional equity: exposing socioeconomic drivers of hypertension</div>
+    <!-- Author -->
+    <div class="author">
+      
 
-        Zihao Yi, <em>Masoud Khani</em>, Mohammad Assadi Shalmani, and
-          <span class="more-authors" title="click to view 4 more authors" onclick="
+      Zihao Yi, <em>Masoud Khani</em>, Mohammad Assadi Shalmani, and
+      <span class="more-authors" title="click to view 4 more authors" onclick="
                 var element = $(this);
                 element.attr('title', '');
                 var more_authors_text = element.text() == '4 more authors' ? 'Amirsajjad Taleban, Jennifer T. Fink, Robert F. Frediani, Jake Luo' : '4 more authors';
@@ -517,66 +603,67 @@
               ">4 more authors</span>
 </div>
 
-        <!-- Journal/Book title and date -->
-        
-        
-        <div class="periodical">
-          <em>Journal of Nutritional Science</em>, 2026
-        </div>
-        <div class="periodical">
-          
-        </div>
+    <!-- Journal/Book title and date -->
+    
+    
+    <div class="periodical">
+      <em>Journal of Nutritional Science</em>, 2026
+    </div>
+    <div class="periodical">
+      
+    </div>
 
-          <!-- Links/Buttons -->
-          <div class="links">
-            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
-            <a href="https://doi.org/10.1017/jns.2025.10067" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a>
-          </div>
-          
-          <div class="badges">
-            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
-              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
-          </div>
+    <!-- Links/Buttons -->
+    <div class="links">
+      <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+      <a href="https://doi.org/10.1017/jns.2025.10067" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a>
+    </div>
+    
+    <div class="badges">
+      <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.1017/jns.2025.10067"></span>
+      <span class="__dimensions_badge_embed__" data-doi="10.1017/jns.2025.10067" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+    </div>
 
-          <!-- Hidden bibtex block -->
-          <div class="bibtex hidden">
-            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">Yi2026FoodDeserts</span><span class="p">,</span>
+    <!-- Hidden bibtex block -->
+    <div class="bibtex hidden">
+      <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">Yi2026FoodDeserts</span><span class="p">,</span>
   <span class="na">title</span> <span class="p">=</span> <span class="s">{From food deserts to nutritional equity: exposing socioeconomic drivers of hypertension}</span><span class="p">,</span>
   <span class="na">author</span> <span class="p">=</span> <span class="s">{Yi, Zihao and Khani, Masoud and Shalmani, Mohammad Assadi and Taleban, Amirsajjad and Fink, Jennifer T. and Frediani, Robert F. and Luo, Jake}</span><span class="p">,</span>
   <span class="na">journal</span> <span class="p">=</span> <span class="s">{Journal of Nutritional Science}</span><span class="p">,</span>
   <span class="na">year</span> <span class="p">=</span> <span class="s">{2026}</span><span class="p">,</span>
+  <span class="na">doi</span> <span class="p">=</span> <span class="s">{10.1017/jns.2025.10067}</span><span class="p">,</span>
 <span class="p">}</span></code></pre></figure>
-          </div>
-        </div>
-      </div>
+    </div>
+  </div>
+</div>
 </li>
 <li>
 <!-- _layouts/bib.html -->
-      <div class="row">
-        <div class="col-sm-2 preview">
+<div class="row">
+  <div class="col-sm-2 preview">
 <figure>
 
   <picture>
     
 
     <!-- Fallback to the original file -->
-    <img src="/assets/img/publication_preview/tinnitus_stress.png" class="preview z-depth-1 rounded" width="auto" height="auto" alt="tinnitus_stress.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+    <img src="/assets/img/publication_preview/tinnitus_stress.png" class="preview-img img-fluid" width="auto" height="auto" alt="tinnitus_stress.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
 
   </picture>
 
 </figure>
 </div>
 
-        <!-- Entry bib key -->
-        <div id="Mumm2026Tinnitus" class="col-sm-8">
-        <!-- Title -->
-        <div class="title">Correlation Between Life Stress and Tinnitus Severity</div>
-        <!-- Author -->
-        <div class="author">
-        
+  <!-- Entry bib key -->
+  <div id="Mumm2026Tinnitus" class="col-sm-8">
+    <!-- Title -->
+    <div class="title">Correlation Between Life Stress and Tinnitus Severity</div>
+    <!-- Author -->
+    <div class="author">
+      
 
-        Beatrice Mumm, <a href="https://scholar.google.com/citations?user=PLACEHOLDER" rel="external nofollow noopener" target="_blank">David Friedland</a>, <a href="https://scholar.google.com/citations?user=PLACEHOLDER" rel="external nofollow noopener" target="_blank">Jazzmyne Adams</a>, and
-          <span class="more-authors" title="click to view 3 more authors" onclick="
+      Beatrice Mumm, <a href="https://scholar.google.com/citations?user=PLACEHOLDER" rel="external nofollow noopener" target="_blank">David Friedland</a>, <a href="https://scholar.google.com/citations?user=PLACEHOLDER" rel="external nofollow noopener" target="_blank">Jazzmyne Adams</a>, and
+      <span class="more-authors" title="click to view 3 more authors" onclick="
                 var element = $(this);
                 element.attr('title', '');
                 var more_authors_text = element.text() == '3 more authors' ? 'Masoud Khani, Jake Luo, Kristina Osinski' : '3 more authors';
@@ -590,30 +677,30 @@
               ">3 more authors</span>
 </div>
 
-        <!-- Journal/Book title and date -->
-        
-        
-        <div class="periodical">
-          <em>Otology &amp; Neurotology</em>, 2026
-        </div>
-        <div class="periodical">
-          
-        </div>
+    <!-- Journal/Book title and date -->
+    
+    
+    <div class="periodical">
+      <em>Otology &amp; Neurotology</em>, 2026
+    </div>
+    <div class="periodical">
+      
+    </div>
 
-          <!-- Links/Buttons -->
-          <div class="links">
-            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
-            <a href="https://doi.org/10.1097/MAO.0000000000004721" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a>
-          </div>
-          
-          <div class="badges">
-            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
-              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
-          </div>
+    <!-- Links/Buttons -->
+    <div class="links">
+      <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+      <a href="https://doi.org/10.1097/MAO.0000000000004721" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a>
+    </div>
+    
+    <div class="badges">
+      <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.1097/MAO.0000000000004721"></span>
+      <span class="__dimensions_badge_embed__" data-doi="10.1097/MAO.0000000000004721" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+    </div>
 
-          <!-- Hidden bibtex block -->
-          <div class="bibtex hidden">
-            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">Mumm2026Tinnitus</span><span class="p">,</span>
+    <!-- Hidden bibtex block -->
+    <div class="bibtex hidden">
+      <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">Mumm2026Tinnitus</span><span class="p">,</span>
   <span class="na">title</span> <span class="p">=</span> <span class="s">{Correlation Between Life Stress and Tinnitus Severity}</span><span class="p">,</span>
   <span class="na">author</span> <span class="p">=</span> <span class="s">{Mumm, Beatrice and Friedland, David and Adams, Jazzmyne and Khani, Masoud and Luo, Jake and Osinski, Kristina}</span><span class="p">,</span>
   <span class="na">journal</span> <span class="p">=</span> <span class="s">{Otology \&amp; Neurotology}</span><span class="p">,</span>
@@ -621,38 +708,39 @@
   <span class="na">number</span> <span class="p">=</span> <span class="s">{2}</span><span class="p">,</span>
   <span class="na">pages</span> <span class="p">=</span> <span class="s">{221--226}</span><span class="p">,</span>
   <span class="na">year</span> <span class="p">=</span> <span class="s">{2026}</span><span class="p">,</span>
+  <span class="na">doi</span> <span class="p">=</span> <span class="s">{10.1097/MAO.0000000000004721}</span><span class="p">,</span>
 <span class="p">}</span></code></pre></figure>
-          </div>
-        </div>
-      </div>
+    </div>
+  </div>
+</div>
 </li>
 <li>
 <!-- _layouts/bib.html -->
-      <div class="row">
-        <div class="col-sm-2 preview">
+<div class="row">
+  <div class="col-sm-2 preview">
 <figure>
 
   <picture>
     
 
     <!-- Fallback to the original file -->
-    <img src="/assets/img/publication_preview/HeadNeckCancer.png" class="preview z-depth-1 rounded" width="auto" height="auto" alt="HeadNeckCancer.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+    <img src="/assets/img/publication_preview/HeadNeckCancer.png" class="preview-img img-fluid" width="auto" height="auto" alt="HeadNeckCancer.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
 
   </picture>
 
 </figure>
 </div>
 
-        <!-- Entry bib key -->
-        <div id="Memon2026HeadNeckCancer" class="col-sm-8">
-        <!-- Title -->
-        <div class="title">Tumoral Skin Invasion Is an Independent Predictor of Rapid Recurrence in Head and Neck Cancer</div>
-        <!-- Author -->
-        <div class="author">
-        
+  <!-- Entry bib key -->
+  <div id="Memon2026HeadNeckCancer" class="col-sm-8">
+    <!-- Title -->
+    <div class="title">Tumoral Skin Invasion Is an Independent Predictor of Rapid Recurrence in Head and Neck Cancer</div>
+    <!-- Author -->
+    <div class="author">
+      
 
-        Abdullah A. Memon, Mohamed Khalil, Oscar Villarreal Espinosa, and
-          <span class="more-authors" title="click to view 17 more authors" onclick="
+      Abdullah A. Memon, Mohamed Khalil, Oscar Villarreal Espinosa, and
+      <span class="more-authors" title="click to view 17 more authors" onclick="
                 var element = $(this);
                 element.attr('title', '');
                 var more_authors_text = element.text() == '17 more authors' ? 'Imaad Said, Eric Yang, Jazzmyne A. Adams, David R. Friedland, Masoud Khani, Jake Luo, Rachel Kuehn, Anne Frei, Jamie Foeckler, Kenneth Akakpo, Becky Massey, Michael Stadler, Stuart Wong, Heather A. Himburg, Musaddiq J. Awan, Jennifer Bruening, Joseph Zenga' : '17 more authors';
@@ -666,30 +754,30 @@
               ">17 more authors</span>
 </div>
 
-        <!-- Journal/Book title and date -->
-        
-        
-        <div class="periodical">
-          <em>Head &amp; Neck</em>, 2026
-        </div>
-        <div class="periodical">
-          
-        </div>
+    <!-- Journal/Book title and date -->
+    
+    
+    <div class="periodical">
+      <em>Head &amp; Neck</em>, 2026
+    </div>
+    <div class="periodical">
+      
+    </div>
 
-          <!-- Links/Buttons -->
-          <div class="links">
-            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
-            <a href="https://doi.org/10.1002/hed.70066" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a>
-          </div>
-          
-          <div class="badges">
-            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
-              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
-          </div>
+    <!-- Links/Buttons -->
+    <div class="links">
+      <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+      <a href="https://doi.org/10.1002/hed.70066" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a>
+    </div>
+    
+    <div class="badges">
+      <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.1002/hed.70066"></span>
+      <span class="__dimensions_badge_embed__" data-doi="10.1002/hed.70066" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+    </div>
 
-          <!-- Hidden bibtex block -->
-          <div class="bibtex hidden">
-            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">Memon2026HeadNeckCancer</span><span class="p">,</span>
+    <!-- Hidden bibtex block -->
+    <div class="bibtex hidden">
+      <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">Memon2026HeadNeckCancer</span><span class="p">,</span>
   <span class="na">title</span> <span class="p">=</span> <span class="s">{Tumoral Skin Invasion Is an Independent Predictor of Rapid Recurrence in Head and Neck Cancer}</span><span class="p">,</span>
   <span class="na">author</span> <span class="p">=</span> <span class="s">{Memon, Abdullah A. and Khalil, Mohamed and Espinosa, Oscar Villarreal and Said, Imaad and Yang, Eric and Adams, Jazzmyne A. and Friedland, David R. and Khani, Masoud and Luo, Jake and Kuehn, Rachel and Frei, Anne and Foeckler, Jamie and Akakpo, Kenneth and Massey, Becky and Stadler, Michael and Wong, Stuart and Himburg, Heather A. and Awan, Musaddiq J. and Bruening, Jennifer and Zenga, Joseph}</span><span class="p">,</span>
   <span class="na">journal</span> <span class="p">=</span> <span class="s">{Head \&amp; Neck}</span><span class="p">,</span>
@@ -697,38 +785,39 @@
   <span class="na">number</span> <span class="p">=</span> <span class="s">{2}</span><span class="p">,</span>
   <span class="na">pages</span> <span class="p">=</span> <span class="s">{535--542}</span><span class="p">,</span>
   <span class="na">year</span> <span class="p">=</span> <span class="s">{2026}</span><span class="p">,</span>
+  <span class="na">doi</span> <span class="p">=</span> <span class="s">{10.1002/hed.70066}</span><span class="p">,</span>
 <span class="p">}</span></code></pre></figure>
-          </div>
-        </div>
-      </div>
+    </div>
+  </div>
+</div>
 </li>
 <li>
 <!-- _layouts/bib.html -->
-      <div class="row">
-        <div class="col-sm-2 preview">
+<div class="row">
+  <div class="col-sm-2 preview">
 <figure>
 
   <picture>
     
 
     <!-- Fallback to the original file -->
-    <img src="/assets/img/publication_preview/XAI_LLM_Fall.png" class="preview z-depth-1 rounded" width="auto" height="auto" alt="XAI_LLM_Fall.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+    <img src="/assets/img/publication_preview/XAI_LLM_Fall.png" class="preview-img img-fluid" width="auto" height="auto" alt="XAI_LLM_Fall.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
 
   </picture>
 
 </figure>
 </div>
 
-        <!-- Entry bib key -->
-        <div id="Luo2025FallICMHI" class="col-sm-8">
-        <!-- Title -->
-        <div class="title">Risk Prediction and Interpretation for Fall Events Using Explainable AI and Large Language Models</div>
-        <!-- Author -->
-        <div class="author">
-        
+  <!-- Entry bib key -->
+  <div id="Luo2025FallICMHI" class="col-sm-8">
+    <!-- Title -->
+    <div class="title">Risk Prediction and Interpretation for Fall Events Using Explainable AI and Large Language Models</div>
+    <!-- Author -->
+    <div class="author">
+      
 
-        <a href="https://scholar.google.com/citations?user=PLACEHOLDER" rel="external nofollow noopener" target="_blank">Jake Luo</a>, <em>Masoud Khani</em>, <a href="https://scholar.google.com/citations?user=PLACEHOLDER" rel="external nofollow noopener" target="_blank">Jazzmyne Adams</a>, and
-          <span class="more-authors" title="click to view 3 more authors" onclick="
+      <a href="https://scholar.google.com/citations?user=PLACEHOLDER" rel="external nofollow noopener" target="_blank">Jake Luo</a>, <em>Masoud Khani</em>, <a href="https://scholar.google.com/citations?user=PLACEHOLDER" rel="external nofollow noopener" target="_blank">Jazzmyne Adams</a>, and
+      <span class="more-authors" title="click to view 3 more authors" onclick="
                 var element = $(this);
                 element.attr('title', '');
                 var more_authors_text = element.text() == '3 more authors' ? 'Qiang Lu, Kristian O’Connor, David R. Friedland' : '3 more authors';
@@ -742,66 +831,66 @@
               ">3 more authors</span>
 </div>
 
-        <!-- Journal/Book title and date -->
-        
-        
-        <div class="periodical">
-          <em>In Proceedings of the 2025 9th International Conference on Medical and Health Informatics (ICMHI ’25)</em>, 2025
-        </div>
-        <div class="periodical">
-          
-        </div>
+    <!-- Journal/Book title and date -->
+    
+    
+    <div class="periodical">
+      <em>In Proceedings of the 2025 9th International Conference on Medical and Health Informatics (ICMHI ’25)</em>, 2025
+    </div>
+    <div class="periodical">
+      
+    </div>
 
-          <!-- Links/Buttons -->
-          <div class="links">
-            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
-          </div>
-          
-          <div class="badges">
-            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
-              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
-          </div>
+    <!-- Links/Buttons -->
+    <div class="links">
+      <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+    </div>
+    
+    <div class="badges">
+      <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+      <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+    </div>
 
-          <!-- Hidden bibtex block -->
-          <div class="bibtex hidden">
-            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">Luo2025FallICMHI</span><span class="p">,</span>
+    <!-- Hidden bibtex block -->
+    <div class="bibtex hidden">
+      <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">Luo2025FallICMHI</span><span class="p">,</span>
   <span class="na">title</span> <span class="p">=</span> <span class="s">{Risk Prediction and Interpretation for Fall Events Using Explainable AI and Large Language Models}</span><span class="p">,</span>
   <span class="na">author</span> <span class="p">=</span> <span class="s">{Luo, Jake and Khani, Masoud and Adams, Jazzmyne and Lu, Qiang and O'Connor, Kristian and Friedland, David R.}</span><span class="p">,</span>
   <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{Proceedings of the 2025 9th International Conference on Medical and Health Informatics (ICMHI '25)}</span><span class="p">,</span>
   <span class="na">pages</span> <span class="p">=</span> <span class="s">{270--277}</span><span class="p">,</span>
   <span class="na">year</span> <span class="p">=</span> <span class="s">{2025}</span><span class="p">,</span>
 <span class="p">}</span></code></pre></figure>
-          </div>
-        </div>
-      </div>
+    </div>
+  </div>
+</div>
 </li>
 <li>
 <!-- _layouts/bib.html -->
-      <div class="row">
-        <div class="col-sm-2 preview">
+<div class="row">
+  <div class="col-sm-2 preview">
 <figure>
 
   <picture>
     
 
     <!-- Fallback to the original file -->
-    <img src="/assets/img/publication_preview/LLMCARE.png" class="preview z-depth-1 rounded" width="auto" height="auto" alt="LLMCARE.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+    <img src="/assets/img/publication_preview/LLMCARE.png" class="preview-img img-fluid" width="auto" height="auto" alt="LLMCARE.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
 
   </picture>
 
 </figure>
 </div>
 
-        <!-- Entry bib key -->
-        <div id="Zolnour2025LLMCARE" class="col-sm-8">
-        <!-- Title -->
-        <div class="title">LLMCARE: Early Detection of Cognitive Impairment via Transformer Models Enhanced by LLM-Generated Synthetic Data</div>
-        <!-- Author -->
-        <div class="author">
-        
+  <!-- Entry bib key -->
+  <div id="Zolnour2025LLMCARE" class="col-sm-8">
+    <!-- Title -->
+    <div class="title">LLMCARE: Early Detection of Cognitive Impairment via Transformer Models Enhanced by LLM-Generated Synthetic Data</div>
+    <!-- Author -->
+    <div class="author">
+      
 
-        <a href="https://scholar.google.com/citations?user=PLACEHOLDER" rel="external nofollow noopener" target="_blank">Ali Zolnour</a>, Hossein Azadmaleki, Yasaman Haghbin, and
-          <span class="more-authors" title="click to view 13 more authors" onclick="
+      <a href="https://scholar.google.com/citations?user=PLACEHOLDER" rel="external nofollow noopener" target="_blank">Ali Zolnour</a>, Hossein Azadmaleki, Yasaman Haghbin, and
+      <span class="more-authors" title="click to view 13 more authors" onclick="
                 var element = $(this);
                 element.attr('title', '');
                 var more_authors_text = element.text() == '13 more authors' ? 'Fatemeh Taherinezhad, Mohamad Javad Momeni Nezhad, Sina Rashidi, Masoud Khani, Amirsajjad Taleban, Samin Mahdizadeh Sani, Maryam Dadkhah, James M Noble, Suzanne Bakken, Yadollah Yaghoobzadeh, Abdol-Hossein Vahabie, Masoud Rouhizadeh, Maryam Zolnoori' : '13 more authors';
@@ -815,68 +904,69 @@
               ">13 more authors</span>
 </div>
 
-        <!-- Journal/Book title and date -->
-        
-        
-        <div class="periodical">
-          <em>Frontiers in Artificial Intelligence</em>, 2025
-        </div>
-        <div class="periodical">
-          
-        </div>
+    <!-- Journal/Book title and date -->
+    
+    
+    <div class="periodical">
+      <em>Frontiers in Artificial Intelligence</em>, 2025
+    </div>
+    <div class="periodical">
+      
+    </div>
 
-          <!-- Links/Buttons -->
-          <div class="links">
-            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
-            <a href="https://doi.org/10.3389/frai.2025.1669896" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a>
-          </div>
-          
-          <div class="badges">
-            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
-              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
-          </div>
+    <!-- Links/Buttons -->
+    <div class="links">
+      <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+      <a href="https://doi.org/10.3389/frai.2025.1669896" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a>
+    </div>
+    
+    <div class="badges">
+      <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.3389/frai.2025.1669896"></span>
+      <span class="__dimensions_badge_embed__" data-doi="10.3389/frai.2025.1669896" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+    </div>
 
-          <!-- Hidden bibtex block -->
-          <div class="bibtex hidden">
-            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">Zolnour2025LLMCARE</span><span class="p">,</span>
+    <!-- Hidden bibtex block -->
+    <div class="bibtex hidden">
+      <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">Zolnour2025LLMCARE</span><span class="p">,</span>
   <span class="na">title</span> <span class="p">=</span> <span class="s">{LLMCARE: Early Detection of Cognitive Impairment via Transformer Models Enhanced by LLM-Generated Synthetic Data}</span><span class="p">,</span>
   <span class="na">author</span> <span class="p">=</span> <span class="s">{Zolnour, Ali and Azadmaleki, Hossein and Haghbin, Yasaman and Taherinezhad, Fatemeh and Nezhad, Mohamad Javad Momeni and Rashidi, Sina and Khani, Masoud and Taleban, Amirsajjad and Sani, Samin Mahdizadeh and Dadkhah, Maryam and Noble, James M and Bakken, Suzanne and Yaghoobzadeh, Yadollah and Vahabie, Abdol-Hossein and Rouhizadeh, Masoud and Zolnoori, Maryam}</span><span class="p">,</span>
   <span class="na">journal</span> <span class="p">=</span> <span class="s">{Frontiers in Artificial Intelligence}</span><span class="p">,</span>
   <span class="na">volume</span> <span class="p">=</span> <span class="s">{8}</span><span class="p">,</span>
   <span class="na">pages</span> <span class="p">=</span> <span class="s">{1669896}</span><span class="p">,</span>
   <span class="na">year</span> <span class="p">=</span> <span class="s">{2025}</span><span class="p">,</span>
+  <span class="na">doi</span> <span class="p">=</span> <span class="s">{10.3389/frai.2025.1669896}</span><span class="p">,</span>
 <span class="p">}</span></code></pre></figure>
-          </div>
-        </div>
-      </div>
+    </div>
+  </div>
+</div>
 </li>
 <li>
 <!-- _layouts/bib.html -->
-      <div class="row">
-        <div class="col-sm-2 preview">
+<div class="row">
+  <div class="col-sm-2 preview">
 <figure>
 
   <picture>
     
 
     <!-- Fallback to the original file -->
-    <img src="/assets/img/publication_preview/MCWs.png" class="preview z-depth-1 rounded" width="auto" height="auto" alt="MCWs.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+    <img src="/assets/img/publication_preview/MCWs.png" class="preview-img img-fluid" width="auto" height="auto" alt="MCWs.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
 
   </picture>
 
 </figure>
 </div>
 
-        <!-- Entry bib key -->
-        <div id="Brahma2025MCWs" class="col-sm-8">
-        <!-- Title -->
-        <div class="title">MCWs (MiCroWire sorter): A New Framework for Automated and Reliable Spike Sorting in Human Intracerebral Recordings</div>
-        <!-- Author -->
-        <div class="author">
-        
+  <!-- Entry bib key -->
+  <div id="Brahma2025MCWs" class="col-sm-8">
+    <!-- Title -->
+    <div class="title">MCWs (MiCroWire sorter): A New Framework for Automated and Reliable Spike Sorting in Human Intracerebral Recordings</div>
+    <!-- Author -->
+    <div class="author">
+      
 
-        Alexander Betancourt, <em>Masoud Khani</em>, Tapasi Brahma, and
-          <span class="more-authors" title="click to view 7 more authors" onclick="
+      Alexander Betancourt, <em>Masoud Khani</em>, Tapasi Brahma, and
+      <span class="more-authors" title="click to view 7 more authors" onclick="
                 var element = $(this);
                 element.attr('title', '');
                 var more_authors_text = element.text() == '7 more authors' ? 'Fernando J. Chaure, Connor Hauder, Sunil Mathew, Ana Sofia Dominguez Zesati, Sean Lew, Kunal Gupta, Hernan G. Rey' : '7 more authors';
@@ -890,67 +980,68 @@
               ">7 more authors</span>
 </div>
 
-        <!-- Journal/Book title and date -->
-        
-        
-        <div class="periodical">
-          <em>bioRxiv</em>, 2025
-        </div>
-        <div class="periodical">
-          
-        </div>
+    <!-- Journal/Book title and date -->
+    
+    
+    <div class="periodical">
+      <em>bioRxiv</em>, 2025
+    </div>
+    <div class="periodical">
+      
+    </div>
 
-          <!-- Links/Buttons -->
-          <div class="links">
-            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
-            <a href="https://doi.org/10.1101/2025.07.09.663285" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a>
-          </div>
-          
-          <div class="badges">
-            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
-              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
-          </div>
+    <!-- Links/Buttons -->
+    <div class="links">
+      <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+      <a href="https://doi.org/10.1101/2025.07.09.663285" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a>
+    </div>
+    
+    <div class="badges">
+      <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.1101/2025.07.09.663285"></span>
+      <span class="__dimensions_badge_embed__" data-doi="10.1101/2025.07.09.663285" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+    </div>
 
-          <!-- Hidden bibtex block -->
-          <div class="bibtex hidden">
-            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">Brahma2025MCWs</span><span class="p">,</span>
+    <!-- Hidden bibtex block -->
+    <div class="bibtex hidden">
+      <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">Brahma2025MCWs</span><span class="p">,</span>
   <span class="na">title</span> <span class="p">=</span> <span class="s">{MCWs (MiCroWire sorter): A New Framework for Automated and Reliable Spike Sorting in Human Intracerebral Recordings}</span><span class="p">,</span>
   <span class="na">author</span> <span class="p">=</span> <span class="s">{Betancourt, Alexander and Khani, Masoud and Brahma, Tapasi and Chaure, Fernando J. and Hauder, Connor and Mathew, Sunil and Zesati, Ana Sofia Dominguez and Lew, Sean and Gupta, Kunal and Rey, Hernan G.}</span><span class="p">,</span>
   <span class="na">journal</span> <span class="p">=</span> <span class="s">{bioRxiv}</span><span class="p">,</span>
   <span class="na">pages</span> <span class="p">=</span> <span class="s">{2025.07.09.663285}</span><span class="p">,</span>
   <span class="na">year</span> <span class="p">=</span> <span class="s">{2025}</span><span class="p">,</span>
+  <span class="na">doi</span> <span class="p">=</span> <span class="s">{10.1101/2025.07.09.663285}</span><span class="p">,</span>
 <span class="p">}</span></code></pre></figure>
-          </div>
-        </div>
-      </div>
+    </div>
+  </div>
+</div>
 </li>
 <li>
 <!-- _layouts/bib.html -->
-      <div class="row">
-        <div class="col-sm-2 preview">
+<div class="row">
+  <div class="col-sm-2 preview">
 <figure>
 
   <picture>
     
 
     <!-- Fallback to the original file -->
-    <img src="/assets/img/publication_preview/AnestheticOtologic.png" class="preview z-depth-1 rounded" width="auto" height="auto" alt="AnestheticOtologic.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+    <img src="/assets/img/publication_preview/AnestheticOtologic.png" class="preview-img img-fluid" width="auto" height="auto" alt="AnestheticOtologic.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
 
   </picture>
 
 </figure>
 </div>
 
-        <!-- Entry bib key -->
-        <div id="Bao2025AnestheticOtologic" class="col-sm-8">
-        <!-- Title -->
-        <div class="title">Assessment of Anesthetic Modalities in Otologic Surgery</div>
-        <!-- Author -->
-        <div class="author">
-        
+  <!-- Entry bib key -->
+  <div id="Bao2025AnestheticOtologic" class="col-sm-8">
+    <!-- Title -->
+    <div class="title">Assessment of Anesthetic Modalities in Otologic Surgery</div>
+    <!-- Author -->
+    <div class="author">
+      
 
-        Phuong H. Bao, <a href="https://scholar.google.com/citations?user=PLACEHOLDER" rel="external nofollow noopener" target="_blank">David R. Friedland</a>, <a href="https://scholar.google.com/citations?user=PLACEHOLDER" rel="external nofollow noopener" target="_blank">Jazzmyne A. Adams</a>, and
-          <span class="more-authors" title="click to view 3 more authors" onclick="
+      Phuong H. Bao, <a href="https://scholar.google.com/citations?user=PLACEHOLDER" rel="external nofollow noopener" target="_blank">David R. Friedland</a>, <a href="https://scholar.google.com/citations?user=PLACEHOLDER" rel="external nofollow noopener" target="_blank">Jazzmyne A. Adams</a>, and
+      <span class="more-authors" title="click to view 3 more authors" onclick="
                 var element = $(this);
                 element.attr('title', '');
                 var more_authors_text = element.text() == '3 more authors' ? 'Julie K. Freed, Masoud Khani, Jake Luo' : '3 more authors';
@@ -964,30 +1055,30 @@
               ">3 more authors</span>
 </div>
 
-        <!-- Journal/Book title and date -->
-        
-        
-        <div class="periodical">
-          <em>Otology &amp; Neurotology Open</em>, 2025
-        </div>
-        <div class="periodical">
-          
-        </div>
+    <!-- Journal/Book title and date -->
+    
+    
+    <div class="periodical">
+      <em>Otology &amp; Neurotology Open</em>, 2025
+    </div>
+    <div class="periodical">
+      
+    </div>
 
-          <!-- Links/Buttons -->
-          <div class="links">
-            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
-            <a href="https://doi.org/10.1097/ONO.0000000000000075" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a>
-          </div>
-          
-          <div class="badges">
-            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
-              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
-          </div>
+    <!-- Links/Buttons -->
+    <div class="links">
+      <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+      <a href="https://doi.org/10.1097/ONO.0000000000000075" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a>
+    </div>
+    
+    <div class="badges">
+      <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.1097/ONO.0000000000000075"></span>
+      <span class="__dimensions_badge_embed__" data-doi="10.1097/ONO.0000000000000075" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+    </div>
 
-          <!-- Hidden bibtex block -->
-          <div class="bibtex hidden">
-            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">Bao2025AnestheticOtologic</span><span class="p">,</span>
+    <!-- Hidden bibtex block -->
+    <div class="bibtex hidden">
+      <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">Bao2025AnestheticOtologic</span><span class="p">,</span>
   <span class="na">title</span> <span class="p">=</span> <span class="s">{Assessment of Anesthetic Modalities in Otologic Surgery}</span><span class="p">,</span>
   <span class="na">author</span> <span class="p">=</span> <span class="s">{Bao, Phuong H. and Friedland, David R. and Adams, Jazzmyne A. and Freed, Julie K. and Khani, Masoud and Luo, Jake}</span><span class="p">,</span>
   <span class="na">journal</span> <span class="p">=</span> <span class="s">{Otology \&amp; Neurotology Open}</span><span class="p">,</span>
@@ -995,38 +1086,39 @@
   <span class="na">number</span> <span class="p">=</span> <span class="s">{3}</span><span class="p">,</span>
   <span class="na">pages</span> <span class="p">=</span> <span class="s">{e075}</span><span class="p">,</span>
   <span class="na">year</span> <span class="p">=</span> <span class="s">{2025}</span><span class="p">,</span>
+  <span class="na">doi</span> <span class="p">=</span> <span class="s">{10.1097/ONO.0000000000000075}</span><span class="p">,</span>
 <span class="p">}</span></code></pre></figure>
-          </div>
-        </div>
-      </div>
+    </div>
+  </div>
+</div>
 </li>
 <li>
 <!-- _layouts/bib.html -->
-      <div class="row">
-        <div class="col-sm-2 preview">
+<div class="row">
+  <div class="col-sm-2 preview">
 <figure>
 
   <picture>
     
 
     <!-- Fallback to the original file -->
-    <img src="/assets/img/publication_preview/PancreaticCancer.png" class="preview z-depth-1 rounded" width="auto" height="auto" alt="PancreaticCancer.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+    <img src="/assets/img/publication_preview/PancreaticCancer.png" class="preview-img img-fluid" width="auto" height="auto" alt="PancreaticCancer.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
 
   </picture>
 
 </figure>
 </div>
 
-        <!-- Entry bib key -->
-        <div id="Khani2025PancreaticCancer" class="col-sm-8">
-        <!-- Title -->
-        <div class="title">The Impact of Socioeconomic Factors on Pancreatic Cancer Care Utilization</div>
-        <!-- Author -->
-        <div class="author">
-        
+  <!-- Entry bib key -->
+  <div id="Khani2025PancreaticCancer" class="col-sm-8">
+    <!-- Title -->
+    <div class="title">The Impact of Socioeconomic Factors on Pancreatic Cancer Care Utilization</div>
+    <!-- Author -->
+    <div class="author">
+      
 
-        <em>Masoud Khani</em>, Mohammad Assadi Shalmani, <a href="https://scholar.google.com/citations?user=PLACEHOLDER" rel="external nofollow noopener" target="_blank">Amirsajjad Taleban</a>, and
-          <span class="more-authors" title="click to view 4 more authors" onclick="
+      <em>Masoud Khani</em>, Mohammad Assadi Shalmani, <a href="https://scholar.google.com/citations?user=PLACEHOLDER" rel="external nofollow noopener" target="_blank">Amirsajjad Taleban</a>, and
+      <span class="more-authors" title="click to view 4 more authors" onclick="
                 var element = $(this);
                 element.attr('title', '');
                 var more_authors_text = element.text() == '4 more authors' ? 'Susan Tsai, Mochamad Nataliansyah, Mohammed Aldakkak, Jake Luo' : '4 more authors';
@@ -1040,30 +1132,30 @@
               ">4 more authors</span>
 </div>
 
-        <!-- Journal/Book title and date -->
-        
-        
-        <div class="periodical">
-          <em>PLoS ONE</em>, 2025
-        </div>
-        <div class="periodical">
-          
-        </div>
+    <!-- Journal/Book title and date -->
+    
+    
+    <div class="periodical">
+      <em>PLoS ONE</em>, 2025
+    </div>
+    <div class="periodical">
+      
+    </div>
 
-          <!-- Links/Buttons -->
-          <div class="links">
-            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
-            <a href="https://doi.org/10.1371/journal.pone.0320518" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a>
-          </div>
-          
-          <div class="badges">
-            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
-              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
-          </div>
+    <!-- Links/Buttons -->
+    <div class="links">
+      <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+      <a href="https://doi.org/10.1371/journal.pone.0320518" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a>
+    </div>
+    
+    <div class="badges">
+      <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.1371/journal.pone.0320518"></span>
+      <span class="__dimensions_badge_embed__" data-doi="10.1371/journal.pone.0320518" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+    </div>
 
-          <!-- Hidden bibtex block -->
-          <div class="bibtex hidden">
-            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">Khani2025PancreaticCancer</span><span class="p">,</span>
+    <!-- Hidden bibtex block -->
+    <div class="bibtex hidden">
+      <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">Khani2025PancreaticCancer</span><span class="p">,</span>
   <span class="na">title</span> <span class="p">=</span> <span class="s">{The Impact of Socioeconomic Factors on Pancreatic Cancer Care Utilization}</span><span class="p">,</span>
   <span class="na">author</span> <span class="p">=</span> <span class="s">{Khani, Masoud and Shalmani, Mohammad Assadi and Taleban, Amirsajjad and Tsai, Susan and Nataliansyah, Mochamad and Aldakkak, Mohammed and Luo, Jake}</span><span class="p">,</span>
   <span class="na">journal</span> <span class="p">=</span> <span class="s">{PLoS ONE}</span><span class="p">,</span>
@@ -1071,38 +1163,39 @@
   <span class="na">number</span> <span class="p">=</span> <span class="s">{5}</span><span class="p">,</span>
   <span class="na">pages</span> <span class="p">=</span> <span class="s">{e0320518}</span><span class="p">,</span>
   <span class="na">year</span> <span class="p">=</span> <span class="s">{2025}</span><span class="p">,</span>
+  <span class="na">doi</span> <span class="p">=</span> <span class="s">{10.1371/journal.pone.0320518}</span><span class="p">,</span>
 <span class="p">}</span></code></pre></figure>
-          </div>
-        </div>
-      </div>
+    </div>
+  </div>
+</div>
 </li>
 <li>
 <!-- _layouts/bib.html -->
-      <div class="row">
-        <div class="col-sm-2 preview">
+<div class="row">
+  <div class="col-sm-2 preview">
 <figure>
 
   <picture>
     
 
     <!-- Fallback to the original file -->
-    <img src="/assets/img/publication_preview/ExplainableAI_BPPV.jpg" class="preview z-depth-1 rounded" width="auto" height="auto" alt="ExplainableAI_BPPV.jpg" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+    <img src="/assets/img/publication_preview/ExplainableAI_BPPV.jpg" class="preview-img img-fluid" width="auto" height="auto" alt="ExplainableAI_BPPV.jpg" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
 
   </picture>
 
 </figure>
 </div>
 
-        <!-- Entry bib key -->
-        <div id="Khani2024BPPV" class="col-sm-8">
-        <!-- Title -->
-        <div class="title">Advancing Personalized Healthcare: Leveraging Explainable AI for BPPV Risk Assessment</div>
-        <!-- Author -->
-        <div class="author">
-        
+  <!-- Entry bib key -->
+  <div id="Khani2024BPPV" class="col-sm-8">
+    <!-- Title -->
+    <div class="title">Advancing Personalized Healthcare: Leveraging Explainable AI for BPPV Risk Assessment</div>
+    <!-- Author -->
+    <div class="author">
+      
 
-        <em>Masoud Khani</em>, <a href="https://scholar.google.com/citations?user=PLACEHOLDER" rel="external nofollow noopener" target="_blank">Jake Luo</a>, Mohammad Assadi Shalmani, and
-          <span class="more-authors" title="click to view 3 more authors" onclick="
+      <em>Masoud Khani</em>, <a href="https://scholar.google.com/citations?user=PLACEHOLDER" rel="external nofollow noopener" target="_blank">Jake Luo</a>, Mohammad Assadi Shalmani, and
+      <span class="more-authors" title="click to view 3 more authors" onclick="
                 var element = $(this);
                 element.attr('title', '');
                 var more_authors_text = element.text() == '3 more authors' ? 'Amirsajjad Taleban, Jazzmyne Adams, David R. Friedland' : '3 more authors';
@@ -1116,68 +1209,69 @@
               ">3 more authors</span>
 </div>
 
-        <!-- Journal/Book title and date -->
-        
-        
-        <div class="periodical">
-          <em>Health Information Science and Systems</em>, 2024
-        </div>
-        <div class="periodical">
-          
-        </div>
+    <!-- Journal/Book title and date -->
+    
+    
+    <div class="periodical">
+      <em>Health Information Science and Systems</em>, 2024
+    </div>
+    <div class="periodical">
+      
+    </div>
 
-          <!-- Links/Buttons -->
-          <div class="links">
-            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
-            <a href="https://doi.org/10.1007/s13755-024-00317-3" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a>
-          </div>
-          
-          <div class="badges">
-            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
-              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
-          </div>
+    <!-- Links/Buttons -->
+    <div class="links">
+      <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+      <a href="https://doi.org/10.1007/s13755-024-00317-3" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a>
+    </div>
+    
+    <div class="badges">
+      <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.1007/s13755-024-00317-3"></span>
+      <span class="__dimensions_badge_embed__" data-doi="10.1007/s13755-024-00317-3" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+    </div>
 
-          <!-- Hidden bibtex block -->
-          <div class="bibtex hidden">
-            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">Khani2024BPPV</span><span class="p">,</span>
+    <!-- Hidden bibtex block -->
+    <div class="bibtex hidden">
+      <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">Khani2024BPPV</span><span class="p">,</span>
   <span class="na">title</span> <span class="p">=</span> <span class="s">{Advancing Personalized Healthcare: Leveraging Explainable AI for BPPV Risk Assessment}</span><span class="p">,</span>
   <span class="na">author</span> <span class="p">=</span> <span class="s">{Khani, Masoud and Luo, Jake and Shalmani, Mohammad Assadi and Taleban, Amirsajjad and Adams, Jazzmyne and Friedland, David R.}</span><span class="p">,</span>
   <span class="na">journal</span> <span class="p">=</span> <span class="s">{Health Information Science and Systems}</span><span class="p">,</span>
   <span class="na">volume</span> <span class="p">=</span> <span class="s">{13}</span><span class="p">,</span>
   <span class="na">number</span> <span class="p">=</span> <span class="s">{1}</span><span class="p">,</span>
   <span class="na">year</span> <span class="p">=</span> <span class="s">{2024}</span><span class="p">,</span>
+  <span class="na">doi</span> <span class="p">=</span> <span class="s">{10.1007/s13755-024-00317-3}</span><span class="p">,</span>
 <span class="p">}</span></code></pre></figure>
-          </div>
-        </div>
-      </div>
+    </div>
+  </div>
+</div>
 </li>
 <li>
 <!-- _layouts/bib.html -->
-      <div class="row">
-        <div class="col-sm-2 preview">
+<div class="row">
+  <div class="col-sm-2 preview">
 <figure>
 
   <picture>
     
 
     <!-- Fallback to the original file -->
-    <img src="/assets/img/publication_preview/Tinnitus.png" class="preview z-depth-1 rounded" width="auto" height="auto" alt="Tinnitus.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+    <img src="/assets/img/publication_preview/Tinnitus.png" class="preview-img img-fluid" width="auto" height="auto" alt="Tinnitus.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
 
   </picture>
 
 </figure>
 </div>
 
-        <!-- Entry bib key -->
-        <div id="Kim2024Tinnitus" class="col-sm-8">
-        <!-- Title -->
-        <div class="title">Increased Healthcare Utilization in Patients with Tinnitus</div>
-        <!-- Author -->
-        <div class="author">
-        
+  <!-- Entry bib key -->
+  <div id="Kim2024Tinnitus" class="col-sm-8">
+    <!-- Title -->
+    <div class="title">Increased Healthcare Utilization in Patients with Tinnitus</div>
+    <!-- Author -->
+    <div class="author">
+      
 
-        Mingee Kim, <a href="https://scholar.google.com/citations?user=PLACEHOLDER" rel="external nofollow noopener" target="_blank">David R. Friedland</a>, <a href="https://scholar.google.com/citations?user=PLACEHOLDER" rel="external nofollow noopener" target="_blank">Jazzmyne A. Adams</a>, and
-          <span class="more-authors" title="click to view 2 more authors" onclick="
+      Mingee Kim, <a href="https://scholar.google.com/citations?user=PLACEHOLDER" rel="external nofollow noopener" target="_blank">David R. Friedland</a>, <a href="https://scholar.google.com/citations?user=PLACEHOLDER" rel="external nofollow noopener" target="_blank">Jazzmyne A. Adams</a>, and
+      <span class="more-authors" title="click to view 2 more authors" onclick="
                 var element = $(this);
                 element.attr('title', '');
                 var more_authors_text = element.text() == '2 more authors' ? 'Masoud Khani, Jake Luo' : '2 more authors';
@@ -1191,30 +1285,30 @@
               ">2 more authors</span>
 </div>
 
-        <!-- Journal/Book title and date -->
-        
-        
-        <div class="periodical">
-          <em>International Tinnitus Journal</em>, 2024
-        </div>
-        <div class="periodical">
-          
-        </div>
+    <!-- Journal/Book title and date -->
+    
+    
+    <div class="periodical">
+      <em>International Tinnitus Journal</em>, 2024
+    </div>
+    <div class="periodical">
+      
+    </div>
 
-          <!-- Links/Buttons -->
-          <div class="links">
-            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
-            <a href="https://doi.org/10.5935/0946-5448.20240036" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a>
-          </div>
-          
-          <div class="badges">
-            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
-              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
-          </div>
+    <!-- Links/Buttons -->
+    <div class="links">
+      <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+      <a href="https://doi.org/10.5935/0946-5448.20240036" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a>
+    </div>
+    
+    <div class="badges">
+      <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.5935/0946-5448.20240036"></span>
+      <span class="__dimensions_badge_embed__" data-doi="10.5935/0946-5448.20240036" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+    </div>
 
-          <!-- Hidden bibtex block -->
-          <div class="bibtex hidden">
-            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">Kim2024Tinnitus</span><span class="p">,</span>
+    <!-- Hidden bibtex block -->
+    <div class="bibtex hidden">
+      <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">Kim2024Tinnitus</span><span class="p">,</span>
   <span class="na">title</span> <span class="p">=</span> <span class="s">{Increased Healthcare Utilization in Patients with Tinnitus}</span><span class="p">,</span>
   <span class="na">author</span> <span class="p">=</span> <span class="s">{Kim, Mingee and Friedland, David R. and Adams, Jazzmyne A. and Khani, Masoud and Luo, Jake}</span><span class="p">,</span>
   <span class="na">journal</span> <span class="p">=</span> <span class="s">{International Tinnitus Journal}</span><span class="p">,</span>
@@ -1222,38 +1316,39 @@
   <span class="na">number</span> <span class="p">=</span> <span class="s">{2}</span><span class="p">,</span>
   <span class="na">pages</span> <span class="p">=</span> <span class="s">{251--255}</span><span class="p">,</span>
   <span class="na">year</span> <span class="p">=</span> <span class="s">{2024}</span><span class="p">,</span>
+  <span class="na">doi</span> <span class="p">=</span> <span class="s">{10.5935/0946-5448.20240036}</span><span class="p">,</span>
 <span class="p">}</span></code></pre></figure>
-          </div>
-        </div>
-      </div>
+    </div>
+  </div>
+</div>
 </li>
 <li>
 <!-- _layouts/bib.html -->
-      <div class="row">
-        <div class="col-sm-2 preview">
+<div class="row">
+  <div class="col-sm-2 preview">
 <figure>
 
   <picture>
     
 
     <!-- Fallback to the original file -->
-    <img src="/assets/img/publication_preview/SocialDeterminants.png" class="preview z-depth-1 rounded" width="auto" height="auto" alt="SocialDeterminants.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+    <img src="/assets/img/publication_preview/SocialDeterminants.png" class="preview-img img-fluid" width="auto" height="auto" alt="SocialDeterminants.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
 
   </picture>
 
 </figure>
 </div>
 
-        <!-- Entry bib key -->
-        <div id="Zagloul2024dysphagia" class="col-sm-8">
-        <!-- Title -->
-        <div class="title">Evaluation of Social Determinants of Health on Dysphagia Care Pathways at a Tertiary Care Facility</div>
-        <!-- Author -->
-        <div class="author">
-        
+  <!-- Entry bib key -->
+  <div id="Zagloul2024dysphagia" class="col-sm-8">
+    <!-- Title -->
+    <div class="title">Evaluation of Social Determinants of Health on Dysphagia Care Pathways at a Tertiary Care Facility</div>
+    <!-- Author -->
+    <div class="author">
+      
 
-        Maie M. Zagloul, Jonathan M. Bock, Joel H. Blumin, and
-          <span class="more-authors" title="click to view 6 more authors" onclick="
+      Maie M. Zagloul, Jonathan M. Bock, Joel H. Blumin, and
+      <span class="more-authors" title="click to view 6 more authors" onclick="
                 var element = $(this);
                 element.attr('title', '');
                 var more_authors_text = element.text() == '6 more authors' ? 'David R. Friedland, Jazzmyne A. Adams, Ling Tong, Kristen I. Osinksi, Masoud Khani, Jake Luo' : '6 more authors';
@@ -1267,30 +1362,30 @@
               ">6 more authors</span>
 </div>
 
-        <!-- Journal/Book title and date -->
-        
-        
-        <div class="periodical">
-          <em>The Laryngoscope</em>, 2024
-        </div>
-        <div class="periodical">
-          
-        </div>
+    <!-- Journal/Book title and date -->
+    
+    
+    <div class="periodical">
+      <em>The Laryngoscope</em>, 2024
+    </div>
+    <div class="periodical">
+      
+    </div>
 
-          <!-- Links/Buttons -->
-          <div class="links">
-            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
-            <a href="https://doi.org/10.1002/lary.31040" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a>
-          </div>
-          
-          <div class="badges">
-            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
-              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
-          </div>
+    <!-- Links/Buttons -->
+    <div class="links">
+      <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+      <a href="https://doi.org/10.1002/lary.31040" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a>
+    </div>
+    
+    <div class="badges">
+      <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.1002/lary.31040"></span>
+      <span class="__dimensions_badge_embed__" data-doi="10.1002/lary.31040" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+    </div>
 
-          <!-- Hidden bibtex block -->
-          <div class="bibtex hidden">
-            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">Zagloul2024dysphagia</span><span class="p">,</span>
+    <!-- Hidden bibtex block -->
+    <div class="bibtex hidden">
+      <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">Zagloul2024dysphagia</span><span class="p">,</span>
   <span class="na">title</span> <span class="p">=</span> <span class="s">{Evaluation of Social Determinants of Health on Dysphagia Care Pathways at a Tertiary Care Facility}</span><span class="p">,</span>
   <span class="na">author</span> <span class="p">=</span> <span class="s">{Zagloul, Maie M. and Bock, Jonathan M. and Blumin, Joel H. and Friedland, David R. and Adams, Jazzmyne A. and Tong, Ling and Osinksi, Kristen I. and Khani, Masoud and Luo, Jake}</span><span class="p">,</span>
   <span class="na">journal</span> <span class="p">=</span> <span class="s">{The Laryngoscope}</span><span class="p">,</span>
@@ -1298,99 +1393,100 @@
   <span class="na">number</span> <span class="p">=</span> <span class="s">{3}</span><span class="p">,</span>
   <span class="na">pages</span> <span class="p">=</span> <span class="s">{1139--1146}</span><span class="p">,</span>
   <span class="na">year</span> <span class="p">=</span> <span class="s">{2024}</span><span class="p">,</span>
+  <span class="na">doi</span> <span class="p">=</span> <span class="s">{10.1002/lary.31040}</span><span class="p">,</span>
 <span class="p">}</span></code></pre></figure>
-          </div>
-        </div>
-      </div>
+    </div>
+  </div>
+</div>
 </li>
 <li>
 <!-- _layouts/bib.html -->
-      <div class="row">
-        <div class="col-sm-2 preview">
+<div class="row">
+  <div class="col-sm-2 preview">
 <figure>
 
   <picture>
     
 
     <!-- Fallback to the original file -->
-    <img src="/assets/img/publication_preview/PancreaticAMIA.png" class="preview z-depth-1 rounded" width="auto" height="auto" alt="PancreaticAMIA.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+    <img src="/assets/img/publication_preview/PancreaticAMIA.png" class="preview-img img-fluid" width="auto" height="auto" alt="PancreaticAMIA.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
 
   </picture>
 
 </figure>
 </div>
 
-        <!-- Entry bib key -->
-        <div id="Khani2024PancreaticAMIA" class="col-sm-8">
-        <!-- Title -->
-        <div class="title">Enhancing Early Intervention: Predicting Pancreatic Cancer Mortality Rates</div>
-        <!-- Author -->
-        <div class="author">
-        
+  <!-- Entry bib key -->
+  <div id="Khani2024PancreaticAMIA" class="col-sm-8">
+    <!-- Title -->
+    <div class="title">Enhancing Early Intervention: Predicting Pancreatic Cancer Mortality Rates</div>
+    <!-- Author -->
+    <div class="author">
+      
 
-        <em>Masoud Khani</em>, <a href="https://scholar.google.com/citations?user=PLACEHOLDER" rel="external nofollow noopener" target="_blank">Amirsajjad Taleban</a>, and <a href="https://scholar.google.com/citations?user=PLACEHOLDER" rel="external nofollow noopener" target="_blank">Jake Luo</a>
+      <em>Masoud Khani</em>, <a href="https://scholar.google.com/citations?user=PLACEHOLDER" rel="external nofollow noopener" target="_blank">Amirsajjad Taleban</a>, and <a href="https://scholar.google.com/citations?user=PLACEHOLDER" rel="external nofollow noopener" target="_blank">Jake Luo</a>
 </div>
 
-        <!-- Journal/Book title and date -->
-        
-        
-        <div class="periodical">
-          <em>In AMIA 2024 Clinical Informatics Conference</em>, 2024
-        </div>
-        <div class="periodical">
-          
-        </div>
+    <!-- Journal/Book title and date -->
+    
+    
+    <div class="periodical">
+      <em>In AMIA 2024 Clinical Informatics Conference</em>, 2024
+    </div>
+    <div class="periodical">
+      
+    </div>
 
-          <!-- Links/Buttons -->
-          <div class="links">
-            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
-            <a href="https://amia.org/education-events/amia-2024-clinical-informatics-conference" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a>
-          </div>
-          
-          <div class="badges">
-            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
-              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
-          </div>
+    <!-- Links/Buttons -->
+    <div class="links">
+      <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+      <a href="https://amia.org/education-events/amia-2024-clinical-informatics-conference" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a>
+    </div>
+    
+    <div class="badges">
+      <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+      <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+    </div>
 
-          <!-- Hidden bibtex block -->
-          <div class="bibtex hidden">
-            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">Khani2024PancreaticAMIA</span><span class="p">,</span>
+    <!-- Hidden bibtex block -->
+    <div class="bibtex hidden">
+      <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">Khani2024PancreaticAMIA</span><span class="p">,</span>
   <span class="na">title</span> <span class="p">=</span> <span class="s">{Enhancing Early Intervention: Predicting Pancreatic Cancer Mortality Rates}</span><span class="p">,</span>
   <span class="na">author</span> <span class="p">=</span> <span class="s">{Khani, Masoud and Taleban, Amirsajjad and Luo, Jake}</span><span class="p">,</span>
   <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{AMIA 2024 Clinical Informatics Conference}</span><span class="p">,</span>
   <span class="na">year</span> <span class="p">=</span> <span class="s">{2024}</span><span class="p">,</span>
 <span class="p">}</span></code></pre></figure>
-          </div>
-        </div>
-      </div>
+    </div>
+  </div>
+</div>
 </li>
 <li>
 <!-- _layouts/bib.html -->
-      <div class="row">
-        <div class="col-sm-2 preview">
+<div class="row">
+  <div class="col-sm-2 preview">
 <figure>
 
   <picture>
     
 
     <!-- Fallback to the original file -->
-    <img src="/assets/img/publication_preview/RA.jpg" class="preview z-depth-1 rounded" width="auto" height="auto" alt="RA.jpg" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+    <img src="/assets/img/publication_preview/Ai.png" class="preview-img img-fluid" width="auto" height="auto" alt="Ai.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
 
   </picture>
 
 </figure>
 </div>
 
-        <!-- Entry bib key -->
-        <div id="Zolnour2023Antidepressant" class="col-sm-8">
-        <!-- Title -->
-        <div class="title">A Risk Identification Model for Detection of Patients at Risk of Antidepressant Discontinuation</div>
-        <!-- Author -->
-        <div class="author">
-        
+  <!-- Entry bib key -->
+  <div id="Zolnour2023Antidepressant" class="col-sm-8">
+    <!-- Title -->
+    <div class="title">A Risk Identification Model for Detection of Patients at Risk of Antidepressant Discontinuation</div>
+    <!-- Author -->
+    <div class="author">
+      
 
-        <a href="https://scholar.google.com/citations?user=PLACEHOLDER" rel="external nofollow noopener" target="_blank">Ali Zolnour</a>, Christina E. Eldredge, Anthony Faiola, and
-          <span class="more-authors" title="click to view 16 more authors" onclick="
+      <a href="https://scholar.google.com/citations?user=PLACEHOLDER" rel="external nofollow noopener" target="_blank">Ali Zolnour</a>, Christina E. Eldredge, Anthony Faiola, and
+      <span class="more-authors" title="click to view 16 more authors" onclick="
                 var element = $(this);
                 element.attr('title', '');
                 var more_authors_text = element.text() == '16 more authors' ? 'Yadollah Yaghoobzadeh, Masoud Khani, Doreen Foy, Maxim Topaz, Hadi Kharrazi, Kin Wah Fung, Paul Fontelo, Anahita Davoudi, Azade Tabaie, Scott A. Breitinger, Tyler S. Oesterle, Masoud Rouhizadeh, Zahra Zonnor, Hans Moen, Timothy B. Patrick, Maryam Zolnoori' : '16 more authors';
@@ -1404,68 +1500,69 @@
               ">16 more authors</span>
 </div>
 
-        <!-- Journal/Book title and date -->
-        
-        
-        <div class="periodical">
-          <em>Frontiers in Artificial Intelligence</em>, 2023
-        </div>
-        <div class="periodical">
-          
-        </div>
+    <!-- Journal/Book title and date -->
+    
+    
+    <div class="periodical">
+      <em>Frontiers in Artificial Intelligence</em>, 2023
+    </div>
+    <div class="periodical">
+      
+    </div>
 
-          <!-- Links/Buttons -->
-          <div class="links">
-            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
-            <a href="https://doi.org/10.3389/frai.2023.1229609" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a>
-          </div>
-          
-          <div class="badges">
-            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
-              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
-          </div>
+    <!-- Links/Buttons -->
+    <div class="links">
+      <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+      <a href="https://doi.org/10.3389/frai.2023.1229609" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a>
+    </div>
+    
+    <div class="badges">
+      <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.3389/frai.2023.1229609"></span>
+      <span class="__dimensions_badge_embed__" data-doi="10.3389/frai.2023.1229609" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+    </div>
 
-          <!-- Hidden bibtex block -->
-          <div class="bibtex hidden">
-            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">Zolnour2023Antidepressant</span><span class="p">,</span>
+    <!-- Hidden bibtex block -->
+    <div class="bibtex hidden">
+      <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">Zolnour2023Antidepressant</span><span class="p">,</span>
   <span class="na">title</span> <span class="p">=</span> <span class="s">{A Risk Identification Model for Detection of Patients at Risk of Antidepressant Discontinuation}</span><span class="p">,</span>
   <span class="na">author</span> <span class="p">=</span> <span class="s">{Zolnour, Ali and Eldredge, Christina E. and Faiola, Anthony and Yaghoobzadeh, Yadollah and Khani, Masoud and Foy, Doreen and Topaz, Maxim and Kharrazi, Hadi and Fung, Kin Wah and Fontelo, Paul and Davoudi, Anahita and Tabaie, Azade and Breitinger, Scott A. and Oesterle, Tyler S. and Rouhizadeh, Masoud and Zonnor, Zahra and Moen, Hans and Patrick, Timothy B. and Zolnoori, Maryam}</span><span class="p">,</span>
   <span class="na">journal</span> <span class="p">=</span> <span class="s">{Frontiers in Artificial Intelligence}</span><span class="p">,</span>
   <span class="na">volume</span> <span class="p">=</span> <span class="s">{6}</span><span class="p">,</span>
   <span class="na">pages</span> <span class="p">=</span> <span class="s">{1229609}</span><span class="p">,</span>
   <span class="na">year</span> <span class="p">=</span> <span class="s">{2023}</span><span class="p">,</span>
+  <span class="na">doi</span> <span class="p">=</span> <span class="s">{10.3389/frai.2023.1229609}</span><span class="p">,</span>
 <span class="p">}</span></code></pre></figure>
-          </div>
-        </div>
-      </div>
+    </div>
+  </div>
+</div>
 </li>
 <li>
 <!-- _layouts/bib.html -->
-      <div class="row">
-        <div class="col-sm-2 preview">
+<div class="row">
+  <div class="col-sm-2 preview">
 <figure>
 
   <picture>
     
 
     <!-- Fallback to the original file -->
-    <img src="/assets/img/publication_preview/download.png" class="preview z-depth-1 rounded" width="auto" height="auto" alt="download.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+    <img src="/assets/img/publication_preview/RA.jpg" class="preview-img img-fluid" width="auto" height="auto" alt="RA.jpg" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
 
   </picture>
 
 </figure>
 </div>
 
-        <!-- Entry bib key -->
-        <div id="Tong2023COVID" class="col-sm-8">
-        <!-- Title -->
-        <div class="title">Association Between Body-Mass Index, Patient Characteristics, and Obesity-Related Comorbidities Among COVID-19 Patients: A Prospective Cohort Study</div>
-        <!-- Author -->
-        <div class="author">
-        
+  <!-- Entry bib key -->
+  <div id="Tong2023COVID" class="col-sm-8">
+    <!-- Title -->
+    <div class="title">Association Between Body-Mass Index, Patient Characteristics, and Obesity-Related Comorbidities Among COVID-19 Patients: A Prospective Cohort Study</div>
+    <!-- Author -->
+    <div class="author">
+      
 
-        <a href="https://scholar.google.com/citations?user=PLACEHOLDER" rel="external nofollow noopener" target="_blank">Ling Tong</a>, <em>Masoud Khani</em>, Qiang Lu, and
-          <span class="more-authors" title="click to view 3 more authors" onclick="
+      <a href="https://scholar.google.com/citations?user=PLACEHOLDER" rel="external nofollow noopener" target="_blank">Ling Tong</a>, <em>Masoud Khani</em>, Qiang Lu, and
+      <span class="more-authors" title="click to view 3 more authors" onclick="
                 var element = $(this);
                 element.attr('title', '');
                 var more_authors_text = element.text() == '3 more authors' ? 'Benjamin Taylor, Kristen I. Osinski, Jake Luo' : '3 more authors';
@@ -1479,30 +1576,30 @@
               ">3 more authors</span>
 </div>
 
-        <!-- Journal/Book title and date -->
-        
-        
-        <div class="periodical">
-          <em>Obesity Research &amp; Clinical Practice</em>, 2023
-        </div>
-        <div class="periodical">
-          
-        </div>
+    <!-- Journal/Book title and date -->
+    
+    
+    <div class="periodical">
+      <em>Obesity Research &amp; Clinical Practice</em>, 2023
+    </div>
+    <div class="periodical">
+      
+    </div>
 
-          <!-- Links/Buttons -->
-          <div class="links">
-            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
-            <a href="https://doi.org/10.1016/j.orcp.2022.12.003" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a>
-          </div>
-          
-          <div class="badges">
-            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
-              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
-          </div>
+    <!-- Links/Buttons -->
+    <div class="links">
+      <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+      <a href="https://doi.org/10.1016/j.orcp.2022.12.003" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a>
+    </div>
+    
+    <div class="badges">
+      <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.1016/j.orcp.2022.12.003"></span>
+      <span class="__dimensions_badge_embed__" data-doi="10.1016/j.orcp.2022.12.003" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+    </div>
 
-          <!-- Hidden bibtex block -->
-          <div class="bibtex hidden">
-            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">Tong2023COVID</span><span class="p">,</span>
+    <!-- Hidden bibtex block -->
+    <div class="bibtex hidden">
+      <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">Tong2023COVID</span><span class="p">,</span>
   <span class="na">title</span> <span class="p">=</span> <span class="s">{Association Between Body-Mass Index, Patient Characteristics, and Obesity-Related Comorbidities Among COVID-19 Patients: A Prospective Cohort Study}</span><span class="p">,</span>
   <span class="na">author</span> <span class="p">=</span> <span class="s">{Tong, Ling and Khani, Masoud and Lu, Qiang and Taylor, Benjamin and Osinski, Kristen I. and Luo, Jake}</span><span class="p">,</span>
   <span class="na">journal</span> <span class="p">=</span> <span class="s">{Obesity Research \&amp; Clinical Practice}</span><span class="p">,</span>
@@ -1510,38 +1607,39 @@
   <span class="na">number</span> <span class="p">=</span> <span class="s">{1}</span><span class="p">,</span>
   <span class="na">pages</span> <span class="p">=</span> <span class="s">{47--57}</span><span class="p">,</span>
   <span class="na">year</span> <span class="p">=</span> <span class="s">{2023}</span><span class="p">,</span>
+  <span class="na">doi</span> <span class="p">=</span> <span class="s">{10.1016/j.orcp.2022.12.003}</span><span class="p">,</span>
 <span class="p">}</span></code></pre></figure>
-          </div>
-        </div>
-      </div>
+    </div>
+  </div>
+</div>
 </li>
 <li>
 <!-- _layouts/bib.html -->
-      <div class="row">
-        <div class="col-sm-2 preview">
+<div class="row">
+  <div class="col-sm-2 preview">
 <figure>
 
   <picture>
     
 
     <!-- Fallback to the original file -->
-    <img src="/assets/img/publication_preview/SD.jpg" class="preview z-depth-1 rounded" width="auto" height="auto" alt="SD.jpg" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+    <img src="/assets/img/publication_preview/SD.jpg" class="preview-img img-fluid" width="auto" height="auto" alt="SD.jpg" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
 
   </picture>
 
 </figure>
 </div>
 
-        <!-- Entry bib key -->
-        <div id="Tong2023Fall" class="col-sm-8">
-        <!-- Title -->
-        <div class="title">Socioeconomic Disparities for Healthcare Utilization of Senior Adult Falls in Southeast Wisconsin, 2020-2022</div>
-        <!-- Author -->
-        <div class="author">
-        
+  <!-- Entry bib key -->
+  <div id="Tong2023Fall" class="col-sm-8">
+    <!-- Title -->
+    <div class="title">Socioeconomic Disparities for Healthcare Utilization of Senior Adult Falls in Southeast Wisconsin, 2020-2022</div>
+    <!-- Author -->
+    <div class="author">
+      
 
-        <a href="https://scholar.google.com/citations?user=PLACEHOLDER" rel="external nofollow noopener" target="_blank">Ling Tong</a>, <em>Masoud Khani</em>, Bradley Taylor, and
-          <span class="more-authors" title="click to view 4 more authors" onclick="
+      <a href="https://scholar.google.com/citations?user=PLACEHOLDER" rel="external nofollow noopener" target="_blank">Ling Tong</a>, <em>Masoud Khani</em>, Bradley Taylor, and
+      <span class="more-authors" title="click to view 4 more authors" onclick="
                 var element = $(this);
                 element.attr('title', '');
                 var more_authors_text = element.text() == '4 more authors' ? 'Kristen Osinski, Jazzmyne A. Adams, David R. Friedland, Jake Luo' : '4 more authors';
@@ -1555,67 +1653,68 @@
               ">4 more authors</span>
 </div>
 
-        <!-- Journal/Book title and date -->
-        
-        
-        <div class="periodical">
-          <em>medRxiv</em>, 2023
-        </div>
-        <div class="periodical">
-          
-        </div>
+    <!-- Journal/Book title and date -->
+    
+    
+    <div class="periodical">
+      <em>medRxiv</em>, 2023
+    </div>
+    <div class="periodical">
+      
+    </div>
 
-          <!-- Links/Buttons -->
-          <div class="links">
-            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
-            <a href="https://doi.org/10.1101/2023.04.24.23289062" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a>
-          </div>
-          
-          <div class="badges">
-            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
-              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
-          </div>
+    <!-- Links/Buttons -->
+    <div class="links">
+      <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+      <a href="https://doi.org/10.1101/2023.04.24.23289062" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a>
+    </div>
+    
+    <div class="badges">
+      <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.1101/2023.04.24.23289062"></span>
+      <span class="__dimensions_badge_embed__" data-doi="10.1101/2023.04.24.23289062" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+    </div>
 
-          <!-- Hidden bibtex block -->
-          <div class="bibtex hidden">
-            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">Tong2023Fall</span><span class="p">,</span>
+    <!-- Hidden bibtex block -->
+    <div class="bibtex hidden">
+      <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">Tong2023Fall</span><span class="p">,</span>
   <span class="na">title</span> <span class="p">=</span> <span class="s">{Socioeconomic Disparities for Healthcare Utilization of Senior Adult Falls in Southeast Wisconsin, 2020-2022}</span><span class="p">,</span>
   <span class="na">author</span> <span class="p">=</span> <span class="s">{Tong, Ling and Khani, Masoud and Taylor, Bradley and Osinski, Kristen and Adams, Jazzmyne A. and Friedland, David R. and Luo, Jake}</span><span class="p">,</span>
   <span class="na">journal</span> <span class="p">=</span> <span class="s">{medRxiv}</span><span class="p">,</span>
   <span class="na">pages</span> <span class="p">=</span> <span class="s">{2023.04.24.23289062}</span><span class="p">,</span>
   <span class="na">year</span> <span class="p">=</span> <span class="s">{2023}</span><span class="p">,</span>
+  <span class="na">doi</span> <span class="p">=</span> <span class="s">{10.1101/2023.04.24.23289062}</span><span class="p">,</span>
 <span class="p">}</span></code></pre></figure>
-          </div>
-        </div>
-      </div>
+    </div>
+  </div>
+</div>
 </li>
 <li>
 <!-- _layouts/bib.html -->
-      <div class="row">
-        <div class="col-sm-2 preview">
+<div class="row">
+  <div class="col-sm-2 preview">
 <figure>
 
   <picture>
     
 
     <!-- Fallback to the original file -->
-    <img src="/assets/img/publication_preview/cartoon-business-graph.png" class="preview z-depth-1 rounded" width="auto" height="auto" alt="cartoon-business-graph.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+    <img src="/assets/img/publication_preview/cartoon-business-graph.png" class="preview-img img-fluid" width="auto" height="auto" alt="cartoon-business-graph.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
 
   </picture>
 
 </figure>
 </div>
 
-        <!-- Entry bib key -->
-        <div id="Feller2023impacts" class="col-sm-8">
-        <!-- Title -->
-        <div class="title">Impacts of Socioeconomic Status on Dentoalveolar Trauma</div>
-        <!-- Author -->
-        <div class="author">
-        
+  <!-- Entry bib key -->
+  <div id="Feller2023impacts" class="col-sm-8">
+    <!-- Title -->
+    <div class="title">Impacts of Socioeconomic Status on Dentoalveolar Trauma</div>
+    <!-- Author -->
+    <div class="author">
+      
 
-        Christina N. Feller, <a href="https://scholar.google.com/citations?user=PLACEHOLDER" rel="external nofollow noopener" target="_blank">Jazzmyne A. Adams</a>, <a href="https://scholar.google.com/citations?user=PLACEHOLDER" rel="external nofollow noopener" target="_blank">David R. Friedland</a>, and
-          <span class="more-authors" title="click to view 3 more authors" onclick="
+      Christina N. Feller, <a href="https://scholar.google.com/citations?user=PLACEHOLDER" rel="external nofollow noopener" target="_blank">Jazzmyne A. Adams</a>, <a href="https://scholar.google.com/citations?user=PLACEHOLDER" rel="external nofollow noopener" target="_blank">David R. Friedland</a>, and
+      <span class="more-authors" title="click to view 3 more authors" onclick="
                 var element = $(this);
                 element.attr('title', '');
                 var more_authors_text = element.text() == '3 more authors' ? 'Masoud Khani, Jake Luo, David M. Poetker' : '3 more authors';
@@ -1629,30 +1728,30 @@
               ">3 more authors</span>
 </div>
 
-        <!-- Journal/Book title and date -->
-        
-        
-        <div class="periodical">
-          <em>WMJ</em>, 2023
-        </div>
-        <div class="periodical">
-          
-        </div>
+    <!-- Journal/Book title and date -->
+    
+    
+    <div class="periodical">
+      <em>WMJ</em>, 2023
+    </div>
+    <div class="periodical">
+      
+    </div>
 
-          <!-- Links/Buttons -->
-          <div class="links">
-            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
-            <a href="https://europepmc.org/article/med/36940119" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a>
-          </div>
-          
-          <div class="badges">
-            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
-              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
-          </div>
+    <!-- Links/Buttons -->
+    <div class="links">
+      <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+      <a href="https://europepmc.org/article/med/36940119" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a>
+    </div>
+    
+    <div class="badges">
+      <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+      <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+    </div>
 
-          <!-- Hidden bibtex block -->
-          <div class="bibtex hidden">
-            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">Feller2023impacts</span><span class="p">,</span>
+    <!-- Hidden bibtex block -->
+    <div class="bibtex hidden">
+      <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">Feller2023impacts</span><span class="p">,</span>
   <span class="na">title</span> <span class="p">=</span> <span class="s">{Impacts of Socioeconomic Status on Dentoalveolar Trauma}</span><span class="p">,</span>
   <span class="na">author</span> <span class="p">=</span> <span class="s">{Feller, Christina N. and Adams, Jazzmyne A. and Friedland, David R. and Khani, Masoud and Luo, Jake and Poetker, David M.}</span><span class="p">,</span>
   <span class="na">journal</span> <span class="p">=</span> <span class="s">{WMJ}</span><span class="p">,</span>
@@ -1661,140 +1760,149 @@
   <span class="na">pages</span> <span class="p">=</span> <span class="s">{32--37}</span><span class="p">,</span>
   <span class="na">year</span> <span class="p">=</span> <span class="s">{2023}</span><span class="p">,</span>
 <span class="p">}</span></code></pre></figure>
-          </div>
-        </div>
-      </div>
+    </div>
+  </div>
+</div>
 </li>
 <li>
 <!-- _layouts/bib.html -->
-      <div class="row">
-        <div class="col-sm-2 preview">
+<div class="row">
+  <div class="col-sm-2 preview">
 <figure>
 
   <picture>
     
 
     <!-- Fallback to the original file -->
-    <img src="/assets/img/publication_preview/DR_diagnosis.png" class="preview z-depth-1 rounded" width="auto" height="auto" alt="DR_diagnosis.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+    <img src="/assets/img/publication_preview/DR_diagnosis.png" class="preview-img img-fluid" width="auto" height="auto" alt="DR_diagnosis.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
 
   </picture>
 
 </figure>
 </div>
 
-        <!-- Entry bib key -->
-        <div id="Khani2022DRDiagnosis" class="col-sm-8">
-        <!-- Title -->
-        <div class="title">DR Diagnosis: A Visualization Model for Diagnosing Diabetic Retinopathy Severity and Discovering Plaque Patterns in Retinal Images</div>
-        <!-- Author -->
-        <div class="author">
-        
+  <!-- Entry bib key -->
+  <div id="Khani2022DRDiagnosis" class="col-sm-8">
+    <!-- Title -->
+    <div class="title">DR Diagnosis: A Visualization Model for Diagnosing Diabetic Retinopathy Severity and Discovering Plaque Patterns in Retinal Images</div>
+    <!-- Author -->
+    <div class="author">
+      
 
-        <em>Masoud Khani</em>, <a href="https://scholar.google.com/citations?user=PLACEHOLDER" rel="external nofollow noopener" target="_blank">Ling Tong</a>, and <a href="https://scholar.google.com/citations?user=PLACEHOLDER" rel="external nofollow noopener" target="_blank">Jake Luo</a>
+      <em>Masoud Khani</em>, <a href="https://scholar.google.com/citations?user=PLACEHOLDER" rel="external nofollow noopener" target="_blank">Ling Tong</a>, and <a href="https://scholar.google.com/citations?user=PLACEHOLDER" rel="external nofollow noopener" target="_blank">Jake Luo</a>
 </div>
 
-        <!-- Journal/Book title and date -->
-        
-        
-        <div class="periodical">
-          <em>In International Conference on AI in Aging and Age-related Diseases (AIHC 2022)</em>, 2022
-        </div>
-        <div class="periodical">
-          
-        </div>
+    <!-- Journal/Book title and date -->
+    
+    
+    <div class="periodical">
+      <em>In International Conference on AI in Aging and Age-related Diseases (AIHC 2022)</em>, 2022
+    </div>
+    <div class="periodical">
+      
+    </div>
 
-          <!-- Links/Buttons -->
-          <div class="links">
-            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
-            <a href="https://aihc2022.org/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a>
-          </div>
-          
-          <div class="badges">
-            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
-              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
-          </div>
+    <!-- Links/Buttons -->
+    <div class="links">
+      <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+      <a href="https://aihc2022.org/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a>
+    </div>
+    
+    <div class="badges">
+      <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+      <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+    </div>
 
-          <!-- Hidden bibtex block -->
-          <div class="bibtex hidden">
-            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">Khani2022DRDiagnosis</span><span class="p">,</span>
+    <!-- Hidden bibtex block -->
+    <div class="bibtex hidden">
+      <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">Khani2022DRDiagnosis</span><span class="p">,</span>
   <span class="na">title</span> <span class="p">=</span> <span class="s">{DR Diagnosis: A Visualization Model for Diagnosing Diabetic Retinopathy Severity and Discovering Plaque Patterns in Retinal Images}</span><span class="p">,</span>
   <span class="na">author</span> <span class="p">=</span> <span class="s">{Khani, Masoud and Tong, Ling and Luo, Jake}</span><span class="p">,</span>
   <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{International Conference on AI in Aging and Age-related Diseases (AIHC 2022)}</span><span class="p">,</span>
   <span class="na">year</span> <span class="p">=</span> <span class="s">{2022}</span><span class="p">,</span>
 <span class="p">}</span></code></pre></figure>
-          </div>
-        </div>
-      </div>
+    </div>
+  </div>
+</div>
 </li>
 <li>
 <!-- _layouts/bib.html -->
-      <div class="row">
-        <div class="col-sm-2 preview">
+<div class="row">
+  <div class="col-sm-2 preview">
 <figure>
 
   <picture>
     
 
     <!-- Fallback to the original file -->
-    <img src="/assets/img/publication_preview/Ai.png" class="preview z-depth-1 rounded" width="auto" height="auto" alt="Ai.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+    <img src="/assets/img/publication_preview/wave-mechanics.gif" class="preview-img img-fluid" width="auto" height="auto" alt="wave-mechanics.gif" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
 
   </picture>
 
 </figure>
 </div>
 
-        <!-- Entry bib key -->
-        <div id="Khani2021Segmentation" class="col-sm-8">
-        <!-- Title -->
-        <div class="title">Medical Image Segmentation Using Machine Learning</div>
-        <!-- Author -->
-        <div class="author">
-        
+  <!-- Entry bib key -->
+  <div id="Khani2021Segmentation" class="col-sm-8">
+    <!-- Title -->
+    <div class="title">Medical Image Segmentation Using Machine Learning</div>
+    <!-- Author -->
+    <div class="author">
+      
 
-        <em>Masoud Khani</em>
+      <em>Masoud Khani</em>
 </div>
 
-        <!-- Journal/Book title and date -->
-        
-        
-        <div class="periodical">
-          <em>University of Wisconsin-Milwaukee</em>, 2021
-        </div>
-        <div class="periodical">
-          
-        </div>
+    <!-- Journal/Book title and date -->
+    
+    
+    <div class="periodical">
+      <em>University of Wisconsin-Milwaukee</em>, 2021
+    </div>
+    <div class="periodical">
+      
+    </div>
 
-          <!-- Links/Buttons -->
-          <div class="links">
-            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
-            <a href="https://www.proquest.com/docview/2584041160" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a>
-          </div>
-          
-          <div class="badges">
-            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
-              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
-          </div>
+    <!-- Links/Buttons -->
+    <div class="links">
+      <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+      <a href="https://www.proquest.com/docview/2584041160" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a>
+    </div>
+    
+    <div class="badges">
+      <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+      <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+    </div>
 
-          <!-- Hidden bibtex block -->
-          <div class="bibtex hidden">
-            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@mastersthesis</span><span class="p">{</span><span class="nl">Khani2021Segmentation</span><span class="p">,</span>
+    <!-- Hidden bibtex block -->
+    <div class="bibtex hidden">
+      <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@mastersthesis</span><span class="p">{</span><span class="nl">Khani2021Segmentation</span><span class="p">,</span>
   <span class="na">title</span> <span class="p">=</span> <span class="s">{Medical Image Segmentation Using Machine Learning}</span><span class="p">,</span>
   <span class="na">author</span> <span class="p">=</span> <span class="s">{Khani, Masoud}</span><span class="p">,</span>
   <span class="na">school</span> <span class="p">=</span> <span class="s">{University of Wisconsin-Milwaukee}</span><span class="p">,</span>
   <span class="na">year</span> <span class="p">=</span> <span class="s">{2021}</span><span class="p">,</span>
 <span class="p">}</span></code></pre></figure>
-          </div>
-        </div>
-      </div>
+    </div>
+  </div>
+</div>
 </li>
 </ol>
           </div>
 
+      </div>
     </div>
+  </section>
 
-    <!-- Social -->
-    <div class="social" style="margin-top: 3rem;">
-      <div class="contact-icons">
+  <!-- CONTACT SECTION -->
+  <section class="content-section contact-section scroll-section">
+    <div class="section-inner center">
+      <div class="section-header">
+        <span class="label scroll-reveal-up">Connect</span>
+        <h2 class="scroll-reveal-up" data-delay="100">Let's Collaborate</h2>
+        <p class="desc scroll-reveal-up" data-delay="200">Feel free to reach out via email at khanim@uwm.edu. I'm always open to discussing research collaborations, particularly in medical AI, digital twins, and healthcare simulation.
+</p>
+      </div>
+      <div class="social-icons scroll-reveal-scale" data-delay="300">
                     <hr style="background-color: #8d8d8d">
 <a href="mailto:%6B%68%61%6E%69%6D@%75%77%6D.%65%64%75" title="email"><i class="fas fa-envelope footer_icons"></i></a>
             <a href="https://orcid.org/0000-0002-7106-5957" title="ORCID" rel="external nofollow noopener" target="_blank"><i class="ai ai-orcid footer_icons"></i></a>
@@ -1804,19 +1912,1024 @@
             
 
       </div>
-
-      <div class="contact-note">
-        Feel free to reach out via email at khanim@uwm.edu. I'm always open to discussing research collaborations, particularly in medical AI, digital twins, and healthcare simulation.
-
-      </div>
-
     </div>
-  </article>
+  </section>
 
 </div>
-    </div>
 
-    <!-- Footer --><style>
+<style>
+/* =============================================
+   FULL-WIDTH DESIGN - Persian Theme
+   Persian Blue (#1D4ED8), Turquoise (#0D9488), Gold (#D97706)
+   ============================================= */
+
+.cosmic-page {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  background: transparent;
+  position: relative;
+  z-index: 2;
+}
+
+/* =============================================
+   HERO
+   ============================================= */
+.hero-section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 40px 60px;
+  position: relative;
+}
+
+.hero-inner {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.hero-content {
+  flex: 1;
+  max-width: 620px;
+}
+
+/* Badge */
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(29, 78, 216, 0.1);
+  border: 1px solid rgba(29, 78, 216, 0.25);
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-size: 14px;
+  color: #60a5fa;
+  margin-bottom: 28px;
+  backdrop-filter: blur(10px);
+}
+
+.badge-dot {
+  width: 8px;
+  height: 8px;
+  background: #1D4ED8;
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(1.3); }
+}
+
+/* Title */
+.hero-title {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: clamp(42px, 6vw, 68px);
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.1;
+  margin: 0 0 24px;
+  letter-spacing: -0.02em;
+}
+
+.name-gradient {
+  background: linear-gradient(135deg, #1D4ED8 0%, #0D9488 50%, #14B8A6 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% auto;
+  animation: gradientMove 4s ease infinite;
+}
+
+@keyframes gradientMove {
+  0%, 100% { background-position: 0% center; }
+  50% { background-position: 100% center; }
+}
+
+/* Subtitle */
+.hero-subtitle {
+  font-size: 17px;
+  line-height: 1.7;
+  color: #9ca3af;
+  margin: 0 0 28px;
+}
+
+/* Tags */
+.hero-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 32px;
+}
+
+.tag {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  font-size: 13px;
+  color: #9ca3af;
+  transition: all 0.3s ease;
+}
+
+.tag i {
+  color: #0D9488;
+}
+
+.tag:hover {
+  background: rgba(13, 148, 136, 0.1);
+  border-color: rgba(13, 148, 136, 0.3);
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+/* Buttons */
+.hero-buttons {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 32px;
+  background: linear-gradient(135deg, #1D4ED8 0%, #0D9488 100%);
+  color: #fff;
+  font-weight: 600;
+  font-size: 15px;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 20px 50px rgba(29, 78, 216, 0.35);
+  color: #fff;
+}
+
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  padding: 16px 32px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #fff;
+  font-weight: 500;
+  font-size: 15px;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+  border-color: #0D9488;
+  color: #14B8A6;
+  transform: translateY(-3px);
+}
+
+/* Hero Image */
+.hero-image {
+  position: relative;
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+}
+
+.image-container {
+  position: relative;
+  width: 340px;
+  height: 340px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-img {
+  width: 270px;
+  height: 270px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid transparent;
+  background: 
+    linear-gradient(#0a0a0f, #0a0a0f) padding-box,
+    linear-gradient(135deg, #1D4ED8, #0D9488, #14B8A6) border-box;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 0 80px rgba(29, 78, 216, 0.25);
+}
+
+.orbit {
+  position: absolute;
+  border-radius: 50%;
+  border: 1px dashed;
+  animation: spin 25s linear infinite;
+}
+
+.orbit-1 {
+  width: 100%;
+  height: 100%;
+  border-color: rgba(29, 78, 216, 0.25);
+}
+
+.orbit-2 {
+  width: 125%;
+  height: 125%;
+  border-color: rgba(13, 148, 136, 0.2);
+  animation-direction: reverse;
+  animation-duration: 35s;
+}
+
+.orbit-3 {
+  width: 150%;
+  height: 150%;
+  border-color: rgba(20, 184, 166, 0.12);
+  animation-duration: 45s;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Floating Icons */
+.floating-icons {
+  position: absolute;
+  inset: -30px;
+  pointer-events: none;
+}
+
+.f-icon {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(10, 10, 20, 0.8);
+  border: 1px solid rgba(13, 148, 136, 0.2);
+  border-radius: 14px;
+  color: #0D9488;
+  font-size: 18px;
+  backdrop-filter: blur(10px);
+  animation: iconFloat 5s ease-in-out infinite;
+}
+
+.i1 { top: 5%; left: -5%; animation-delay: 0s; }
+.i2 { top: 55%; right: -12%; animation-delay: 1.5s; }
+.i3 { bottom: 5%; left: 15%; animation-delay: 3s; }
+
+@keyframes iconFloat {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-10px) rotate(5deg); }
+}
+
+/* Scroll Indicator */
+.scroll-indicator {
+  position: absolute;
+  bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  color: #6b7280;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
+
+.scroll-line {
+  width: 1px;
+  height: 50px;
+  background: linear-gradient(to bottom, #0D9488, transparent);
+  animation: scrollAnim 2s ease infinite;
+}
+
+@keyframes scrollAnim {
+  0% { transform: scaleY(0); opacity: 0; transform-origin: top; }
+  50% { transform: scaleY(1); opacity: 1; }
+  100% { transform: scaleY(0); opacity: 0; transform-origin: bottom; }
+}
+
+/* =============================================
+   CONTENT SECTIONS
+   ============================================= */
+.content-section {
+  width: 100%;
+  padding: 100px 40px;
+  background: transparent;
+}
+
+.section-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.section-inner.center {
+  text-align: center;
+}
+
+.section-header {
+  margin-bottom: 40px;
+}
+
+.section-header .label {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  color: #0D9488;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  margin-bottom: 12px;
+}
+
+.section-header h2 {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: clamp(28px, 4vw, 40px);
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+}
+
+.section-header .desc {
+  color: #9ca3af;
+  font-size: 16px;
+  margin-top: 16px;
+  max-width: 500px;
+}
+
+.center .desc {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* About Text */
+.about-text {
+  color: #9ca3af;
+  font-size: 16px;
+  line-height: 1.85;
+}
+
+.about-text strong {
+  color: #14B8A6;
+  font-weight: 600;
+}
+
+.about-text a {
+  color: #14B8A6;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s;
+}
+
+.about-text a:hover {
+  border-color: #14B8A6;
+}
+
+/* Social Icons */
+.social-icons {
+  margin-top: 40px;
+}
+
+.social-icons .contact-icons {
+  font-size: 32px;
+}
+
+.social-icons .contact-icons a {
+  display: inline-block;
+  margin: 0 14px;
+  color: #6b7280;
+  transition: all 0.3s ease;
+}
+
+.social-icons .contact-icons a:hover {
+  color: #14B8A6;
+  transform: translateY(-5px);
+}
+
+/* Contact Section */
+.contact-section {
+  padding-bottom: 120px;
+}
+
+/* =============================================
+   SCROLL ANIMATIONS - Modern Reveal Effects
+   ============================================= */
+
+/* Base scroll reveal state - elements start hidden */
+.scroll-reveal,
+.scroll-reveal-up,
+.scroll-reveal-left,
+.scroll-reveal-right,
+.scroll-reveal-scale {
+  opacity: 0;
+  transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform, opacity;
+}
+
+.scroll-reveal {
+  transform: translateY(30px);
+}
+
+.scroll-reveal-up {
+  transform: translateY(60px);
+}
+
+.scroll-reveal-left {
+  transform: translateX(-40px);
+}
+
+.scroll-reveal-right {
+  transform: translateX(40px);
+}
+
+.scroll-reveal-scale {
+  transform: scale(0.9);
+}
+
+/* Revealed state */
+.scroll-reveal.revealed,
+.scroll-reveal-up.revealed,
+.scroll-reveal-left.revealed,
+.scroll-reveal-right.revealed,
+.scroll-reveal-scale.revealed {
+  opacity: 1;
+  transform: translateY(0) translateX(0) scale(1);
+}
+
+/* Stagger animations for child elements */
+.stagger-item {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.stagger-container.revealed .stagger-item {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger delays */
+.stagger-container.revealed .stagger-item:nth-child(1) { transition-delay: 0.05s; }
+.stagger-container.revealed .stagger-item:nth-child(2) { transition-delay: 0.1s; }
+.stagger-container.revealed .stagger-item:nth-child(3) { transition-delay: 0.15s; }
+.stagger-container.revealed .stagger-item:nth-child(4) { transition-delay: 0.2s; }
+.stagger-container.revealed .stagger-item:nth-child(5) { transition-delay: 0.25s; }
+.stagger-container.revealed .stagger-item:nth-child(6) { transition-delay: 0.3s; }
+
+/* Section scroll effects */
+.scroll-section {
+  position: relative;
+}
+
+.scroll-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(13, 148, 136, 0.5), transparent);
+  transition: width 1s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.scroll-section.in-view::before {
+  width: 80%;
+}
+
+/* Magnetic button hover effect */
+.magnetic-btn {
+  position: relative;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Parallax sections */
+.parallax-bg {
+  transform: translateY(var(--parallax-offset, 0));
+  transition: transform 0.1s linear;
+}
+
+/* Text reveal animation for headings */
+.text-reveal {
+  overflow: hidden;
+  display: inline-block;
+}
+
+.text-reveal span {
+  display: inline-block;
+  transform: translateY(100%);
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.text-reveal.revealed span {
+  transform: translateY(0);
+}
+
+/* Glow pulse on reveal */
+.glow-reveal {
+  position: relative;
+}
+
+.glow-reveal::after {
+  content: '';
+  position: absolute;
+  inset: -20px;
+  background: radial-gradient(circle, rgba(13, 148, 136, 0.15) 0%, transparent 70%);
+  opacity: 0;
+  transform: scale(0.8);
+  transition: all 0.6s ease;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.glow-reveal.revealed::after {
+  opacity: 1;
+  transform: scale(1);
+  animation: glowPulse 2s ease-out forwards;
+}
+
+@keyframes glowPulse {
+  0% { opacity: 1; transform: scale(1); }
+  100% { opacity: 0; transform: scale(1.5); }
+}
+
+/* Counter animation for numbers */
+.count-up {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Smooth scroll progress indicator */
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #1D4ED8, #0D9488, #14B8A6);
+  transform-origin: left;
+  transform: scaleX(var(--scroll-progress, 0));
+  z-index: 9999;
+  transition: transform 0.1s linear;
+}
+
+/* Section fade on scroll past */
+.scroll-section {
+  transition: opacity 0.3s ease;
+}
+
+/* Floating elements parallax */
+.f-icon {
+  transition: transform 0.3s ease;
+}
+
+/* Hero content entrance animation sequence */
+.hero-section .scroll-reveal.revealed {
+  animation: heroEntrance 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes heroEntrance {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* News items animation */
+.news .news-item {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.stagger-container.revealed .news .news-item {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.stagger-container.revealed .news .news-item:nth-child(1) { transition-delay: 0.1s; }
+.stagger-container.revealed .news .news-item:nth-child(2) { transition-delay: 0.2s; }
+.stagger-container.revealed .news .news-item:nth-child(3) { transition-delay: 0.3s; }
+.stagger-container.revealed .news .news-item:nth-child(4) { transition-delay: 0.4s; }
+.stagger-container.revealed .news .news-item:nth-child(5) { transition-delay: 0.5s; }
+
+/* Publications animation - target Jekyll Scholar's ol.bibliography li structure */
+.section-body.stagger-container .publications ol.bibliography li {
+  opacity: 0;
+  transform: translateY(25px);
+  transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), 
+              transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.section-body.stagger-container.revealed .publications ol.bibliography li {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.section-body.stagger-container.revealed .publications ol.bibliography li:nth-child(1) { transition-delay: 0.1s; }
+.section-body.stagger-container.revealed .publications ol.bibliography li:nth-child(2) { transition-delay: 0.2s; }
+.section-body.stagger-container.revealed .publications ol.bibliography li:nth-child(3) { transition-delay: 0.3s; }
+.section-body.stagger-container.revealed .publications ol.bibliography li:nth-child(4) { transition-delay: 0.4s; }
+.section-body.stagger-container.revealed .publications ol.bibliography li:nth-child(5) { transition-delay: 0.5s; }
+.section-body.stagger-container.revealed .publications ol.bibliography li:nth-child(6) { transition-delay: 0.6s; }
+.section-body.stagger-container.revealed .publications ol.bibliography li:nth-child(7) { transition-delay: 0.7s; }
+.section-body.stagger-container.revealed .publications ol.bibliography li:nth-child(8) { transition-delay: 0.8s; }
+
+/* Fallback: ensure publications are visible after page load even if JS fails */
+.publications {
+  min-height: 100px;
+}
+
+@keyframes fallbackReveal {
+  to {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+  }
+}
+
+/* Auto-reveal after 2.5s if JS doesn't trigger - backup safety net */
+.section-body.stagger-container .publications ol.bibliography li {
+  animation: fallbackReveal 0.6s ease 2.5s forwards;
+}
+
+/* Underline reveal for labels */
+.scroll-reveal-left.revealed .label,
+.section-header .label.scroll-reveal-left.revealed {
+  position: relative;
+}
+
+.section-header .label::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #0D9488, transparent);
+  transition: width 0.6s cubic-bezier(0.16, 1, 0.3, 1) 0.3s;
+}
+
+.section-header .label.revealed::after {
+  width: 100%;
+}
+
+/* =============================================
+   RESPONSIVE
+   ============================================= */
+@media (max-width: 1024px) {
+  .hero-inner {
+    flex-direction: column;
+    text-align: center;
+    gap: 50px;
+  }
+  
+  .hero-content {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .hero-tags, .hero-buttons {
+    justify-content: center;
+  }
+  
+  .image-container {
+    width: 280px;
+    height: 280px;
+  }
+  
+  .profile-img {
+    width: 230px;
+    height: 230px;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-section {
+    padding: 80px 20px 40px;
+  }
+  
+  .content-section {
+    padding: 60px 20px;
+  }
+  
+  .hero-title {
+    font-size: 34px;
+  }
+  
+  .hero-subtitle {
+    font-size: 15px;
+  }
+  
+  .btn-primary, .btn-outline {
+    padding: 14px 24px;
+    font-size: 14px;
+  }
+  
+  .image-container {
+    width: 220px;
+    height: 220px;
+  }
+  
+  .profile-img {
+    width: 180px;
+    height: 180px;
+  }
+  
+  .floating-icons {
+    display: none;
+  }
+  
+  .section-header h2 {
+    font-size: 26px;
+  }
+  
+  /* Reduce animation distance on mobile */
+  .scroll-reveal-up {
+    transform: translateY(40px);
+  }
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  .scroll-reveal,
+  .scroll-reveal-up,
+  .scroll-reveal-left,
+  .scroll-reveal-right,
+  .scroll-reveal-scale,
+  .stagger-item {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  
+  // =============================================
+  // SCROLL REVEAL ANIMATION SYSTEM
+  // =============================================
+  
+  const revealElements = document.querySelectorAll(
+    '.scroll-reveal, .scroll-reveal-up, .scroll-reveal-left, .scroll-reveal-right, .scroll-reveal-scale, .stagger-container'
+  );
+  
+  const sectionElements = document.querySelectorAll('.scroll-section');
+  
+  // Create intersection observer for reveal animations
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const el = entry.target;
+        const delay = parseInt(el.dataset.delay) || 0;
+        
+        setTimeout(() => {
+          el.classList.add('revealed');
+        }, delay);
+        
+        // Unobserve after revealing (one-time animation)
+        revealObserver.unobserve(el);
+      }
+    });
+  }, {
+    threshold: 0.05,
+    rootMargin: '0px 0px -20px 0px'
+  });
+  
+  // Create observer for sections (for line animation)
+  const sectionObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in-view');
+      }
+    });
+  }, {
+    threshold: 0.1
+  });
+  
+  // Observe all reveal elements
+  revealElements.forEach(el => revealObserver.observe(el));
+  sectionElements.forEach(el => sectionObserver.observe(el));
+  
+  // =============================================
+  // HERO ENTRANCE - Trigger immediately on load
+  // =============================================
+  
+  const heroElements = document.querySelectorAll('.hero-section .scroll-reveal, .hero-section .scroll-reveal-scale, .hero-section .stagger-container');
+  heroElements.forEach(el => {
+    const delay = parseInt(el.dataset.delay) || 0;
+    setTimeout(() => {
+      el.classList.add('revealed');
+    }, 100 + delay);
+  });
+  
+  // =============================================
+  // SCROLL PROGRESS INDICATOR
+  // =============================================
+  
+  const progressBar = document.createElement('div');
+  progressBar.className = 'scroll-progress';
+  document.body.appendChild(progressBar);
+  
+  function updateScrollProgress() {
+    const scrollTop = window.scrollY;
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const progress = docHeight > 0 ? scrollTop / docHeight : 0;
+    document.documentElement.style.setProperty('--scroll-progress', progress);
+  }
+  
+  // =============================================
+  // PARALLAX EFFECT FOR FLOATING ICONS
+  // =============================================
+  
+  const floatingIcons = document.querySelectorAll('.f-icon');
+  const heroImage = document.querySelector('.hero-image');
+  
+  function updateParallax() {
+    const scrollY = window.scrollY;
+    const maxScroll = window.innerHeight;
+    
+    if (scrollY < maxScroll) {
+      floatingIcons.forEach((icon, index) => {
+        const speed = 0.1 + (index * 0.05);
+        const offset = scrollY * speed;
+        icon.style.transform = `translateY(${offset}px) rotate(${offset * 0.1}deg)`;
+      });
+      
+      // Subtle parallax on hero image
+      if (heroImage) {
+        heroImage.style.transform = `translateY(${scrollY * 0.1}px)`;
+      }
+    }
+  }
+  
+  // =============================================
+  // MAGNETIC BUTTON EFFECT
+  // =============================================
+  
+  const magneticButtons = document.querySelectorAll('.magnetic-btn');
+  
+  magneticButtons.forEach(btn => {
+    btn.addEventListener('mousemove', (e) => {
+      const rect = btn.getBoundingClientRect();
+      const x = e.clientX - rect.left - rect.width / 2;
+      const y = e.clientY - rect.top - rect.height / 2;
+      
+      btn.style.transform = `translate(${x * 0.15}px, ${y * 0.15}px)`;
+    });
+    
+    btn.addEventListener('mouseleave', () => {
+      btn.style.transform = 'translate(0, 0)';
+    });
+  });
+  
+  // =============================================
+  // SMOOTH SCROLL FOR NAVIGATION
+  // =============================================
+  
+  document.querySelector('.btn-primary')?.addEventListener('click', function(e) {
+    e.preventDefault();
+    document.querySelector('#about-section')?.scrollIntoView({ 
+      behavior: 'smooth',
+      block: 'start'
+    });
+  });
+  
+  // =============================================
+  // SCROLL EVENT LISTENER (THROTTLED)
+  // =============================================
+  
+  let ticking = false;
+  
+  function onScroll() {
+    if (!ticking) {
+      window.requestAnimationFrame(() => {
+        updateScrollProgress();
+        updateParallax();
+        ticking = false;
+      });
+      ticking = true;
+    }
+  }
+  
+  window.addEventListener('scroll', onScroll, { passive: true });
+  
+  // Initial calls
+  updateScrollProgress();
+  
+  // =============================================
+  // STAGGER ANIMATION FOR NEWS/PUB ITEMS
+  // =============================================
+  
+  const staggerContainers = document.querySelectorAll('.stagger-container');
+  
+  staggerContainers.forEach(container => {
+    // Target news items
+    const newsItems = container.querySelectorAll('.news-item');
+    newsItems.forEach((item, index) => {
+      item.style.transitionDelay = `${0.1 + (index * 0.1)}s`;
+    });
+    
+    // Target publication items (Jekyll Scholar structure: ol.bibliography li)
+    const pubItems = container.querySelectorAll('.publications ol.bibliography li');
+    pubItems.forEach((item, index) => {
+      item.style.transitionDelay = `${0.1 + (index * 0.1)}s`;
+    });
+  });
+  
+  // =============================================
+  // FALLBACK: Ensure all content is visible
+  // =============================================
+  
+  setTimeout(() => {
+    document.querySelectorAll('.scroll-reveal, .scroll-reveal-up, .scroll-reveal-left, .scroll-reveal-right, .scroll-reveal-scale, .stagger-container').forEach(el => {
+      el.classList.add('revealed');
+    });
+    document.querySelectorAll('.scroll-section').forEach(el => {
+      el.classList.add('in-view');
+    });
+  }, 3000);
+  
+  // =============================================
+  // TEXT SPLIT ANIMATION (for special headings)
+  // =============================================
+  
+  const splitTexts = document.querySelectorAll('.text-split');
+  
+  splitTexts.forEach(el => {
+    const text = el.textContent;
+    el.innerHTML = '';
+    text.split('').forEach((char, i) => {
+      const span = document.createElement('span');
+      span.textContent = char === ' ' ? '\u00A0' : char;
+      span.style.transitionDelay = `${i * 0.03}s`;
+      el.appendChild(span);
+    });
+  });
+  
+  // =============================================
+  // COUNTER ANIMATION FOR NUMBERS
+  // =============================================
+  
+  function animateCounter(el) {
+    const target = parseInt(el.dataset.target);
+    const duration = 2000;
+    const start = performance.now();
+    
+    function update(currentTime) {
+      const elapsed = currentTime - start;
+      const progress = Math.min(elapsed / duration, 1);
+      const easeOut = 1 - Math.pow(1 - progress, 3);
+      const current = Math.floor(easeOut * target);
+      
+      el.textContent = current.toLocaleString();
+      
+      if (progress < 1) {
+        requestAnimationFrame(update);
+      } else {
+        el.textContent = target.toLocaleString();
+      }
+    }
+    
+    requestAnimationFrame(update);
+  }
+  
+  // Observe counter elements
+  const counterObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        animateCounter(entry.target);
+        counterObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.5 });
+  
+  document.querySelectorAll('.count-up').forEach(el => counterObserver.observe(el));
+  
+});
+</script>
+  </div>
+
+  <!-- Footer --><style>
   .fixed-bottom {
     position: absolute !important;
     margin-top: 5% !important;
@@ -1833,30 +2946,30 @@
   </div>
 </footer>
 
-    <!-- JavaScripts -->
-    <!-- jQuery -->
+  <!-- JavaScripts -->
+  <!-- jQuery -->
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
-    <!-- Bootsrap & MDB scripts -->
+  <!-- Bootsrap & MDB scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha256-fgLAgv7fyCGopR/gBNq2iW3ZKIdqIcyshnUULC4vex8=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/js/mdb.min.js" integrity="sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA=" crossorigin="anonymous"></script>
 
-    <!-- Masonry & imagesLoaded -->
+  <!-- Masonry & imagesLoaded -->
   <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
   <script defer src="/assets/js/masonry.js" type="text/javascript"></script>
-    
+  
   <!-- Medium Zoom JS -->
   <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.8/dist/medium-zoom.min.js" integrity="sha256-7PhEpEWEW0XXQ0k6kQrPKwuoIomz8R8IYyuU1Qew4P8=" crossorigin="anonymous"></script>
   <script defer src="/assets/js/zoom.js"></script><!-- Load Common JS -->
   <script defer src="/assets/js/common.js"></script>
   <script defer src="/assets/js/copy_code.js" type="text/javascript"></script>
 
-    
+  
   <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
   <script async src="https://badge.dimensions.ai/badge.js"></script>
 
-    <!-- MathJax -->
+  <!-- MathJax -->
   <script type="text/javascript">
     window.MathJax = {
       tex: {
@@ -1867,8 +2980,8 @@
   <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js"></script>
   <script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 
-    
-    
+  
+  
 
 <!-- Scrolling Progress Bar -->
 <script type="text/javascript">
@@ -1947,5 +3060,10 @@
   }
 </script>
 
-  </body>
+
+  <!-- Particles.js -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script src="/assets/js/particles-config.js"></script>
+</body>
+
 </html>
