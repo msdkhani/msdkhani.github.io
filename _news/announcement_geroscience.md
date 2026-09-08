@@ -1,6 +1,7 @@
 ---
 layout: post
-date: 2026-02-01
+title: Temporal risk pathways in fall prediction
+date: 2026-02-04
 inline: true
 related_posts: false
 ---

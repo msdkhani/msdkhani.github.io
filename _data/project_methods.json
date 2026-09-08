@@ -1,0 +1,184 @@
+{
+  "1": {
+    "kicker": "From voltage to distinct waveforms",
+    "image": 4,
+    "steps": [
+      [
+        "Recorded signal",
+        "Electrophysiological recordings contain neuronal activity and noise. The recording environment shapes the preparation and quality checks needed.",
+        "wave"
+      ],
+      [
+        "Detect & extract",
+        "Candidate spikes are detected and short waveform segments are extracted for comparison.",
+        "wave"
+      ],
+      [
+        "Represent",
+        "Waveform representations support comparisons between candidate events. PyWaveClus uses Haar wavelet and PCA features; see each project for its specific implementation.",
+        "bars"
+      ],
+      [
+        "Cluster",
+        "Candidate events are organized into spike groups for analysis. PyWaveClus uses superparamagnetic clustering; MCWs targets reliable sorting in human hospital recordings.",
+        "clusters"
+      ]
+    ]
+  },
+  "2": {
+    "kicker": "From clinical history to possible futures",
+    "image": 2,
+    "steps": [
+      [
+        "Disease sequences",
+        "Clinical histories are represented as ordered sequences of disease codes. Order provides context beyond the presence of individual diagnoses.",
+        "tokens"
+      ],
+      [
+        "Mine patterns",
+        "PrefixSpan extracts recurring sequential patterns to prepare the input used by the framework.",
+        "tokens"
+      ],
+      [
+        "Transformer decoder",
+        "A decoder learns relationships within the sequence and predicts what could follow the observed history.",
+        "matrix"
+      ],
+      [
+        "Next disease codes",
+        "The model produces candidate next codes. These predictions describe learned associations, not a certain outcome for an individual.",
+        "bars"
+      ]
+    ]
+  },
+  "3": {
+    "kicker": "A risk score is only the beginning",
+    "image": 1,
+    "steps": [
+      [
+        "Clinical history",
+        "Retrospective health records supply clinical predictors for studying fall risk.",
+        "tokens"
+      ],
+      [
+        "Time horizons",
+        "Seven prediction horizons, from 3 to 60 months, frame separate questions about short- and long-term risk.",
+        "timeline"
+      ],
+      [
+        "Predict risk",
+        "Machine learning models estimate risk within each horizon. Comparing horizons helps reveal how the prediction task changes over time.",
+        "bars"
+      ],
+      [
+        "Explain with SHAP",
+        "SHAP attributes model predictions to input features. Comparing these attributions highlights temporal changes in predictor importance; it does not establish causality.",
+        "bars"
+      ]
+    ]
+  },
+  "4": {
+    "kicker": "Exploring a patient model that evolves",
+    "image": 2,
+    "steps": [
+      [
+        "Patient history",
+        "A possible starting point is a longitudinal representation of observations and health events.",
+        "tokens"
+      ],
+      [
+        "Represent state",
+        "A computational model would summarize the patient state while retaining uncertainty and missing information.",
+        "nodes"
+      ],
+      [
+        "Explore scenarios",
+        "Simulation could examine hypothetical changes. This is a conceptual research direction, not an implemented intervention simulator.",
+        "branches"
+      ],
+      [
+        "Evaluate & update",
+        "A useful system would need validation against observed outcomes and a way to update as new information arrives.",
+        "timeline"
+      ]
+    ]
+  },
+  "5": {
+    "kicker": "From language to cognitive signals",
+    "image": 3,
+    "steps": [
+      [
+        "Language data",
+        "Language samples provide the input for studying patterns associated with cognitive impairment.",
+        "tokens"
+      ],
+      [
+        "Synthetic augmentation",
+        "LLM-generated synthetic language data expand the training material in a setting with limited data.",
+        "branches"
+      ],
+      [
+        "Transformer models",
+        "Transformer representations capture contextual relationships within language for the detection task.",
+        "matrix"
+      ],
+      [
+        "Evaluate detection",
+        "The study evaluates cognitive impairment detection. This schematic summarizes the learning workflow rather than a clinical diagnostic service.",
+        "bars"
+      ]
+    ]
+  },
+  "6": {
+    "kicker": "Finding structure in human recordings",
+    "image": 4,
+    "steps": [
+      [
+        "Human recordings",
+        "Intracerebral recordings collected in hospital environments can include noise and interruptions.",
+        "wave"
+      ],
+      [
+        "Candidate spikes",
+        "Spike sorting begins by identifying short signal events that may reflect neuronal activity.",
+        "wave"
+      ],
+      [
+        "Separate activity",
+        "The framework organizes candidate waveforms into groups to support analysis of individual neuronal activity.",
+        "clusters"
+      ],
+      [
+        "Assess reliability",
+        "Recording quality and sorting reliability matter when interpreting the output. The linked MCWs work is a preprint.",
+        "bars"
+      ]
+    ]
+  },
+  "7": {
+    "kicker": "Health begins beyond the clinic.",
+    "image": 7,
+    "steps": [
+      [
+        "Social context",
+        "Income, education, insurance, and neighborhood deprivation describe different dimensions of socioeconomic context.",
+        "context"
+      ],
+      [
+        "Care utilization",
+        "Health records are used to calculate ZIP-code-level utilization of specialized pancreatic cancer care.",
+        "records"
+      ],
+      [
+        "Compare & adjust",
+        "Regression analyses examine associations between socioeconomic measures and utilization while accounting for other factors.",
+        "compare"
+      ],
+      [
+        "Identify disparities",
+        "The results highlight differences in access that can guide further research and equity-focused planning.",
+        "care"
+      ]
+    ]
+  }
+}

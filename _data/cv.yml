@@ -1,227 +1,209 @@
-- title: General Information
-  type: map
-  contents:
-    - name: Full Name
-      value: Masoud Khani
-    - name: Email
-      value: khanim@uwm.edu
-    - name: LinkedIn
-      value: linkedin.com/in/masoudmk
-    - name: Location
-      value: Milwaukee, WI
-
-- title: Summary
-  type: map
-  contents:
-    - name: Profile
-      value: Computational scientist specializing in medical modeling, simulation, and AI for healthcare applications. Expertise in developing hybrid simulation-ML frameworks, patient-specific digital twins, and explainable AI systems for clinical decision support. Research combines agent-based modeling, discrete-event simulation, transformer architectures, and large language models to address challenges in disease trajectory prediction, risk stratification, and intervention evaluation.
-
-- title: Research Interests
-  type: nested_list
-  contents:
-    - title: "Medical Modeling & Simulation"
-      items:
-        - "Agent-based models, discrete-event simulation, hybrid ML-simulation approaches for clinical decision support, intervention evaluation frameworks, and health system optimization"
-        - "Developing computational frameworks that integrate real-world data for population health applications"
-    - title: "Digital Twins for Healthcare"
-      items:
-        - "Patient-specific modeling for personalized medicine, real-time risk stratification using multimodal data (EHR, sensors, imaging)"
-        - "Uncertainty quantification in clinical predictions and dynamic 'what-if' scenario analysis for intervention planning"
-    - title: "Large Language Models in Medicine"
-      items:
-        - "Clinical text understanding, medical question answering, synthetic data generation, retrieval-augmented generation for evidence-based practice"
-        - "LLM-enhanced clinical education and simulation platforms, comprehensive safety evaluation frameworks"
-    - title: "Responsible AI for Healthcare"
-      items:
-        - "Explainability methods (SHAP, LIME, attention mechanisms), fairness assessment across demographics, algorithmic bias mitigation"
-        - "Uncertainty quantification and stakeholder-centered design with patient and clinician engagement"
-
-- title: Education
-  type: time_table
-  contents:
-    - title: Ph.D., Biomedical and Health Informatics
-      institution: University of Wisconsin–Milwaukee, Milwaukee, WI
-      year: Sep. 2021 – Present
-      description:
-        - "Dissertation: Medical modeling, simulation, and AI for clinical decision support"
-        - "Focus: Agent-based models, discrete-event simulation, transformer-based disease trajectory modeling, LLMs in medicine, and explainable AI for healthcare"
-        - "GPA: 3.8/4.0"
-    - title: M.S., Computer Science
-      institution: University of Wisconsin–Milwaukee, Milwaukee, WI
-      year: Jan. 2020 – Aug. 2021
-      description:
-        - "Thesis: Medical Image Segmentation Using Machine Learning (deep learning for wound image segmentation)"
-        - "GPA: 3.7/4.0"
-    - title: B.S., Software Engineering
-      institution: Tehran Azad University, Tehran, Iran
-      year: Sep. 2014 – Jun. 2018
-      description:
-        - "Thesis: Fall Detection in the Elderly Using Smartphones via Machine Learning Techniques"
-        - "GPA: 3.5/4.0"
-
-- title: Professional & Research Experience
-  type: time_table
-  contents:
-    - title: Engineer I
-      institution: Medical College of Wisconsin — ReyLab (Neurosurgery Research), Milwaukee, WI
-      year: Jun. 2025 – Present
-      description:
-        - Investigate mechanisms of human episodic memory formation and retrieval by developing data acquisition systems that integrate multiscale neural recordings (MRI, intracranial EEG, microwire single-unit/LFP) with cognitive task paradigms in epilepsy patients
-        - Advance epilepsy diagnosis and treatment through engineering of real-time analysis pipelines for seizure onset zone localization, leveraging single-neuron firing patterns and local field potential biomarkers
-        - Lead development of MCWs (MiCroWire sorter), a modular, open-source spike sorting framework engineered for human intracerebral recordings in clinical settings (first co-author, bioRxiv preprint)
-        - Build reproducible computational infrastructure for large-scale neural data analysis (40-core systems, 250TB storage), implementing automated quality control, artifact rejection, and feature extraction workflows
-    - title: Research Assistant
-      institution: University of Wisconsin–Milwaukee — Biomedical Data and Language Processing Lab, Milwaukee, WI
-      year: Sep. 2021 – Sep. 2025
-      description:
-        - Develop AI-driven clinical decision support systems for NIH-funded research, integrating agent-based modeling, discrete-event simulation, and machine learning to evaluate population health interventions
-        - Build LLM-based agentic systems for clinical applications using transformer architectures, synthetic data generation, RAG, and prompt engineering
-        - Design explainable AI frameworks combining SHAP analysis, attention mechanisms, and natural language generation to translate complex temporal prediction models into clinically interpretable risk pathways
-        - Engineer scalable data processing infrastructure for large-scale health datasets (7M+ patients) using distributed computing frameworks
-        - Collaborate across clinical specialties (otolaryngology, cardiology, gastroenterology, neurosurgery, geriatrics), contributing to 20+ publications
-    - title: Data Scientist Intern
-      institution: Medical College of Wisconsin — Clinical and Translational Science Institute, Milwaukee, WI
-      year: Jun. 2023 – Aug. 2023
-      description:
-        - Reimplemented WaveClus3 spike-sorting algorithm from MATLAB to Python, optimizing computational efficiency for large-scale human intracranial recordings from epilepsy patients
-        - Designed novel artifact rejection methods to improve single-neuron detection in hospital-based electrophysiology environments
-    - title: Project Assistant
-      institution: University of Wisconsin–Milwaukee — Northwestern Mutual Data Science Institute, Milwaukee, WI
-      year: Jan. 2021 – May 2023
-      description:
-        - Conducted data-driven program evaluation studies analyzing enrollment patterns, learning outcomes, and engagement metrics for interdisciplinary data science curricula
-        - Built open-source educational framework with 50+ reproducible data science examples demonstrating real-world applications of statistical modeling and machine learning
-
-- title: Teaching & Mentoring
-  type: time_table
-  contents:
-    - title: Lecturer
-      institution: University of Wisconsin–Milwaukee — College of Health Sciences, Milwaukee, WI
-      year: Sep. 2024 – Dec. 2025
-      description:
-        - "Big Data & Healthcare Informatics (Graduate): Designed and delivered comprehensive curriculum covering distributed computing frameworks (Apache Spark), machine learning for large-scale health data, deep learning architectures, and production AI systems for 60+ graduate students"
-        - "Introduction to Healthcare Informatics (Graduate): Taught foundational course spanning health IT ecosystems, stakeholder analysis, clinical decision support systems, medical image processing, AI/ML in healthcare, data standards (HL7, FHIR), and translational informatics"
-    - title: Teaching Assistant
-      institution: University of Wisconsin–Milwaukee — Big Data & Healthcare Informatics, Milwaukee, WI
-      year: Aug. 2023 – Sep. 2024
-      description:
-        - Led lab sessions on applied healthcare data science, teaching graduate students to implement ML pipelines, develop simulation models, and analyze EHRs using Python-based frameworks
-        - Contributed to curriculum development by designing assignments, creating coding tutorials, and developing assessment rubrics
-    - title: Research Mentorship
-      institution: University of Wisconsin–Milwaukee
-      year: Ongoing
-      description:
-        - Mentored 10+ undergraduate and graduate students on research projects involving medical modeling, machine learning, and clinical data analysis
-        - Supervised 5+ students through completion of thesis projects
-
-- title: Research Funding & Awards
-  type: time_table
-  contents:
-    - year: 2021–Present
-      items:
-        - "NIH-funded Research (Team Member): Advancing Healthier Wisconsin Endowment — AI-driven clinical decision support systems for otolaryngology and geriatric care"
-        - "CTSI Pilot-BERD Methodological Innovation — Advanced explainable AI methodologies for clinical prediction models"
-    - year: 2024–2025
-      items:
-        - "NMDSI Student Scholars Award — $7,500 (Northwestern Mutual Data Science Institute). Funded LLM-based clinical applications research"
-    - year: 2024
-      items:
-        - "Chancellor's Graduate Student Award — $2,500 (Apr. 2024)"
-        - "Chancellor's Graduate Student Award — (Fall 2024)"
-        - "Graduate Student Travel Award — $1,500 (May 2024). Conference presentations on pancreatic cancer mortality"
-        - "Best Reviewer Award — AMIA Informatics Summit, 2024"
-    - year: 2020
-      items:
-        - "Chancellor's Graduate Student Award — $6,000 (Jan. 2020)"
-
-- title: Technical Skills
-  type: nested_list
-  contents:
-    - title: Medical Modeling & Simulation
-      items:
-        - Agent-Based Modeling (ABM)
-        - Discrete-Event Simulation (DES)
-        - System Dynamics
-        - Monte Carlo Simulation
-        - Digital Twin Development
-        - Stochastic Modeling
-    - title: Machine Learning & Deep Learning
-      items:
-        - PyTorch
-        - TensorFlow
-        - scikit-learn
-        - Hugging Face Transformers
-        - XGBoost
-        - LightGBM
-        - Reinforcement Learning
-        - Federated Learning
-    - title: Large Language Models
-      items:
-        - Hugging Face Ecosystem
-        - OpenAI API
-        - NVIDIA NeMo
-        - LangChain
-        - "Fine-tuning (LoRA, QLoRA)"
-        - "Retrieval-Augmented Generation (RAG)"
-        - Prompt Engineering
-    - title: Explainable AI
-      items:
-        - SHAP
-        - LIME
-        - Attention Visualization
-        - Integrated Gradients
-        - Counterfactual Explanations
-        - Uncertainty Quantification
-    - title: High-Performance Computing
-      items:
-        - Apache Spark
-        - Dask
-        - RAPIDS
-        - Ray
-        - Distributed Training
-        - HPC Cluster Management
-        - "Cloud Platforms (AWS, GCP, Azure)"
-    - title: Programming & Development
-      items:
-        - "Python (Expert)"
-        - R
-        - SQL
-        - MATLAB
-        - Git/GitHub
-        - Docker
-        - Jupyter
-        - Linux/Unix
-    - title: Data Engineering
-      items:
-        - MySQL
-        - PostgreSQL
-        - MongoDB
-        - ETL Pipelines
-        - Data Preprocessing
-        - Feature Engineering
-
-- title: Scholarly Service & Leadership
-  type: nested_list
-  contents:
-    - title: Peer Review Service
-      items:
-        - Nature Communications
-        - JAMA Network Open
-        - Applied Clinical Informatics
-        - "Journal of Medical Internet Research (JMIR) family (Public Health and Surveillance, JMIRx Med, JMIR AI)"
-        - "AMIA Annual Symposium and Informatics Summit (2023–Present)"
-        - APHA Annual Meeting
-    - title: Multi-institutional Collaboration
-      items:
-        - Columbia University
-        - University of Florida
-        - University of Tehran
-        - Multiple medical centers (data sharing and methodological consultation)
-    - title: Research Mentorship
-      items:
-        - Mentored 10+ undergraduate and graduate students on research projects
-        - Supervised 5+ students through completion of thesis projects
-    - title: Professional Memberships
-      items:
-        - American Medical Informatics Association (AMIA)
-        - American Public Health Association (APHA)
+[
+  {
+    "title": "Profile",
+    "type": "map",
+    "contents": [
+      {
+        "name": "Name",
+        "value": "Masoud Khani"
+      },
+      {
+        "name": "Location",
+        "value": "Milwaukee, WI, USA"
+      },
+      {
+        "name": "Research",
+        "value": "Artificial intelligence in healthcare, machine learning, explainable AI, large language models, and biomedical data science."
+      }
+    ]
+  },
+  {
+    "title": "Education",
+    "type": "time_table",
+    "contents": [
+      {
+        "title": "Ph.D. Candidate in Biomedical and Health Informatics",
+        "institution": "University of Wisconsin–Milwaukee",
+        "year": "Sep. 2021 – Present",
+        "description": [
+          "Dissertation research: interpretable and predictive AI methods using longitudinal electronic health records for clinical risk prediction and decision support.",
+          "GPA: 3.9/4.0."
+        ]
+      },
+      {
+        "title": "M.S. in Computer Science",
+        "institution": "University of Wisconsin–Milwaukee",
+        "year": "Jan. 2020 – Aug. 2021",
+        "description": [
+          "Thesis: Medical Image Segmentation Using Machine Learning.",
+          "Deep learning, computer vision, and medical image segmentation for automated wound analysis.",
+          "GPA: 3.6/4.0."
+        ]
+      },
+      {
+        "title": "Bachelor of Software Engineering",
+        "institution": "Tehran Azad University",
+        "year": "Sep. 2014 – Jun. 2018",
+        "description": [
+          "Thesis: Fall Detection in Elderly with Smartphones via Machine Learning Techniques.",
+          "GPA: 3.5."
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Research & Professional Experience",
+    "type": "time_table",
+    "contents": [
+      {
+        "title": "Research Assistant",
+        "institution": "University of Wisconsin–Milwaukee · Biomedical Data and Language Processing Lab",
+        "year": "Sep. 2021 – Present",
+        "description": [
+          "Develop predictive models from large-scale longitudinal electronic health record data using machine learning, explainable AI, and large language models.",
+          "Study clinical risk and disease trajectories, including fall risk, pancreatic cancer, and vestibular disorders.",
+          "Design interpretable AI and LLM frameworks for temporal risk-factor discovery and patient-level prediction interpretation.",
+          "Lead computational work spanning cohort design, feature engineering, statistical analysis, model development, and validation."
+        ]
+      },
+      {
+        "title": "Engineer I",
+        "institution": "Medical College of Wisconsin",
+        "year": "Jun. 2025 – Sep. 2026",
+        "description": [
+          "Engineered and maintained intracranial electrophysiology recording systems for human epilepsy studies, integrating acquisition hardware, microwire electrodes, and experimental equipment.",
+          "Optimized signal routing, system synchronization, and recording configurations; performed troubleshooting and validation during patient experiments.",
+          "Investigated single-neuron activity and human memory using intracranial recordings and behavioral tasks.",
+          "Developed neural signal-processing and spike-sorting workflows, including artifact removal, spike detection, and clustering."
+        ]
+      },
+      {
+        "title": "Doctoral Teaching Assistant / Lecturer",
+        "institution": "University of Wisconsin–Milwaukee · Big Data & Healthcare Informatics",
+        "year": "Aug. 2023 – May 2025",
+        "description": [
+          "Taught undergraduate and graduate coursework in big data and healthcare informatics, including machine learning, analytics, healthcare data, and computational methods.",
+          "Developed lectures, programming assignments, laboratory exercises, and practical data science and AI materials.",
+          "Mentored student research and course projects in programming, machine learning, and biomedical informatics."
+        ]
+      },
+      {
+        "title": "Research Data Scientist Intern",
+        "institution": "Medical College of Wisconsin · Clinical & Translational Science Institute / Rey Lab",
+        "year": "Jun. 2023 – Aug. 2023",
+        "description": [
+          "Developed Python methods for spike sorting and single-neuron analysis of human intracranial recordings.",
+          "Implemented and extended WaveClus3 components in Python for spike detection and clustering.",
+          "Developed artifact detection and removal methods and evaluated neuronal unit identification for accuracy and reproducibility."
+        ]
+      },
+      {
+        "title": "Project Assistant",
+        "institution": "University of Wisconsin–Milwaukee · Northwestern Mutual Data Science Institute",
+        "year": "Jan. 2021 – May 2022",
+        "description": [
+          "Analyzed enrollment and academic data to characterize participation and trends in data science education.",
+          "Developed and maintained an open-source repository of data science resources and applications across academic disciplines."
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Programming & Technical Skills",
+    "type": "nested_list",
+    "contents": [
+      {
+        "title": "Machine learning",
+        "items": [
+          "TensorFlow, PyTorch, Keras, scikit-learn, LangChain"
+        ]
+      },
+      {
+        "title": "Languages",
+        "items": [
+          "Python 3, R, Java"
+        ]
+      },
+      {
+        "title": "Databases",
+        "items": [
+          "MySQL, PostgreSQL, SQL Server"
+        ]
+      },
+      {
+        "title": "Big data",
+        "items": [
+          "Spark, Dask, RAPIDS, Ray"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Scholarly Reviews",
+    "type": "list",
+    "contents": [
+      "AMIA 2024 Symposium and 2024 Informatics Summit",
+      "APHA 2024 Annual Meeting and Expo",
+      "Applied Clinical Informatics",
+      "JMIR Public Health and Surveillance",
+      "JMIRx Med",
+      "JMIR AI"
+    ]
+  },
+  {
+    "title": "Awards & Fellowships",
+    "type": "time_table",
+    "contents": [
+      {
+        "title": "NMDSI Student Scholars Award",
+        "institution": "Northwestern Mutual Data Science Institute",
+        "year": "2024 – 2026",
+        "description": [
+          "Award: $7,500."
+        ]
+      },
+      {
+        "title": "CTSI Pilot-BERD Methodological Innovation",
+        "institution": "Research team member",
+        "year": "2024 – Present",
+        "description": []
+      },
+      {
+        "title": "Advancing Healthier Wisconsin",
+        "institution": "Research team member",
+        "year": "2021 – Present",
+        "description": []
+      },
+      {
+        "title": "Reviewer Award",
+        "institution": "AMIA Informatics Summit",
+        "year": "2024",
+        "description": []
+      },
+      {
+        "title": "Graduate Student Travel Award",
+        "institution": "University of Wisconsin–Milwaukee",
+        "year": "May 2024",
+        "description": [
+          "Award: $1,500."
+        ]
+      },
+      {
+        "title": "Chancellor’s Graduate Student Award",
+        "institution": "University of Wisconsin–Milwaukee",
+        "year": "Apr. 2024",
+        "description": [
+          "Award: $1,200."
+        ]
+      },
+      {
+        "title": "Chancellor’s Graduate Student Award",
+        "institution": "University of Wisconsin–Milwaukee",
+        "year": "Jan. 2020",
+        "description": [
+          "Award: $6,000."
+        ]
+      }
+    ]
+  }
+]

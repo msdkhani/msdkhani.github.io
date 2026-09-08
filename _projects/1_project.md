@@ -1,173 +1,36 @@
 ---
-layout: page
-title: "PyWaveClus: Python Spike Detection and Clustering"
-description: "The Python Implementation of Waveclause with artifacts removal."
-img: assets/img/publication_preview/pywaveclus_preview.png
-importance: 1
+layout: research-project
+title: "Spike Sorting Framework"
+description: "From neural recordings to interpretable spike groups: PyWaveClus and MCWs."
+topic: "Neural signals"
+status: "Software & preprint"
+importance: 3
 category: work
+method_id: "1"
 ---
 
+## Two approaches to spike sorting
 
-<div class="caption">
-    The PyWaveClus pipeline consists of three main steps: spike detection, feature extraction, and clustering.
-</div>
+Spike sorting separates candidate neuronal events in electrophysiological recordings into groups with similar characteristics. My work in this area includes **PyWaveClus**, a Python pipeline, and **MCWs (MiCroWire sorter)**, a collaborative framework for human intracerebral recordings.
 
-<h4>Overview</h4>
-<p>
-    <strong>PyWaveClus</strong> is a Python package designed to analyze electrophysiological recordings. In neuroscience, spikes—brief electrical discharges from neurons—encode essential information about brain function. 
-    However, detecting and interpreting these spikes in large datasets can be complex due to noise and overlapping signals.
-</p>
-<p>
-    This package streamlines spike sorting by providing an automated pipeline that includes:
-</p>
-<ul>
-    <li><strong>Spike Detection:</strong> Identifying neural spikes from noisy signals.</li>
-    <li><strong>Feature Extraction:</strong> Transforming spike waveforms into numerical features for clustering.</li>
-    <li><strong>Clustering:</strong> Grouping spikes likely originating from the same neuron.</li>
-</ul>
+The schematic above shows the shared task at a conceptual level. The two projects have their own methods and implementations.
 
+## PyWaveClus
 
-<h5>1. Spike Detection</h5>
-<p>
-    Neural spikes are often buried in noise, making robust detection essential. In PyWaveClus, spike detection relies on **wavelet-based thresholding**. 
-    The signal is first filtered, and then a **wavelet transform** is applied to isolate spikes based on transient changes in voltage.
-</p>
+[PyWaveClus](https://github.com/msdkhani/PyWaveClus) implements a Python workflow inspired by Wave_clus. It brings together spike detection, waveform extraction, Haar wavelet and PCA features, and superparamagnetic clustering.
 
-<h6>Concept:</h6>
-<ul>
-    <li><strong>Filtering:</strong> Reduces noise by applying bandpass filters (e.g., 2 Hz to 4 kHz) to remove unwanted frequencies.</li>
-    <li><strong>Wavelet Transform:</strong> Decomposes the signal into multiple frequency bands, enhancing the identification of sharp voltage changes characteristic of spikes.</li>
-    <li><strong>Thresholding:</strong> Spikes are detected by comparing the wavelet coefficients to a predefined threshold.</li>
-</ul>
+Its documentation covers artifact removal and the steps required to run the pipeline on electrophysiological recordings, with credit to the original Wave_clus and superparamagnetic clustering methods. Sorting output requires quality assessment for the recording being studied.
 
-<h6>Code Implementation:</h6>
-<pre><code class="language-python">
-import pywaveclus.spike_detection as sd
+[Explore PyWaveClus code and documentation](https://github.com/msdkhani/PyWaveClus)
 
-# Step 1: Load your electrophysiological recording (using SpikeInterface)
-recording = ...            # Raw recording
-recording_bp2 = ...        # Bandpass filtered at 2 Hz
-recording_bp4 = ...        # Bandpass filtered at 4 kHz
+## MCWs · MiCroWire sorter
 
-# Step 2: Detect spikes
-spike_detection_results = sd.detect_spikes(recording, recording_bp2, recording_bp4)
+MCWs is a framework for automated spike sorting in human intracerebral recordings. It addresses the recording-quality challenges of hospital environments, including noise and interruptions during experimental sessions.
 
-# Step 3: Extract waveforms of detected spikes
-spikes_waveforms = sd.extract_waveforms(spike_detection_results, recording_bp2)
-</code></pre>
+Developed with colleagues in ReyLab, this work supports analysis of human neuronal activity. I am a coauthor of the framework’s preprint.
 
-<p>
-    The output includes the timestamps and channels where spikes were detected. The extracted waveforms are segmented for further analysis.
-</p>
+Alexander Betancourt, Masoud Khani, Tapasi Brahma, Fernando J. Chaure, Connor Hauder, Sunil Mathew, Ana Sofia Dominguez Zesati, Sean Lew, Kunal Gupta, and Hernan G. Rey. **MCWs (MiCroWire sorter): A new framework for automated and reliable spike sorting in human intracerebral recordings.** *bioRxiv*, 2025.
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-    </div>
-</div>
+[Read the MCWs preprint](https://doi.org/10.1101/2025.07.09.663285)
 
-
-<h5>2. Feature Extraction</h5>
-<p>
-    Once spikes are detected, we need to extract numerical features to represent their key characteristics. PyWaveClus supports two main methods:
-</p>
-<ul>
-    <li><strong>Haar Wavelets:</strong> Efficiently captures local variations in the waveform shape.</li>
-    <li><strong>Principal Component Analysis (PCA):</strong> Reduces the dimensionality of the waveform data while preserving the most important features.</li>
-</ul>
-
-<h6>How It Works:</h6>
-<p>
-    The spike waveform is isolated and then transformed into features. These features are compact and informative, making clustering more efficient and accurate.
-</p>
-
-<h6>Code Implementation:</h6>
-<pre><code class="language-python">
-import pywaveclus.feature_extraction as fe
-
-# Step 4: Extract features from spike waveforms
-features = fe.feature_extraction(spikes_waveforms)
-</code></pre>
-
-<p>
-    The extracted features are ready to be used for clustering. Researchers can also choose between different feature extraction methods based on their analysis needs.
-</p>
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-    </div>
-</div>
-
----
-
-<h5>3. Clustering</h5>
-<p>
-    Neural recordings often capture spikes from multiple neurons on a single electrode. Clustering helps distinguish spikes generated by different neurons, enabling researchers to study individual neuron activity.
-</p>
-<p>
-    PyWaveClus uses the **Super Paramagnetic Clustering (SPC)** algorithm, which is particularly effective for high-dimensional data. It automatically identifies clusters without requiring strict assumptions about cluster shape.
-</p>
-
-<h6>How It Works:</h6>
-<ul>
-    <li><strong>Feature Similarity:</strong> The algorithm groups spikes based on the similarity of their features.</li>
-    <li><strong>Temperature Parameter:</strong> Clusters are formed by adjusting a temperature parameter, which influences how tightly points are grouped.</li>
-    <li><strong>Cluster Assignment:</strong> Each spike is labeled with a cluster ID representing the neuron it likely originated from.</li>
-</ul>
-
-<h6>Code Implementation:</h6>
-<pre><code class="language-python">
-import pywaveclus.clustering as clu
-
-# Step 5: Perform clustering on the extracted features
-labels, metadata = clu.SPC_clustering(features)
-</code></pre>
-
-<p>
-    The output includes cluster labels and metadata (e.g., cluster sizes and temperature maps). This allows researchers to analyze each neuron's activity separately.
-</p>
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/clustering_results.png" title="Clustering Output" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-
----
-
-<h4>Running the Full Pipeline</h4>
-<p>
-    To simplify the workflow, PyWaveClus offers the <code>spike_sorting_pipeline</code> function, which automates spike detection, feature extraction, and clustering.
-</p>
-
-<h6>Code Implementation:</h6>
-<pre><code class="language-python">
-from pywaveclus.waveclus import spike_sorting_pipeline
-
-OUTPUT_FOLDER = '/'
-PROJECT_NAME = 'test'
-
-def main():
-    bundle_dict = ...
-    recording = ...
-    recording_bp2 = ...
-    recording_bp4 = ...
-    #Run the full pipeline
-    spike_sorting_pipeline(
-        recording, 
-        recording_bp2, 
-        recording_bp4, 
-        bundle_dict,
-        artifact_removal=True,
-        save_dir=f'{OUTPUT_FOLDER}/{PROJECT_NAME}/'
-    )
-
-if __name__ == '__main__':
-    main()
-</code></pre>
-
----
-
-<h4>Summary</h4>
-<p>
-    PyWaveClus is a powerful and modular tool for spike sorting in neuroscience research. It combines advanced detection, feature extraction, and clustering techniques to streamline the analysis of large-scale neural data. By integrating with <strong>SpikeInterface</strong>, the package supports various data formats and enhances reproducibility.
-</p>
+The linked MCWs work is a preprint and has not been peer reviewed.

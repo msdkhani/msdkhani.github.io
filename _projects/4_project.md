@@ -1,54 +1,16 @@
 ---
-layout: page
-title: "Digital Twins for Healthcare"
-description: "Patient-specific computational models for real-time risk stratification and dynamic intervention planning."
-img: assets/img/publication_preview/fall_geroscience.png
-importance: 3
+layout: research-project
+title: "Digital twins for healthcare"
+description: "A research interest in connecting patient histories, predictive models, and simulation."
+topic: "Patient modeling"
+status: "Research interest"
+importance: 6
 category: work
+method_id: "4"
 ---
 
-## Overview
+## A direction for future research
 
-**Digital twins** are virtual replicas of individual patients that integrate multimodal clinical data to simulate health trajectories, evaluate interventions, and support personalized medicine. This project develops computational frameworks that combine **agent-based modeling**, **discrete-event simulation**, and **machine learning** to create dynamic, patient-specific models.
+I’m interested in how patient-specific computational models could connect longitudinal clinical data with simulation and prediction. Questions include how to represent changing patient states, quantify uncertainty, and evaluate hypothetical interventions.
 
-### The Problem
-
-Healthcare decisions are often based on population-level evidence that may not reflect an individual patient's unique circumstances. Clinicians need tools that can:
-- Predict how a *specific* patient's condition will evolve
-- Simulate the likely outcomes of different treatment options
-- Account for the complex interactions between comorbidities, medications, and social determinants
-
-### Our Approach
-
-We build digital twin frameworks using a **hybrid simulation-ML architecture**:
-
-**Agent-Based Modeling (ABM)**
-- Each patient is modeled as an autonomous agent with individual health states, risk factors, and care trajectories
-- Agents interact with healthcare system components (clinics, specialists, interventions) modeled as entities in the simulation
-- Population-level dynamics emerge from individual patient behaviors and system constraints
-
-**Discrete-Event Simulation (DES)**
-- Clinical encounters, procedures, and transitions are modeled as discrete events with stochastic timing
-- Resource allocation and care pathway bottlenecks are captured to evaluate system-wide impacts
-
-**Machine Learning Integration**
-- Predictive models inform agent state transitions using real-world EHR data
-- Transformer-based architectures capture complex temporal dependencies in patient histories
-- Risk stratification models are continuously updated with incoming data
-
-### Applications
-
-- **Fall Risk Stratification** — Real-time risk assessment for elderly patients using multimodal data (EHR, sensors, imaging)
-- **What-If Scenario Analysis** — Comparing intervention strategies before implementation
-- **Population Health Simulation** — Modeling disease burden and intervention impact at scale
-
-### Technical Capabilities
-
-| Capability | Details |
-|-----------|---------|
-| **Multimodal Data Fusion** | EHR, wearable sensors, imaging, social determinants |
-| **Stochastic Simulation** | Monte Carlo methods for uncertainty quantification |
-| **Real-Time Updates** | Online learning from streaming patient data |
-| **Scalability** | Validated on cohorts of 7M+ patients |
-
-This research is supported by **NIH-funded projects** through the Advancing Healthier Wisconsin Endowment and the CTSI Pilot-BERD program.
+This is a research interest, rather than a released digital-twin platform. My published work on [disease trajectory prediction](https://doi.org/10.1007/s00521-025-11695-4) and [temporal fall risk](https://doi.org/10.1007/s11357-026-02117-x) provides related methodological context.

@@ -1,0 +1,28 @@
+- title: Understanding how fall risk changes over time
+  area: Explainable AI
+  year: 2026
+  venue: GeroScience · Research article
+  summary: Comparing clinical predictors across seven time horizons to distinguish acute triggers from longer-term vulnerability.
+  url: https://doi.org/10.1007/s11357-026-02117-x
+  diagram_alt: Seven observation windows separate short-term and long-term clinical predictors.
+- title: Learning the sequence of disease
+  area: Disease trajectories
+  year: 2026
+  venue: Neural Computing and Applications · Research article
+  summary: A generative, interpretable transformer framework for modeling sequences of diagnoses in health records.
+  url: https://doi.org/10.1007/s00521-025-11695-4
+  diagram_alt: A causal attention matrix connects earlier diagnoses to later disease states.
+- title: Language models for cognitive impairment detection
+  area: Clinical language models
+  year: 2025
+  venue: Frontiers in Artificial Intelligence · Research article
+  summary: LLMCARE explores transformer models and synthetic language data for early detection of cognitive impairment.
+  url: https://doi.org/10.3389/frai.2025.1669896
+  diagram_alt: Language sequences are represented as embeddings for cognitive impairment classification.
+- title: MCWs — making sense of human neural recordings
+  area: Neural signal processing
+  year: 2025
+  venue: bioRxiv · Preprint
+  summary: A spike-sorting framework designed around the challenges of human intracerebral recordings in hospital settings.
+  url: https://doi.org/10.1101/2025.07.09.663285
+  diagram_alt: Recorded waveforms are grouped into distinct spike clusters.

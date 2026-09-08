@@ -1,83 +1,23 @@
-// Has to be in the head tag, otherwise a flicker effect will occur.
-
-let toggleTheme = (theme) => {
-  if (theme == "dark") {
-    setTheme("light");
-  } else {
-    setTheme("dark");
-  }
-}
-
-
-let setTheme = (theme) =>  {
-  transTheme();
-  setHighlight(theme);
-  setGiscusTheme(theme);
-
-  if (theme) {
-    document.documentElement.setAttribute("data-theme", theme);
-  }
-  else {
-    document.documentElement.removeAttribute("data-theme");
-  }
-  localStorage.setItem("theme", theme);
-
-  // Updates the background of medium-zoom overlay.
-  if (typeof medium_zoom !== 'undefined') {
-    medium_zoom.update({
-      background: getComputedStyle(document.documentElement)
-          .getPropertyValue('--global-bg-color') + 'ee',  // + 'ee' for trasparency.
-    })
-  }
+let toggleTheme = theme => setTheme(theme === 'dark' ? 'light' : 'dark');
+let setHighlight = theme => {
+  const light = document.getElementById('highlight_theme_light');
+  const dark = document.getElementById('highlight_theme_dark');
+  if (light) light.media = theme === 'dark' ? 'none' : '';
+  if (dark) dark.media = theme === 'dark' ? '' : 'none';
 };
-
-
-let setHighlight = (theme) => {
-  if (theme == "dark") {
-    document.getElementById("highlight_theme_light").media = "none";
-    document.getElementById("highlight_theme_dark").media = "";
-  } else {
-    document.getElementById("highlight_theme_dark").media = "none";
-    document.getElementById("highlight_theme_light").media = "";
-  }
-}
-
-
-let setGiscusTheme = (theme) => {
-
-  function sendMessage(message) {
-    const iframe = document.querySelector('iframe.giscus-frame');
-    if (!iframe) return;
-    iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
-  }
-
-  sendMessage({
-    setConfig: {
-      theme: theme
-    }
-  });
-
-}
-
-
-let transTheme = () => {
-  document.documentElement.classList.add("transition");
-  window.setTimeout(() => {
-    document.documentElement.classList.remove("transition");
-  }, 500)
-}
-
-
-let initTheme = (theme) => {
-  if (theme == null || theme == 'null') {
-    const userPref = window.matchMedia;
-    if (userPref && userPref('(prefers-color-scheme: dark)').matches) {
-        theme = 'dark';
-    }
-  }
-
-  setTheme(theme);
-}
-
-
-initTheme(localStorage.getItem("theme"));
+let setGiscusTheme = theme => {
+  const iframe = document.querySelector('iframe.giscus-frame');
+  if (iframe) iframe.contentWindow.postMessage({ giscus: { setConfig: { theme } } }, 'https://giscus.app');
+};
+let transTheme = () => {};
+let setTheme = theme => {
+  theme = theme === 'light' ? 'light' : 'dark';
+  document.documentElement.setAttribute('data-theme', theme);
+  setHighlight(theme); setGiscusTheme(theme);
+  try { localStorage.setItem('theme', theme); } catch (_) { /* Storage is optional. */ }
+  if (typeof medium_zoom !== 'undefined') medium_zoom.update({ background: getComputedStyle(document.documentElement).getPropertyValue('--global-bg-color').trim() });
+};
+let initTheme = theme => setTheme(theme === 'light' || theme === 'dark' ? theme : 'dark');
+let savedTheme;
+try { savedTheme = localStorage.getItem('theme'); } catch (_) { /* Use the default theme. */ }
+initTheme(savedTheme);

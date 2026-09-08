@@ -1,58 +1,9 @@
 ---
-layout: page
-title: projects
+layout: research-index
+title: Research
 permalink: /projects/
-description: Research projects in AI for healthcare, neural signal processing, and clinical decision support.
+description: Methods and tools for understanding clinical data, language, and neural activity.
 nav: true
 nav_order: 2
-display_categories: [work]
-horizontal: false
 ---
-
-<!-- pages/projects.md -->
-<div class="projects">
-{%- if site.enable_project_categories and page.display_categories %}
-  <!-- Display categorized projects -->
-  {%- for category in page.display_categories %}
-  <h2 class="category">{{ category }}</h2>
-  {%- assign categorized_projects = site.projects | where: "category", category -%}
-  {%- assign sorted_projects = categorized_projects | sort: "importance" %}
-  <!-- Generate cards for each project -->
-  {% if page.horizontal -%}
-  <div class="container">
-    <div class="row row-cols-2">
-    {%- for project in sorted_projects -%}
-      {% include projects_horizontal.html %}
-    {%- endfor %}
-    </div>
-  </div>
-  {%- else -%}
-  <div class="grid">
-    {%- for project in sorted_projects -%}
-      {% include projects.html %}
-    {%- endfor %}
-  </div>
-  {%- endif -%}
-  {% endfor %}
-
-{%- else -%}
-<!-- Display projects without categories -->
-  {%- assign sorted_projects = site.projects | sort: "importance" -%}
-  <!-- Generate cards for each project -->
-  {% if page.horizontal -%}
-  <div class="container">
-    <div class="row row-cols-2">
-    {%- for project in sorted_projects -%}
-      {% include projects_horizontal.html %}
-    {%- endfor %}
-    </div>
-  </div>
-  {%- else -%}
-  <div class="grid">
-    {%- for project in sorted_projects -%}
-      {% include projects.html %}
-    {%- endfor %}
-  </div>
-  {%- endif -%}
-{%- endif -%}
-</div>
+<div class="research-catalog">{% assign projects = site.projects | where_exp: 'project', 'project.archived != true' | sort: 'importance' %}{% for project in projects %}{% assign method = site.data.project_methods[project.method_id] %}<a class="catalog-entry" href="{{ project.url | relative_url }}"><div class="catalog-art"><img src="{{ '/assets/img/method-' | append: method.image | append: '.svg' | relative_url }}" width="800" height="500" alt="Conceptual illustration for {{ project.title }}" loading="lazy"></div><div><p class="eyebrow">{{ project.topic }} / {{ project.status }}</p><h2>{{ project.title }}</h2><p>{{ project.description }}</p><span class="work-open">Explore the method</span></div></a>{% endfor %}</div>

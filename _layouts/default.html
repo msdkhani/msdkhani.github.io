@@ -15,19 +15,17 @@
 <body
   class="{% if site.navbar_fixed %}fixed-top-nav{% endif %} {% unless site.footer_fixed %}sticky-bottom-footer{% endunless %}">
 
-  <!-- Cosmic Canvas - GPU-rendered nebulae and atmospheric effects -->
-  <canvas id="cosmic-canvas"></canvas>
-
-  <!-- Particles Animation Background -->
-  <div id="particles-js"></div>
+  <canvas id="attention-canvas" aria-hidden="true"></canvas>
+  <div class="cosmic-controls" hidden><button id="motion-toggle" type="button" aria-pressed="false">Pause motion</button></div>
+  <a class="skip-link" href="#main-content">Skip to content</a>
 
   <!-- Header -->
   {%- include header.html %}
 
   <!-- Content -->
-  <div class="main-content">
+  <main class="main-content" id="main-content">
     {{ content }}
-  </div>
+  </main>
 
   <!-- Footer -->
   {%- include footer.html %}
@@ -42,9 +40,7 @@
   {% include scripts/analytics.html %}
   {% include scripts/progressBar.html %}
 
-  <!-- Particles.js -->
-  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-  <script src="{{ '/assets/js/particles-config.js' | relative_url }}"></script>
+  <script defer src="{{ '/assets/js/attention-field.js' | relative_url }}?v={{ site.time | date: '%s' }}"></script>
+  <script defer src="{{ '/assets/js/research-motion.js' | relative_url }}?v={{ site.time | date: '%s' }}"></script>
 </body>
-
 </html>

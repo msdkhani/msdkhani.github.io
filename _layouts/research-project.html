@@ -1,0 +1,15 @@
+---
+layout: default
+---
+{% assign method = site.data.project_methods[page.method_id] %}
+<div class="wrap project-story">
+  <header class="project-story-hero"><a class="back-to-research" href="{{ '/projects/' | relative_url }}">All research</a><p class="eyebrow">{{ page.topic }} / {{ page.status }}</p><h1>{{ page.title }}</h1><p class="story-deck">{{ method.kicker }}</p><p class="page-description">{{ page.description }}</p></header>
+  <section class="method-explorer" aria-labelledby="method-heading"><div class="method-heading"><p class="eyebrow">01 / Inside the method</p><h2 id="method-heading">How it works.</h2><p>Select a stage to explore the workflow.</p></div>
+    <div class="pipeline-art">{% assign diagram = 'method-' | append: page.method_id | append: '.html' %}{% include {{ diagram }} %}</div>
+    <p class="schematic-note">Conceptual schematic · {% if page.method_id == '4' %}Proposed research direction{% else %}Simplified method overview{% endif %}</p>
+    <div class="method-stages">{% for step in method.steps %}<div class="method-step"><button type="button" class="stage-select" data-stage="{{ forloop.index0 }}" aria-pressed="false"><span>0{{ forloop.index }}</span>{{ step[0] }}</button><p>{{ step[1] }}</p></div>{% endfor %}</div>
+  </section>
+  <section class="project-reading"><div><p class="eyebrow">02 / Context & sources</p><h2>The research.</h2></div><div class="project-prose">{{ content }}</div></section>
+  <footer class="publication-end"><span>Keep exploring</span><a class="action-secondary" href="{{ '/projects/' | relative_url }}">All research</a><a class="action-secondary" href="{{ '/publications/' | relative_url }}">Publications</a></footer>
+</div>
+<script defer src="{{ '/assets/js/method-explorer.js' | relative_url }}"></script>

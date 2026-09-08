@@ -6,17 +6,17 @@ title: blank # the website title (if blank, full name will be used instead)
 first_name: Masoud
 middle_name: 
 last_name: Khani
-email: khanim@uwm.edu
+email:
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Computational scientist specializing in medical modeling, digital twins, and AI for healthcare.
-  Expert in hybrid simulation-ML frameworks, agent-based modeling, and LLMs for clinical decision support.
+  Masoud Khani is a biomedical informatics researcher working on explainable clinical AI,
+  disease trajectory prediction, clinical language models, and human neural recordings.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
 keywords: biomedical informatics, AI for healthcare, digital twins, LLMs, agent-based modeling, medical simulation, explainable AI, clinical decision support
 
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: 🚀 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+icon: MK # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://msdkhani.github.io # the base hostname & protocol for your site
 baseurl:  # the subpath of your site, e.g. /blog/
@@ -52,10 +52,10 @@ rss_icon: false
 # -----------------------------------------------------------------------------
 
 navbar_fixed: true
-footer_fixed: true
+footer_fixed: false
 
 # Dimensions
-max_width: 980px
+max_width: 1200px
 
 # TODO: add layout settings (single page vs. multi-page)
 
@@ -80,7 +80,7 @@ telegram_username: # your Telegram user name
 scholar_userid: ZG0Wlq0AAAAJ # your Google Scholar ID
 semanticscholar_id: # your Semantic Scholar ID
 whatsapp_number: # your WhatsApp number (full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.)
-orcid_id: 0000-0002-7106-5957 # your ORCID ID
+orcid_id: 0000-0003-3131-0661 # your ORCID ID
 medium_username: # your Medium username
 quora_username: # your Quora username
 publons_id: # your ID on Publons
@@ -104,7 +104,7 @@ youtube_id: # your youtube channel id (youtube.com/@<youtube_id>)
 discord_id: # your discord id (18-digit unique numerical identifier)
 
 contact_note: >
-  Feel free to reach out via email at khanim@uwm.edu. I'm always open to discussing research collaborations, particularly in medical AI, digital twins, and healthcare simulation.
+  I'm open to research collaborations in medical AI, digital twins, and healthcare simulation. Connect with me on LinkedIn.
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
@@ -201,6 +201,7 @@ kramdown:
 # Includes & excludes
 include: ['_pages']
 exclude:
+  - CONTENT_REVIEW.md
   - bin
   - Gemfile
   - Gemfile.lock
@@ -347,7 +348,7 @@ enable_google_analytics:    false  # enables google analytics
 enable_panelbear_analytics: false  # enables panelbear analytics
 enable_google_verification: false  # enables google site verification
 enable_bing_verification:   false  # enables bing site verification
-enable_masonry:             true   # enables automatic project cards arrangement
+enable_masonry:             false   # enables automatic project cards arrangement
 enable_math:                true   # enables math typesetting (uses MathJax)
 enable_tooltips:            false  # enables automatic tooltip links generated
                                    # for each section titles on pages and posts

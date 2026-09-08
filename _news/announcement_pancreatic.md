@@ -1,6 +1,7 @@
 ---
 layout: post
-date: 2025-02-01
+title: Socioeconomic factors in pancreatic cancer care
+date: 2025-05-07
 inline: true
 related_posts: false
 ---

@@ -1,5 +1,6 @@
 ---
 layout: post
+title: Explainable AI for BPPV risk assessment
 date: 2024-11-24
 inline: true
 related_posts: false

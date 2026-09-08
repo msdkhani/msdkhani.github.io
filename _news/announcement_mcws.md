@@ -1,6 +1,7 @@
 ---
 layout: post
-date: 2025-01-15
+title: MCWs preprint released
+date: 2025-07-11
 inline: true
 related_posts: false
 ---

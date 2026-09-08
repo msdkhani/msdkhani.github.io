@@ -1,0 +1,13 @@
+---
+layout: default
+---
+<div class="wrap publications-page">
+  <header class="publication-hero">
+    <p class="eyebrow">Masoud Khani / Research archive</p>
+    <h1>Publications<span>Medical AI. In detail.</span></h1>
+    <p class="page-description">{{ page.description }}</p>
+    <nav class="publication-years" aria-label="Publication years">{% for year in page.years %}<a href="#year-{{ year }}">{{ year }}</a>{% endfor %}</nav>
+  </header>
+  {{ content }}
+  <footer class="publication-end"><span>Continue exploring</span><a class="action-secondary" href="{{ '/projects/' | relative_url }}">Research projects</a><a class="action-secondary" href="https://scholar.google.com/citations?user={{ site.scholar_userid }}">Google Scholar</a></footer>
+</div>

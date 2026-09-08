@@ -1,6 +1,7 @@
 ---
 layout: post
-date: 2026-02-01
+title: Sequential Pattern Transformer published
+date: 2026-02-03
 inline: true
 related_posts: false
 ---
