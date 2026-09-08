@@ -1,7 +1,7 @@
 /**
  * COSMIC STARFIELD - Interactive stars with connections
  */
-particlesJS("particles-js", {
+if (window.particlesJS) particlesJS("particles-js", {
   "particles": {
     "number": {
       "value": 120,
@@ -86,22 +86,20 @@ particlesJS("particles-js", {
   "retina_detect": true
 });
 
-// Shooting stars
-function createShootingStar() {
-  const star = document.createElement('div');
-  star.className = 'shooting-star';
-  star.style.left = Math.random() * 70 + '%';
-  star.style.top = Math.random() * 40 + '%';
-  document.body.appendChild(star);
-  setTimeout(() => star.remove(), 1200);
-}
-
-setInterval(() => {
-  if (Math.random() > 0.5) createShootingStar();
-}, 4000);
+// Keep the original starfield interaction while honoring the motion control.
+window.addEventListener('cosmic-motion', function (event) {
+  var instance = window.pJSDom && window.pJSDom[0];
+  if (!instance) return;
+  var p = instance.pJS;
+  p.particles.move.enable = !event.detail;
+  p.particles.opacity.anim.enable = !event.detail;
+  p.particles.size.anim.enable = !event.detail;
+  p.interactivity.events.onhover.enable = !event.detail;
+});
 
 // Parallax on mouse (particles layer)
 document.addEventListener('mousemove', (e) => {
+  if (document.documentElement.classList.contains('motion-paused')) return;
   const x = (e.clientX - window.innerWidth / 2) / 60;
   const y = (e.clientY - window.innerHeight / 2) / 60;
   const p = document.getElementById('particles-js');
@@ -120,7 +118,7 @@ document.addEventListener('mousemove', (e) => {
 
   var scrollY = 0, smoothScroll = 0, lastScroll = 0, smoothVel = 0;
   var mouseX = 0.5, mouseY = 0.5, smoothMX = 0.5, smoothMY = 0.5;
-  var running = true;
+  var running = true, frame = null, paused = false;
   var textures = [];
   var sections = [];
 
@@ -229,7 +227,7 @@ document.addEventListener('mousemove', (e) => {
     }
 
     renderWarp();
-    requestAnimationFrame(loop);
+    frame = requestAnimationFrame(loop);
   }
 
   function renderSections(t) {
@@ -312,10 +310,17 @@ document.addEventListener('mousemove', (e) => {
     resize();
     textures = themes.map(makeNebula);
   });
-  document.addEventListener('visibilitychange', function () {
-    running = !document.hidden;
+  function syncMotion() {
+    if (frame !== null) cancelAnimationFrame(frame);
+    frame = null;
+    running = !document.hidden && !paused;
     if (running) loop();
+  }
+  window.addEventListener('cosmic-motion', function (event) {
+    paused = event.detail;
+    syncMotion();
   });
+  document.addEventListener('visibilitychange', syncMotion);
 
   init();
   loop();

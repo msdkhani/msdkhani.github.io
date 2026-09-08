@@ -1,8 +1,6 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const mode_toggle = document.getElementById("light-toggle");
-
-    mode_toggle.addEventListener("click", function() {
-        toggleTheme(localStorage.getItem("theme"));
-    });
+document.addEventListener('DOMContentLoaded', () => {
+  const button = document.getElementById('light-toggle');
+  if (!button) return;
+  button.setAttribute('aria-label', 'Switch color theme');
+  button.addEventListener('click', () => toggleTheme(document.documentElement.getAttribute('data-theme')));
 });
-

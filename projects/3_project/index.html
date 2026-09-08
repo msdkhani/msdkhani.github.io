@@ -11,24 +11,24 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Explainable AI for Clinical Risk Prediction | Masoud  Khani</title>
+    <title>Explainable clinical risk models | Masoud  Khani</title>
     <meta name="author" content="Masoud  Khani">
-    <meta name="description" content="SHAP-based temporal risk pathways and LLM-driven natural language explanations for clinical prediction models.">
+    <meta name="description" content="Understanding which clinical factors matter, and how their importance changes over time.">
     <meta name="keywords" content="biomedical informatics, AI for healthcare, digital twins, LLMs, agent-based modeling, medical simulation, explainable AI, clinical decision support">
 
     <!-- OpenGraph -->
     <meta property="og:site_name" content="Masoud  Khani">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Masoud  Khani | Explainable AI for Clinical Risk Prediction">
+    <meta property="og:title" content="Masoud  Khani | Explainable clinical risk models">
     <meta property="og:url" content="https://msdkhani.github.io/projects/3_project/">
-    <meta property="og:description" content="SHAP-based temporal risk pathways and LLM-driven natural language explanations for clinical prediction models.">
+    <meta property="og:description" content="Understanding which clinical factors matter, and how their importance changes over time.">
     
     <meta property="og:locale" content="en">
 
     <!-- Twitter card -->
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Explainable AI for Clinical Risk Prediction">
-    <meta name="twitter:description" content="SHAP-based temporal risk pathways and LLM-driven natural language explanations for clinical prediction models.">
+    <meta name="twitter:title" content="Explainable clinical risk models">
+    <meta name="twitter:description" content="Understanding which clinical factors matter, and how their importance changes over time.">
     
     
 
@@ -42,9 +42,9 @@
         },
         "url": "https://msdkhani.github.io/projects/3_project/",
         "@type": "WebSite",
-        "description": "SHAP-based temporal risk pathways and LLM-driven natural language explanations for clinical prediction models.",
-        "headline": "Explainable AI for Clinical Risk Prediction",
-        "sameAs": ["https://orcid.org/0000-0002-7106-5957", "https://scholar.google.com/citations?user=ZG0Wlq0AAAAJ", "https://github.com/msdkhani", "https://www.linkedin.com/in/masoudmk"],
+        "description": "Understanding which clinical factors matter, and how their importance changes over time.",
+        "headline": "Explainable clinical risk models",
+        "sameAs": ["https://orcid.org/0000-0003-3131-0661", "https://scholar.google.com/citations?user=ZG0Wlq0AAAAJ", "https://github.com/msdkhani", "https://www.linkedin.com/in/masoudmk"],
         "name": "Masoud  Khani",
         "@context": "https://schema.org"
       }
@@ -70,9 +70,9 @@
 
     <!-- Styles -->
     
-    <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%F0%9F%9A%80&lt;/text&gt;&lt;/svg&gt;">
+    <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;MK&lt;/text&gt;&lt;/svg&gt;">
     
-    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/main.css?v=1788878472">
     <link rel="canonical" href="https://msdkhani.github.io/projects/3_project/">
     
     <!-- Dark Mode -->
@@ -87,13 +87,11 @@
 
 <!-- Body -->
 
-<body class="fixed-top-nav ">
+<body class="fixed-top-nav sticky-bottom-footer">
 
-  <!-- Cosmic Canvas - GPU-rendered nebulae and atmospheric effects -->
-  <canvas id="cosmic-canvas"></canvas>
-
-  <!-- Particles Animation Background -->
-  <div id="particles-js"></div>
+  <canvas id="attention-canvas" aria-hidden="true"></canvas>
+  <div class="cosmic-controls" hidden><button id="motion-toggle" type="button" aria-pressed="false">Pause motion</button></div>
+  <a class="skip-link" href="#main-content">Skip to content</a>
 
   <!-- Header -->
     <header>
@@ -115,7 +113,7 @@
 
               <!-- About -->
               <li class="nav-item ">
-                <a class="nav-link" href="/">about</a>
+                <a class="nav-link" href="/">About</a>
               </li>
                 
               <!-- Blog -->
@@ -123,13 +121,13 @@
 
               <!-- Other pages -->
               <li class="nav-item ">
-                <a class="nav-link" href="/publications/">publications</a>
+                <a class="nav-link" href="/publications/">Publications</a>
               </li>
               <li class="nav-item ">
-                <a class="nav-link" href="/projects/">projects</a>
+                <a class="nav-link" href="/projects/">Research</a>
               </li>
               <li class="nav-item ">
-                <a class="nav-link" href="/cv/">cv</a>
+                <a class="nav-link" href="/cv/">CV</a>
               </li>
               <li class="nav-item ">
                 <a class="nav-link" href="/teaching/">Teaching</a>
@@ -157,164 +155,67 @@
 
 
   <!-- Content -->
-  <div class="main-content">
-    <!-- page.html - Cosmic Full Width -->
-<div class="cosmic-page">
-  <section class="page-hero">
-    <div class="page-hero-inner">
-      <h1 class="page-title">Explainable AI for Clinical Risk Prediction</h1>
-      
-      <p class="page-description">SHAP-based temporal risk pathways and LLM-driven natural language explanations for clinical prediction models.</p>
-      
-    </div>
-  </section>
-
-  <section class="page-content">
-    <div class="page-content-inner">
-      <h2 id="overview">Overview</h2>
-
-<p>This research addresses one of the most critical barriers to AI adoption in healthcare: the <strong>black-box problem</strong>. We develop frameworks that combine <strong>explainable AI (XAI)</strong> methods with <strong>Large Language Models</strong> to make clinical prediction models transparent, trustworthy, and actionable for healthcare providers.</p>
-
-<h3 id="the-problem">The Problem</h3>
-
-<p>Machine learning models can achieve impressive accuracy in predicting clinical outcomes — from fall risk to disease progression — but clinicians are often reluctant to trust predictions they cannot understand. Traditional feature importance methods (e.g., SHAP values) produce numerical outputs that are difficult to interpret without statistical expertise.</p>
-
-<h3 id="our-approach">Our Approach</h3>
-
-<p>We bridge the gap between complex AI outputs and clinical decision-making through a two-stage approach:</p>
-
-<p><strong>Stage 1: Temporal Explainability</strong></p>
-<ul>
-  <li>Apply <strong>SHAP (SHapley Additive exPlanations)</strong> to temporal prediction models to identify which features contribute most to risk at different time points</li>
-  <li>Develop <strong>temporal risk pathways</strong> that reveal how feature importance evolves over a patient’s care journey</li>
-  <li>Combine with <strong>LIME</strong> and <strong>attention visualization</strong> for multi-perspective explainability</li>
-</ul>
-
-<p><strong>Stage 2: LLM-Powered Interpretation</strong></p>
-<ul>
-  <li>Use large language models to translate numerical SHAP values into <strong>clear, natural language explanations</strong>
-</li>
-  <li>Generate <strong>patient-specific risk narratives</strong> that clinicians can review alongside predictions</li>
-  <li>Provide <strong>actionable recommendations</strong> tied to the most influential risk factors</li>
-</ul>
-
-<h3 id="applications">Applications</h3>
-
-<ul>
-  <li>
-<strong>Fall Risk Prediction</strong> — Identifying temporal risk pathways for elderly patient falls, published in <em>GeroScience</em> (2026)</li>
-  <li>
-<strong>BPPV Risk Assessment</strong> — Personalized explainable predictions for benign paroxysmal positional vertigo, published in <em>Health Information Science and Systems</em> (2024)</li>
-  <li>
-<strong>Antidepressant Discontinuation</strong> — Risk detection with interpretable feature importance, published in <em>Frontiers in AI</em> (2023)</li>
-</ul>
-
-<h3 id="key-innovation">Key Innovation</h3>
-
-<p>Our system doesn’t just explain <em>what</em> the model predicts — it explains <em>why</em> in terms clinicians can act on. By combining XAI methods with LLM interpretation, we reduce the cognitive load on healthcare providers and enable trust-based clinical decision-making.</p>
-
-<p><strong>Recognition:</strong> This work contributed to the <strong>AMIA Best Reviewer Award (2024)</strong> and has been presented at <strong>ICMHI 2025</strong> and <strong>AMIA Annual Symposium</strong>.</p>
-
-    </div>
-  </section>
+  <main class="main-content" id="main-content">
+    
+<div class="wrap project-story">
+  <header class="project-story-hero"><a class="back-to-research" href="/projects/">All research</a><p class="eyebrow">Explainable AI / Published research</p>
+<h1>Explainable clinical risk models</h1>
+<p class="story-deck">A risk score is only the beginning</p>
+<p class="page-description">Understanding which clinical factors matter, and how their importance changes over time.</p></header>
+  <section class="method-explorer" aria-labelledby="method-heading"><div class="method-heading">
+<p class="eyebrow">01 / Inside the method</p>
+<h2 id="method-heading">How it works.</h2>
+<p>Select a stage to explore the workflow.</p>
 </div>
+    <div class="pipeline-art"><svg class="pipeline-svg" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 320" role="img" aria-label="Conceptual workflow: Clinical history, Time horizons, Predict risk, Explain with SHAP"><g fill="none" stroke="currentColor"><path class="flow-link" d="M190 155H310" stroke-dasharray="3 8" opacity=".25"></path><g class="pipeline-stage" data-stage="0"><rect x="20" y="40" width="210" height="230" rx="4" opacity=".16"></rect><text x="125" y="73" text-anchor="middle" stroke="none" fill="currentColor" font-size="10" font-family="monospace">01</text><rect x="60" y="108" width="130" height="22" opacity=".45"></rect><path d="M78 119h55" opacity=".6"></path><rect x="60" y="142" width="130" height="22" opacity=".45"></rect><path d="M78 153h72" opacity=".6"></path><rect x="60" y="176" width="130" height="22" opacity=".45"></rect><path d="M78 187h89" opacity=".6"></path><text x="125" y="244" text-anchor="middle" stroke="none" fill="currentColor" font-size="12" font-family="sans-serif">Clinical history</text></g><path class="flow-link" d="M440 155H560" stroke-dasharray="3 8" opacity=".25"></path><g class="pipeline-stage" data-stage="1"><rect x="270" y="40" width="210" height="230" rx="4" opacity=".16"></rect><text x="375" y="73" text-anchor="middle" stroke="none" fill="currentColor" font-size="10" font-family="monospace">02</text><path d="M310 110H443" opacity=".55"></path><circle cx="310" cy="110" r="3" fill="currentColor"></circle><path d="M324 128H443" opacity=".55"></path><circle cx="324" cy="128" r="3" fill="currentColor"></circle><path d="M338 146H443" opacity=".55"></path><circle cx="338" cy="146" r="3" fill="currentColor"></circle><path d="M352 164H443" opacity=".55"></path><circle cx="352" cy="164" r="3" fill="currentColor"></circle><path d="M366 182H443" opacity=".55"></path><circle cx="366" cy="182" r="3" fill="currentColor"></circle><path d="M380 200H443" opacity=".55"></path><circle cx="380" cy="200" r="3" fill="currentColor"></circle><text x="375" y="244" text-anchor="middle" stroke="none" fill="currentColor" font-size="12" font-family="sans-serif">Time horizons</text></g><path class="flow-link" d="M690 155H810" stroke-dasharray="3 8" opacity=".25"></path><g class="pipeline-stage" data-stage="2"><rect x="520" y="40" width="210" height="230" rx="4" opacity=".16"></rect><text x="625" y="73" text-anchor="middle" stroke="none" fill="currentColor" font-size="10" font-family="monospace">03</text><rect x="559" y="167" width="10" height="25" fill="currentColor" stroke="none" opacity=".65"></rect><rect x="583" y="136" width="10" height="56" fill="currentColor" stroke="none" opacity=".65"></rect><rect x="607" y="105" width="10" height="87" fill="currentColor" stroke="none" opacity=".65"></rect><rect x="631" y="152" width="10" height="40" fill="currentColor" stroke="none" opacity=".65"></rect><rect x="655" y="121" width="10" height="71" fill="currentColor" stroke="none" opacity=".65"></rect><rect x="679" y="90" width="10" height="102" fill="currentColor" stroke="none" opacity=".65"></rect><text x="625" y="244" text-anchor="middle" stroke="none" fill="currentColor" font-size="12" font-family="sans-serif">Predict risk</text></g><g class="pipeline-stage" data-stage="3"><rect x="770" y="40" width="210" height="230" rx="4" opacity=".16"></rect><text x="875" y="73" text-anchor="middle" stroke="none" fill="currentColor" font-size="10" font-family="monospace">04</text><rect x="809" y="167" width="10" height="25" fill="currentColor" stroke="none" opacity=".65"></rect><rect x="833" y="136" width="10" height="56" fill="currentColor" stroke="none" opacity=".65"></rect><rect x="857" y="105" width="10" height="87" fill="currentColor" stroke="none" opacity=".65"></rect><rect x="881" y="152" width="10" height="40" fill="currentColor" stroke="none" opacity=".65"></rect><rect x="905" y="121" width="10" height="71" fill="currentColor" stroke="none" opacity=".65"></rect><rect x="929" y="90" width="10" height="102" fill="currentColor" stroke="none" opacity=".65"></rect><text x="875" y="244" text-anchor="middle" stroke="none" fill="currentColor" font-size="12" font-family="sans-serif">Explain with SHAP</text></g></g></svg></div>
+    <p class="schematic-note">Conceptual schematic · Simplified method overview</p>
+    <div class="method-stages">
+<div class="method-step">
+<button type="button" class="stage-select" data-stage="0" aria-pressed="false"><span>01</span>Clinical history</button><p>Retrospective health records supply clinical predictors for studying fall risk.</p>
+</div>
+<div class="method-step">
+<button type="button" class="stage-select" data-stage="1" aria-pressed="false"><span>02</span>Time horizons</button><p>Seven prediction horizons, from 3 to 60 months, frame separate questions about short- and long-term risk.</p>
+</div>
+<div class="method-step">
+<button type="button" class="stage-select" data-stage="2" aria-pressed="false"><span>03</span>Predict risk</button><p>Machine learning models estimate risk within each horizon. Comparing horizons helps reveal how the prediction task changes over time.</p>
+</div>
+<div class="method-step">
+<button type="button" class="stage-select" data-stage="3" aria-pressed="false"><span>04</span>Explain with SHAP</button><p>SHAP attributes model predictions to input features. Comparing these attributions highlights temporal changes in predictor importance; it does not establish causality.</p>
+</div>
+</div>
+  </section>
+  <section class="project-reading"><div>
+<p class="eyebrow">02 / Context &amp; sources</p>
+<h2>The research.</h2>
+</div>
+<div class="project-prose">
+<h2 id="looking-beyond-a-single-risk-score">Looking beyond a single risk score</h2>
 
-<style>
-.cosmic-page {
-  width: 100vw;
-  margin-left: calc(-50vw + 50%);
-  background: transparent;
-  position: relative;
-  z-index: 2;
-}
+<p>Our GeroScience study compares fall prediction across seven time horizons, from 3 to 60 months. SHAP analysis examines how the importance of clinical predictors changes between short- and long-term models. The results distinguish acute triggers from chronic vulnerabilities in retrospective health records.</p>
 
-.page-hero {
-  padding: 120px 40px 60px;
-  text-align: center;
-}
+<p>This work evaluates research models; it does not establish a prospectively validated clinical decision tool.</p>
 
-.page-hero-inner {
-  max-width: 800px;
-  margin: 0 auto;
-}
+<h2 id="related-publications">Related publications</h2>
 
-.page-title {
-  font-family: 'Plus Jakarta Sans', sans-serif;
-  font-size: clamp(36px, 5vw, 56px);
-  font-weight: 700;
-  background: linear-gradient(135deg, #1D4ED8 0%, #0D9488 50%, #14B8A6 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin: 0 0 16px;
-  letter-spacing: -0.02em;
-}
+<ul>
+  <li>
+<a href="https://doi.org/10.1007/s11357-026-02117-x" rel="external nofollow noopener" target="_blank">Temporal risk pathways in fall prediction</a> — <em>GeroScience</em>, 2026.</li>
+  <li>
+<a href="https://doi.org/10.1145/3761712.3761774" rel="external nofollow noopener" target="_blank">Risk prediction and interpretation using explainable AI and large language models</a> — ICMHI 2025.</li>
+  <li>
+<a href="https://doi.org/10.1007/s13755-024-00317-3" rel="external nofollow noopener" target="_blank">Explainable AI for BPPV risk assessment</a> — <em>Health Information Science and Systems</em>, published online in 2024.</li>
+</ul>
+</div></section>
+  <footer class="publication-end"><span>Keep exploring</span><a class="action-secondary" href="/projects/">All research</a><a class="action-secondary" href="/publications/">Publications</a></footer>
+</div>
+<script defer src="/assets/js/method-explorer.js"></script>
 
-.page-description {
-  font-size: 18px;
-  color: #9ca3af;
-  margin: 0;
-  line-height: 1.6;
-}
+  </main>
 
-.page-content {
-  padding: 40px 40px 100px;
-}
+  <!-- Footer --><footer class="site-footer"><div class="wrap">
+<span>© 2026 Masoud Khani</span><span>Biomedical informatics · Milwaukee</span><a href="/publications/">Publications</a>
+</div></footer>
 
-.page-content-inner {
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.page-content-inner h2 {
-  color: #fff;
-  font-family: 'Plus Jakarta Sans', sans-serif;
-  font-weight: 600;
-  margin-top: 2.5rem;
-}
-
-.page-content-inner p,
-.page-content-inner li {
-  color: #9ca3af;
-  line-height: 1.8;
-}
-
-.page-content-inner a {
-  color: #14B8A6;
-}
-
-.page-content-inner a:hover {
-  color: #2DD4BF;
-}
-
-@media (max-width: 640px) {
-  .page-hero {
-    padding: 100px 20px 40px;
-  }
-  .page-content {
-    padding: 30px 20px 60px;
-  }
-}
-</style>
-
-  </div>
-
-  <!-- Footer --><style>
-  .fixed-bottom {
-    position: absolute !important;
-    margin-top: 5% !important;
-    right: 0 !important;
-    left: 0 !important;
-    bottom: auto;
-  }
-</style>
-
-<footer class="fixed-bottom">
-  <div class="container mt-0">
-    © 2026 Masoud  Khani. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>.
-
-  </div>
-</footer>
 
   <!-- JavaScripts -->
   <!-- jQuery -->
@@ -324,10 +225,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha256-fgLAgv7fyCGopR/gBNq2iW3ZKIdqIcyshnUULC4vex8=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/js/mdb.min.js" integrity="sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA=" crossorigin="anonymous"></script>
 
-  <!-- Masonry & imagesLoaded -->
-  <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
-  <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
-  <script defer src="/assets/js/masonry.js" type="text/javascript"></script>
+  
   
   <!-- Medium Zoom JS -->
   <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.8/dist/medium-zoom.min.js" integrity="sha256-7PhEpEWEW0XXQ0k6kQrPKwuoIomz8R8IYyuU1Qew4P8=" crossorigin="anonymous"></script>
@@ -431,9 +329,7 @@
 </script>
 
 
-  <!-- Particles.js -->
-  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-  <script src="/assets/js/particles-config.js"></script>
+  <script defer src="/assets/js/attention-field.js?v=1788878472"></script>
+  <script defer src="/assets/js/research-motion.js?v=1788878472"></script>
 </body>
-
 </html>

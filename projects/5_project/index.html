@@ -11,24 +11,24 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>LLM-Based Clinical Decision Support | Masoud  Khani</title>
+    <title>LLMCARE &amp; clinical language | Masoud  Khani</title>
     <meta name="author" content="Masoud  Khani">
-    <meta name="description" content="Leveraging large language models for clinical text understanding, synthetic data generation, and retrieval-augmented clinical applications.">
+    <meta name="description" content="Transformer models and synthetic language data for cognitive impairment detection.">
     <meta name="keywords" content="biomedical informatics, AI for healthcare, digital twins, LLMs, agent-based modeling, medical simulation, explainable AI, clinical decision support">
 
     <!-- OpenGraph -->
     <meta property="og:site_name" content="Masoud  Khani">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Masoud  Khani | LLM-Based Clinical Decision Support">
+    <meta property="og:title" content="Masoud  Khani | LLMCARE &amp; clinical language">
     <meta property="og:url" content="https://msdkhani.github.io/projects/5_project/">
-    <meta property="og:description" content="Leveraging large language models for clinical text understanding, synthetic data generation, and retrieval-augmented clinical applications.">
+    <meta property="og:description" content="Transformer models and synthetic language data for cognitive impairment detection.">
     
     <meta property="og:locale" content="en">
 
     <!-- Twitter card -->
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="LLM-Based Clinical Decision Support">
-    <meta name="twitter:description" content="Leveraging large language models for clinical text understanding, synthetic data generation, and retrieval-augmented clinical applications.">
+    <meta name="twitter:title" content="LLMCARE &amp; clinical language">
+    <meta name="twitter:description" content="Transformer models and synthetic language data for cognitive impairment detection.">
     
     
 
@@ -42,9 +42,9 @@
         },
         "url": "https://msdkhani.github.io/projects/5_project/",
         "@type": "WebSite",
-        "description": "Leveraging large language models for clinical text understanding, synthetic data generation, and retrieval-augmented clinical applications.",
-        "headline": "LLM-Based Clinical Decision Support",
-        "sameAs": ["https://orcid.org/0000-0002-7106-5957", "https://scholar.google.com/citations?user=ZG0Wlq0AAAAJ", "https://github.com/msdkhani", "https://www.linkedin.com/in/masoudmk"],
+        "description": "Transformer models and synthetic language data for cognitive impairment detection.",
+        "headline": "LLMCARE & clinical language",
+        "sameAs": ["https://orcid.org/0000-0003-3131-0661", "https://scholar.google.com/citations?user=ZG0Wlq0AAAAJ", "https://github.com/msdkhani", "https://www.linkedin.com/in/masoudmk"],
         "name": "Masoud  Khani",
         "@context": "https://schema.org"
       }
@@ -70,9 +70,9 @@
 
     <!-- Styles -->
     
-    <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%F0%9F%9A%80&lt;/text&gt;&lt;/svg&gt;">
+    <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;MK&lt;/text&gt;&lt;/svg&gt;">
     
-    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/main.css?v=1788878472">
     <link rel="canonical" href="https://msdkhani.github.io/projects/5_project/">
     
     <!-- Dark Mode -->
@@ -87,13 +87,11 @@
 
 <!-- Body -->
 
-<body class="fixed-top-nav ">
+<body class="fixed-top-nav sticky-bottom-footer">
 
-  <!-- Cosmic Canvas - GPU-rendered nebulae and atmospheric effects -->
-  <canvas id="cosmic-canvas"></canvas>
-
-  <!-- Particles Animation Background -->
-  <div id="particles-js"></div>
+  <canvas id="attention-canvas" aria-hidden="true"></canvas>
+  <div class="cosmic-controls" hidden><button id="motion-toggle" type="button" aria-pressed="false">Pause motion</button></div>
+  <a class="skip-link" href="#main-content">Skip to content</a>
 
   <!-- Header -->
     <header>
@@ -115,7 +113,7 @@
 
               <!-- About -->
               <li class="nav-item ">
-                <a class="nav-link" href="/">about</a>
+                <a class="nav-link" href="/">About</a>
               </li>
                 
               <!-- Blog -->
@@ -123,13 +121,13 @@
 
               <!-- Other pages -->
               <li class="nav-item ">
-                <a class="nav-link" href="/publications/">publications</a>
+                <a class="nav-link" href="/publications/">Publications</a>
               </li>
               <li class="nav-item ">
-                <a class="nav-link" href="/projects/">projects</a>
+                <a class="nav-link" href="/projects/">Research</a>
               </li>
               <li class="nav-item ">
-                <a class="nav-link" href="/cv/">cv</a>
+                <a class="nav-link" href="/cv/">CV</a>
               </li>
               <li class="nav-item ">
                 <a class="nav-link" href="/teaching/">Teaching</a>
@@ -157,175 +155,62 @@
 
 
   <!-- Content -->
-  <div class="main-content">
-    <!-- page.html - Cosmic Full Width -->
-<div class="cosmic-page">
-  <section class="page-hero">
-    <div class="page-hero-inner">
-      <h1 class="page-title">LLM-Based Clinical Decision Support</h1>
-      
-      <p class="page-description">Leveraging large language models for clinical text understanding, synthetic data generation, and retrieval-augmented clinical applications.</p>
-      
-    </div>
-  </section>
-
-  <section class="page-content">
-    <div class="page-content-inner">
-      <h2 id="overview">Overview</h2>
-
-<p>This project explores the application of <strong>Large Language Models (LLMs)</strong> in healthcare — from clinical text understanding and medical question answering to synthetic data generation and safety evaluation. We develop LLM-based agentic systems that enhance clinical workflows while maintaining rigorous safety and reliability standards.</p>
-
-<h3 id="the-problem">The Problem</h3>
-
-<p>Healthcare generates vast amounts of unstructured text — clinical notes, discharge summaries, pathology reports, research literature — that contain critical information for patient care. Traditional NLP methods struggle with the complexity and nuance of medical language. Meanwhile, modern LLMs show remarkable capabilities but raise concerns about hallucination, bias, and safety in clinical settings.</p>
-
-<h3 id="our-approach">Our Approach</h3>
-
-<p>We develop and evaluate LLM applications across several domains:</p>
-
-<p><strong>Retrieval-Augmented Generation (RAG)</strong></p>
-<ul>
-  <li>Build knowledge-grounded clinical assistants that retrieve relevant evidence before generating responses</li>
-  <li>Integrate clinical guidelines, drug databases, and research literature into LLM workflows</li>
-  <li>Reduce hallucination risk through evidence-based response generation</li>
-</ul>
-
-<p><strong>Synthetic Data Generation</strong></p>
-<ul>
-  <li>Generate realistic synthetic clinical data for training and validation when real patient data is unavailable or restricted</li>
-  <li>Develop privacy-preserving data augmentation techniques for rare conditions and underrepresented populations</li>
-  <li>Validate synthetic data quality against real-world distributions</li>
-</ul>
-
-<p><strong>Clinical Education</strong></p>
-<ul>
-  <li>Design LLM-enhanced simulation platforms for medical training</li>
-  <li>Create interactive clinical scenarios with adaptive difficulty and personalized feedback</li>
-  <li>Support case-based learning with AI-generated patient presentations</li>
-</ul>
-
-<p><strong>Safety Evaluation Frameworks</strong></p>
-<ul>
-  <li>Systematic evaluation of LLM reliability in clinical contexts</li>
-  <li>Bias detection across demographics and clinical specialties</li>
-  <li>Hallucination detection and mitigation strategies specific to medical applications</li>
-</ul>
-
-<h3 id="key-technologies">Key Technologies</h3>
-
-<ul>
-  <li>
-<strong>Fine-tuning</strong>: LoRA and QLoRA for efficient adaptation to clinical domains</li>
-  <li>
-<strong>Frameworks</strong>: LangChain, Hugging Face, OpenAI API, NVIDIA NeMo</li>
-  <li>
-<strong>Evaluation</strong>: Custom clinical safety benchmarks, multi-annotator validation protocols</li>
-</ul>
-
-<h3 id="impact">Impact</h3>
-
-<p>This research was supported by the <strong>NMDSI Student Scholars Award ($7,500)</strong> and contributes to the development of trustworthy AI systems that can augment — not replace — clinical expertise.</p>
-
-    </div>
-  </section>
+  <main class="main-content" id="main-content">
+    
+<div class="wrap project-story">
+  <header class="project-story-hero"><a class="back-to-research" href="/projects/">All research</a><p class="eyebrow">Language models / Published · 2025</p>
+<h1>LLMCARE &amp; clinical language</h1>
+<p class="story-deck">From language to cognitive signals</p>
+<p class="page-description">Transformer models and synthetic language data for cognitive impairment detection.</p></header>
+  <section class="method-explorer" aria-labelledby="method-heading"><div class="method-heading">
+<p class="eyebrow">01 / Inside the method</p>
+<h2 id="method-heading">How it works.</h2>
+<p>Select a stage to explore the workflow.</p>
 </div>
+    <div class="pipeline-art"><svg class="pipeline-svg" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 320" role="img" aria-label="Conceptual workflow: Language data, Synthetic augmentation, Transformer models, Evaluate detection"><g fill="none" stroke="currentColor"><path class="flow-link" d="M190 155H310" stroke-dasharray="3 8" opacity=".25"></path><g class="pipeline-stage" data-stage="0"><rect x="20" y="40" width="210" height="230" rx="4" opacity=".16"></rect><text x="125" y="73" text-anchor="middle" stroke="none" fill="currentColor" font-size="10" font-family="monospace">01</text><rect x="60" y="108" width="130" height="22" opacity=".45"></rect><path d="M78 119h55" opacity=".6"></path><rect x="60" y="142" width="130" height="22" opacity=".45"></rect><path d="M78 153h72" opacity=".6"></path><rect x="60" y="176" width="130" height="22" opacity=".45"></rect><path d="M78 187h89" opacity=".6"></path><text x="125" y="244" text-anchor="middle" stroke="none" fill="currentColor" font-size="12" font-family="sans-serif">Language data</text></g><path class="flow-link" d="M440 155H560" stroke-dasharray="3 8" opacity=".25"></path><g class="pipeline-stage" data-stage="1"><rect x="270" y="40" width="210" height="230" rx="4" opacity=".16"></rect><text x="375" y="73" text-anchor="middle" stroke="none" fill="currentColor" font-size="10" font-family="monospace">02</text><path d="M320 155L423 115" opacity=".5"></path><circle cx="423" cy="115" r="8"></circle><path d="M320 155L423 155" opacity=".5"></path><circle cx="423" cy="155" r="8"></circle><path d="M320 155L423 195" opacity=".5"></path><circle cx="423" cy="195" r="8"></circle><circle cx="320" cy="155" r="12"></circle><text x="375" y="244" text-anchor="middle" stroke="none" fill="currentColor" font-size="12" font-family="sans-serif">Synthetic augmentation</text></g><path class="flow-link" d="M690 155H810" stroke-dasharray="3 8" opacity=".25"></path><g class="pipeline-stage" data-stage="2"><rect x="520" y="40" width="210" height="230" rx="4" opacity=".16"></rect><text x="625" y="73" text-anchor="middle" stroke="none" fill="currentColor" font-size="10" font-family="monospace">03</text><rect x="574" y="103" transform="translate(0 0)" width="12" height="12" fill="currentColor" stroke="none" opacity="0.25"></rect><rect x="592" y="103" transform="translate(0 0)" width="12" height="12" fill="currentColor" stroke="none" opacity="0.12"></rect><rect x="610" y="103" transform="translate(0 0)" width="12" height="12" fill="currentColor" stroke="none" opacity="0.12"></rect><rect x="628" y="103" transform="translate(0 0)" width="12" height="12" fill="currentColor" stroke="none" opacity="0.12"></rect><rect x="646" y="103" transform="translate(0 0)" width="12" height="12" fill="currentColor" stroke="none" opacity="0.12"></rect><rect x="664" y="103" transform="translate(0 0)" width="12" height="12" fill="currentColor" stroke="none" opacity="0.12"></rect><rect x="574" y="103" transform="translate(0 18)" width="12" height="12" fill="currentColor" stroke="none" opacity="0.35"></rect><rect x="592" y="103" transform="translate(0 18)" width="12" height="12" fill="currentColor" stroke="none" opacity="0.45"></rect><rect x="610" y="103" transform="translate(0 18)" width="12" height="12" fill="currentColor" stroke="none" opacity="0.12"></rect><rect x="628" y="103" transform="translate(0 18)" width="12" height="12" fill="currentColor" stroke="none" opacity="0.12"></rect><rect x="646" y="103" transform="translate(0 18)" width="12" height="12" fill="currentColor" stroke="none" opacity="0.12"></rect><rect x="664" y="103" transform="translate(0 18)" width="12" height="12" fill="currentColor" stroke="none" opacity="0.12"></rect><rect x="574" y="103" transform="translate(0 36)" width="12" height="12" fill="currentColor" stroke="none" opacity="0.45"></rect><rect x="592" y="103" transform="translate(0 36)" width="12" height="12" fill="currentColor" stroke="none" opacity="0.55"></rect><rect x="610" y="103" transform="translate(0 36)" width="12" height="12" fill="currentColor" stroke="none" opacity="0.65"></rect><rect x="628" y="103" transform="translate(0 36)" width="12" height="12" fill="currentColor" stroke="none" opacity="0.12"></rect><rect x="646" y="103" transform="translate(0 36)" width="12" height="12" fill="currentColor" stroke="none" opacity="0.12"></rect><rect x="664" y="103" transform="translate(0 36)" width="12" height="12" fill="currentColor" stroke="none" opacity="0.12"></rect><rect x="574" y="103" transform="translate(0 54)" width="12" height="12" fill="currentColor" stroke="none" opacity="0.55"></rect><rect x="592" y="103" transform="translate(0 54)" width="12" height="12" fill="currentColor" stroke="none" opacity="0.65"></rect><rect x="610" y="103" transform="translate(0 54)" width="12" height="12" fill="currentColor" stroke="none" opacity="0.25"></rect><rect x="628" y="103" transform="translate(0 54)" width="12" height="12" fill="currentColor" stroke="none" opacity="0.35"></rect><rect x="646" y="103" transform="translate(0 54)" width="12" height="12" fill="currentColor" stroke="none" opacity="0.12"></rect><rect x="664" y="103" transform="translate(0 54)" width="12" height="12" fill="currentColor" stroke="none" opacity="0.12"></rect><rect x="574" y="103" transform="translate(0 72)" width="12" height="12" fill="currentColor" stroke="none" opacity="0.65"></rect><rect x="592" y="103" transform="translate(0 72)" width="12" height="12" fill="currentColor" stroke="none" opacity="0.25"></rect><rect x="610" y="103" transform="translate(0 72)" width="12" height="12" fill="currentColor" stroke="none" opacity="0.35"></rect><rect x="628" y="103" transform="translate(0 72)" width="12" height="12" fill="currentColor" stroke="none" opacity="0.45"></rect><rect x="646" y="103" transform="translate(0 72)" width="12" height="12" fill="currentColor" stroke="none" opacity="0.55"></rect><rect x="664" y="103" transform="translate(0 72)" width="12" height="12" fill="currentColor" stroke="none" opacity="0.12"></rect><rect x="574" y="103" transform="translate(0 90)" width="12" height="12" fill="currentColor" stroke="none" opacity="0.25"></rect><rect x="592" y="103" transform="translate(0 90)" width="12" height="12" fill="currentColor" stroke="none" opacity="0.35"></rect><rect x="610" y="103" transform="translate(0 90)" width="12" height="12" fill="currentColor" stroke="none" opacity="0.45"></rect><rect x="628" y="103" transform="translate(0 90)" width="12" height="12" fill="currentColor" stroke="none" opacity="0.55"></rect><rect x="646" y="103" transform="translate(0 90)" width="12" height="12" fill="currentColor" stroke="none" opacity="0.65"></rect><rect x="664" y="103" transform="translate(0 90)" width="12" height="12" fill="currentColor" stroke="none" opacity="0.25"></rect><text x="625" y="244" text-anchor="middle" stroke="none" fill="currentColor" font-size="12" font-family="sans-serif">Transformer models</text></g><g class="pipeline-stage" data-stage="3"><rect x="770" y="40" width="210" height="230" rx="4" opacity=".16"></rect><text x="875" y="73" text-anchor="middle" stroke="none" fill="currentColor" font-size="10" font-family="monospace">04</text><rect x="809" y="167" width="10" height="25" fill="currentColor" stroke="none" opacity=".65"></rect><rect x="833" y="136" width="10" height="56" fill="currentColor" stroke="none" opacity=".65"></rect><rect x="857" y="105" width="10" height="87" fill="currentColor" stroke="none" opacity=".65"></rect><rect x="881" y="152" width="10" height="40" fill="currentColor" stroke="none" opacity=".65"></rect><rect x="905" y="121" width="10" height="71" fill="currentColor" stroke="none" opacity=".65"></rect><rect x="929" y="90" width="10" height="102" fill="currentColor" stroke="none" opacity=".65"></rect><text x="875" y="244" text-anchor="middle" stroke="none" fill="currentColor" font-size="12" font-family="sans-serif">Evaluate detection</text></g></g></svg></div>
+    <p class="schematic-note">Conceptual schematic · Simplified method overview</p>
+    <div class="method-stages">
+<div class="method-step">
+<button type="button" class="stage-select" data-stage="0" aria-pressed="false"><span>01</span>Language data</button><p>Language samples provide the input for studying patterns associated with cognitive impairment.</p>
+</div>
+<div class="method-step">
+<button type="button" class="stage-select" data-stage="1" aria-pressed="false"><span>02</span>Synthetic augmentation</button><p>LLM-generated synthetic language data expand the training material in a setting with limited data.</p>
+</div>
+<div class="method-step">
+<button type="button" class="stage-select" data-stage="2" aria-pressed="false"><span>03</span>Transformer models</button><p>Transformer representations capture contextual relationships within language for the detection task.</p>
+</div>
+<div class="method-step">
+<button type="button" class="stage-select" data-stage="3" aria-pressed="false"><span>04</span>Evaluate detection</button><p>The study evaluates cognitive impairment detection. This schematic summarizes the learning workflow rather than a clinical diagnostic service.</p>
+</div>
+</div>
+  </section>
+  <section class="project-reading"><div>
+<p class="eyebrow">02 / Context &amp; sources</p>
+<h2>The research.</h2>
+</div>
+<div class="project-prose">
+<h2 id="learning-from-clinical-language">Learning from clinical language</h2>
 
-<style>
-.cosmic-page {
-  width: 100vw;
-  margin-left: calc(-50vw + 50%);
-  background: transparent;
-  position: relative;
-  z-index: 2;
-}
+<p>LLMCARE explores early detection of cognitive impairment using transformer models enhanced with LLM-generated synthetic data. The study examines how language models can help address limited training data in this research setting.</p>
 
-.page-hero {
-  padding: 120px 40px 60px;
-  text-align: center;
-}
+<p>I contributed as a coauthor to this collaborative study of language-based cognitive impairment detection.</p>
 
-.page-hero-inner {
-  max-width: 800px;
-  margin: 0 auto;
-}
+<h2 id="publication">Publication</h2>
 
-.page-title {
-  font-family: 'Plus Jakarta Sans', sans-serif;
-  font-size: clamp(36px, 5vw, 56px);
-  font-weight: 700;
-  background: linear-gradient(135deg, #1D4ED8 0%, #0D9488 50%, #14B8A6 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin: 0 0 16px;
-  letter-spacing: -0.02em;
-}
+<p><strong>LLMCARE: early detection of cognitive impairment via transformer models enhanced by LLM-generated synthetic data.</strong> <em>Frontiers in Artificial Intelligence</em>, 8, 1669896 (2025).</p>
 
-.page-description {
-  font-size: 18px;
-  color: #9ca3af;
-  margin: 0;
-  line-height: 1.6;
-}
+<p><a href="https://doi.org/10.3389/frai.2025.1669896" rel="external nofollow noopener" target="_blank">Read the paper</a></p>
+</div></section>
+  <footer class="publication-end"><span>Keep exploring</span><a class="action-secondary" href="/projects/">All research</a><a class="action-secondary" href="/publications/">Publications</a></footer>
+</div>
+<script defer src="/assets/js/method-explorer.js"></script>
 
-.page-content {
-  padding: 40px 40px 100px;
-}
+  </main>
 
-.page-content-inner {
-  max-width: 1000px;
-  margin: 0 auto;
-}
+  <!-- Footer --><footer class="site-footer"><div class="wrap">
+<span>© 2026 Masoud Khani</span><span>Biomedical informatics · Milwaukee</span><a href="/publications/">Publications</a>
+</div></footer>
 
-.page-content-inner h2 {
-  color: #fff;
-  font-family: 'Plus Jakarta Sans', sans-serif;
-  font-weight: 600;
-  margin-top: 2.5rem;
-}
-
-.page-content-inner p,
-.page-content-inner li {
-  color: #9ca3af;
-  line-height: 1.8;
-}
-
-.page-content-inner a {
-  color: #14B8A6;
-}
-
-.page-content-inner a:hover {
-  color: #2DD4BF;
-}
-
-@media (max-width: 640px) {
-  .page-hero {
-    padding: 100px 20px 40px;
-  }
-  .page-content {
-    padding: 30px 20px 60px;
-  }
-}
-</style>
-
-  </div>
-
-  <!-- Footer --><style>
-  .fixed-bottom {
-    position: absolute !important;
-    margin-top: 5% !important;
-    right: 0 !important;
-    left: 0 !important;
-    bottom: auto;
-  }
-</style>
-
-<footer class="fixed-bottom">
-  <div class="container mt-0">
-    © 2026 Masoud  Khani. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>.
-
-  </div>
-</footer>
 
   <!-- JavaScripts -->
   <!-- jQuery -->
@@ -335,10 +220,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha256-fgLAgv7fyCGopR/gBNq2iW3ZKIdqIcyshnUULC4vex8=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/js/mdb.min.js" integrity="sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA=" crossorigin="anonymous"></script>
 
-  <!-- Masonry & imagesLoaded -->
-  <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
-  <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
-  <script defer src="/assets/js/masonry.js" type="text/javascript"></script>
+  
   
   <!-- Medium Zoom JS -->
   <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.8/dist/medium-zoom.min.js" integrity="sha256-7PhEpEWEW0XXQ0k6kQrPKwuoIomz8R8IYyuU1Qew4P8=" crossorigin="anonymous"></script>
@@ -442,9 +324,7 @@
 </script>
 
 
-  <!-- Particles.js -->
-  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-  <script src="/assets/js/particles-config.js"></script>
+  <script defer src="/assets/js/attention-field.js?v=1788878472"></script>
+  <script defer src="/assets/js/research-motion.js?v=1788878472"></script>
 </body>
-
 </html>

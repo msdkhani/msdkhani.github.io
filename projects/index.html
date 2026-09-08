@@ -11,24 +11,24 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>projects | Masoud  Khani</title>
+    <title>Research | Masoud  Khani</title>
     <meta name="author" content="Masoud  Khani">
-    <meta name="description" content="Research projects in AI for healthcare, neural signal processing, and clinical decision support.">
+    <meta name="description" content="Methods and tools for understanding clinical data, language, and neural activity.">
     <meta name="keywords" content="biomedical informatics, AI for healthcare, digital twins, LLMs, agent-based modeling, medical simulation, explainable AI, clinical decision support">
 
     <!-- OpenGraph -->
     <meta property="og:site_name" content="Masoud  Khani">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Masoud  Khani | projects">
+    <meta property="og:title" content="Masoud  Khani | Research">
     <meta property="og:url" content="https://msdkhani.github.io/projects/">
-    <meta property="og:description" content="Research projects in AI for healthcare, neural signal processing, and clinical decision support.">
+    <meta property="og:description" content="Methods and tools for understanding clinical data, language, and neural activity.">
     
     <meta property="og:locale" content="en">
 
     <!-- Twitter card -->
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="projects">
-    <meta name="twitter:description" content="Research projects in AI for healthcare, neural signal processing, and clinical decision support.">
+    <meta name="twitter:title" content="Research">
+    <meta name="twitter:description" content="Methods and tools for understanding clinical data, language, and neural activity.">
     
     
 
@@ -42,9 +42,9 @@
         },
         "url": "https://msdkhani.github.io/projects/",
         "@type": "WebSite",
-        "description": "Research projects in AI for healthcare, neural signal processing, and clinical decision support.",
-        "headline": "projects",
-        "sameAs": ["https://orcid.org/0000-0002-7106-5957", "https://scholar.google.com/citations?user=ZG0Wlq0AAAAJ", "https://github.com/msdkhani", "https://www.linkedin.com/in/masoudmk"],
+        "description": "Methods and tools for understanding clinical data, language, and neural activity.",
+        "headline": "Research",
+        "sameAs": ["https://orcid.org/0000-0003-3131-0661", "https://scholar.google.com/citations?user=ZG0Wlq0AAAAJ", "https://github.com/msdkhani", "https://www.linkedin.com/in/masoudmk"],
         "name": "Masoud  Khani",
         "@context": "https://schema.org"
       }
@@ -70,9 +70,9 @@
 
     <!-- Styles -->
     
-    <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%F0%9F%9A%80&lt;/text&gt;&lt;/svg&gt;">
+    <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;MK&lt;/text&gt;&lt;/svg&gt;">
     
-    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/main.css?v=1788878472">
     <link rel="canonical" href="https://msdkhani.github.io/projects/">
     
     <!-- Dark Mode -->
@@ -87,13 +87,11 @@
 
 <!-- Body -->
 
-<body class="fixed-top-nav ">
+<body class="fixed-top-nav sticky-bottom-footer">
 
-  <!-- Cosmic Canvas - GPU-rendered nebulae and atmospheric effects -->
-  <canvas id="cosmic-canvas"></canvas>
-
-  <!-- Particles Animation Background -->
-  <div id="particles-js"></div>
+  <canvas id="attention-canvas" aria-hidden="true"></canvas>
+  <div class="cosmic-controls" hidden><button id="motion-toggle" type="button" aria-pressed="false">Pause motion</button></div>
+  <a class="skip-link" href="#main-content">Skip to content</a>
 
   <!-- Header -->
     <header>
@@ -115,7 +113,7 @@
 
               <!-- About -->
               <li class="nav-item ">
-                <a class="nav-link" href="/">about</a>
+                <a class="nav-link" href="/">About</a>
               </li>
                 
               <!-- Blog -->
@@ -123,13 +121,13 @@
 
               <!-- Other pages -->
               <li class="nav-item ">
-                <a class="nav-link" href="/publications/">publications</a>
+                <a class="nav-link" href="/publications/">Publications</a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link" href="/projects/">projects<span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="/projects/">Research<span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item ">
-                <a class="nav-link" href="/cv/">cv</a>
+                <a class="nav-link" href="/cv/">CV</a>
               </li>
               <li class="nav-item ">
                 <a class="nav-link" href="/teaching/">Teaching</a>
@@ -157,285 +155,58 @@
 
 
   <!-- Content -->
-  <div class="main-content">
-    <!-- page.html - Cosmic Full Width -->
-<div class="cosmic-page">
-  <section class="page-hero">
-    <div class="page-hero-inner">
-      <h1 class="page-title">projects</h1>
-      
-      <p class="page-description">Research projects in AI for healthcare, neural signal processing, and clinical decision support.</p>
-      
-    </div>
-  </section>
-
-  <section class="page-content">
-    <div class="page-content-inner">
-      <!-- pages/projects.md -->
-<div class="projects">
-  <!-- Display categorized projects -->
-  <h2 class="category">work</h2>
-  <!-- Generate cards for each project -->
-  <div class="grid">
-<!-- _includes/projects.html -->
-<div class="grid-sizer"></div>
-<div class="grid-item">
-  <a href="/projects/1_project/">
-      <div class="card hoverable">
-<figure>
-
-  <picture>
-    
-
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/publication_preview/pywaveclus_preview.png" width="auto" height="auto" alt="project thumbnail" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-
-  </picture>
-
-</figure>
-
-        <div class="card-body">
-          <h2 class="card-title text-lowercase">PyWaveClus: Python Spike Detection and Clustering</h2>
-          <p class="card-text">The Python Implementation of Waveclause with artifacts removal.</p>
-          <div class="row ml-1 mr-1 p-0">
-          </div>
-        </div>
-      </div>
-    </a>
+  <main class="main-content" id="main-content">
+    <div class="wrap research-index">
+<header class="publication-hero"><p class="eyebrow">Masoud Khani / Research</p>
+<h1>Ideas into methods.<span>Medicine at the center.</span>
+</h1>
+<p class="page-description">Explore the models, tools, and questions behind my work in medical AI. Follow each method from its inputs to what we can learn.</p></header><div class="research-catalog">
+<a class="catalog-entry" href="/projects/3_project/"><div class="catalog-art"><img src="/assets/img/method-1.svg" width="800" height="500" alt="Conceptual illustration for Explainable clinical risk models" loading="lazy"></div>
+<div>
+<p class="eyebrow">Explainable AI / Published research</p>
+<h2>Explainable clinical risk models</h2>
+<p>Understanding which clinical factors matter, and how their importance changes over time.</p>
+<span class="work-open">Explore the method</span>
+</div></a><a class="catalog-entry" href="/projects/2_project/"><div class="catalog-art"><img src="/assets/img/method-2.svg" width="800" height="500" alt="Conceptual illustration for Sequential Pattern Transformer" loading="lazy"></div>
+<div>
+<p class="eyebrow">Clinical AI / Published · 2026</p>
+<h2>Sequential Pattern Transformer</h2>
+<p>A generative and interpretable framework for predicting disease trajectories.</p>
+<span class="work-open">Explore the method</span>
+</div></a><a class="catalog-entry" href="/projects/7_project/"><div class="catalog-art"><img src="/assets/img/method-7.svg" width="800" height="500" alt="Conceptual illustration for Social determinants of health" loading="lazy"></div>
+<div>
+<p class="eyebrow">Health equity / Published research</p>
+<h2>Social determinants of health</h2>
+<p>Understanding how socioeconomic conditions relate to access, care utilization, and health equity.</p>
+<span class="work-open">Explore the method</span>
+</div></a><a class="catalog-entry" href="/projects/1_project/"><div class="catalog-art"><img src="/assets/img/method-4.svg" width="800" height="500" alt="Conceptual illustration for Spike Sorting Framework" loading="lazy"></div>
+<div>
+<p class="eyebrow">Neural signals / Software &amp; preprint</p>
+<h2>Spike Sorting Framework</h2>
+<p>From neural recordings to interpretable spike groups: PyWaveClus and MCWs.</p>
+<span class="work-open">Explore the method</span>
+</div></a><a class="catalog-entry" href="/projects/5_project/"><div class="catalog-art"><img src="/assets/img/method-3.svg" width="800" height="500" alt="Conceptual illustration for LLMCARE &amp; clinical language" loading="lazy"></div>
+<div>
+<p class="eyebrow">Language models / Published · 2025</p>
+<h2>LLMCARE &amp; clinical language</h2>
+<p>Transformer models and synthetic language data for cognitive impairment detection.</p>
+<span class="work-open">Explore the method</span>
+</div></a><a class="catalog-entry" href="/projects/4_project/"><div class="catalog-art"><img src="/assets/img/method-2.svg" width="800" height="500" alt="Conceptual illustration for Digital twins for healthcare" loading="lazy"></div>
+<div>
+<p class="eyebrow">Patient modeling / Research interest</p>
+<h2>Digital twins for healthcare</h2>
+<p>A research interest in connecting patient histories, predictive models, and simulation.</p>
+<span class="work-open">Explore the method</span>
+</div></a>
 </div>
-<!-- _includes/projects.html -->
-<div class="grid-sizer"></div>
-<div class="grid-item">
-  <a href="/projects/2_project/">
-      <div class="card hoverable">
-<figure>
-
-  <picture>
-    
-
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/publication_preview/spt_preview.png" width="auto" height="auto" alt="project thumbnail" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-
-  </picture>
-
-</figure>
-
-        <div class="card-body">
-          <h2 class="card-title text-lowercase">Sequential Pattern Transformer (SPT)</h2>
-          <p class="card-text">A generative and interpretable framework for predicting disease trajectories using transformer architectures.</p>
-          <div class="row ml-1 mr-1 p-0">
-          </div>
-        </div>
-      </div>
-    </a>
-</div>
-<!-- _includes/projects.html -->
-<div class="grid-sizer"></div>
-<div class="grid-item">
-  <a href="/projects/6_project/">
-      <div class="card hoverable">
-<figure>
-
-  <picture>
-    
-
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/publication_preview/mcws_preview.png" width="auto" height="auto" alt="project thumbnail" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-
-  </picture>
-
-</figure>
-
-        <div class="card-body">
-          <h2 class="card-title text-lowercase">MCWs: MicroWire Sorter</h2>
-          <p class="card-text">An open-source, modular framework for automated spike sorting in human intracerebral recordings.</p>
-          <div class="row ml-1 mr-1 p-0">
-          </div>
-        </div>
-      </div>
-    </a>
-</div>
-<!-- _includes/projects.html -->
-<div class="grid-sizer"></div>
-<div class="grid-item">
-  <a href="/projects/3_project/">
-      <div class="card hoverable">
-<figure>
-
-  <picture>
-    
-
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/publication_preview/ExplainableAI_BPPV.jpg" width="auto" height="auto" alt="project thumbnail" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-
-  </picture>
-
-</figure>
-
-        <div class="card-body">
-          <h2 class="card-title text-lowercase">Explainable AI for Clinical Risk Prediction</h2>
-          <p class="card-text">SHAP-based temporal risk pathways and LLM-driven natural language explanations for clinical prediction models.</p>
-          <div class="row ml-1 mr-1 p-0">
-          </div>
-        </div>
-      </div>
-    </a>
-</div>
-<!-- _includes/projects.html -->
-<div class="grid-sizer"></div>
-<div class="grid-item">
-  <a href="/projects/4_project/">
-      <div class="card hoverable">
-<figure>
-
-  <picture>
-    
-
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/publication_preview/fall_geroscience.png" width="auto" height="auto" alt="project thumbnail" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-
-  </picture>
-
-</figure>
-
-        <div class="card-body">
-          <h2 class="card-title text-lowercase">Digital Twins for Healthcare</h2>
-          <p class="card-text">Patient-specific computational models for real-time risk stratification and dynamic intervention planning.</p>
-          <div class="row ml-1 mr-1 p-0">
-          </div>
-        </div>
-      </div>
-    </a>
-</div>
-<!-- _includes/projects.html -->
-<div class="grid-sizer"></div>
-<div class="grid-item">
-  <a href="/projects/5_project/">
-      <div class="card hoverable">
-<figure>
-
-  <picture>
-    
-
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/publication_preview/LLMCARE.png" width="auto" height="auto" alt="project thumbnail" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-
-  </picture>
-
-</figure>
-
-        <div class="card-body">
-          <h2 class="card-title text-lowercase">LLM-Based Clinical Decision Support</h2>
-          <p class="card-text">Leveraging large language models for clinical text understanding, synthetic data generation, and retrieval-augmented clinical applications.</p>
-          <div class="row ml-1 mr-1 p-0">
-          </div>
-        </div>
-      </div>
-    </a>
-</div>
-  </div>
 </div>
 
-    </div>
-  </section>
-</div>
+  </main>
 
-<style>
-.cosmic-page {
-  width: 100vw;
-  margin-left: calc(-50vw + 50%);
-  background: transparent;
-  position: relative;
-  z-index: 2;
-}
+  <!-- Footer --><footer class="site-footer"><div class="wrap">
+<span>© 2026 Masoud Khani</span><span>Biomedical informatics · Milwaukee</span><a href="/publications/">Publications</a>
+</div></footer>
 
-.page-hero {
-  padding: 120px 40px 60px;
-  text-align: center;
-}
-
-.page-hero-inner {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.page-title {
-  font-family: 'Plus Jakarta Sans', sans-serif;
-  font-size: clamp(36px, 5vw, 56px);
-  font-weight: 700;
-  background: linear-gradient(135deg, #1D4ED8 0%, #0D9488 50%, #14B8A6 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin: 0 0 16px;
-  letter-spacing: -0.02em;
-}
-
-.page-description {
-  font-size: 18px;
-  color: #9ca3af;
-  margin: 0;
-  line-height: 1.6;
-}
-
-.page-content {
-  padding: 40px 40px 100px;
-}
-
-.page-content-inner {
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.page-content-inner h2 {
-  color: #fff;
-  font-family: 'Plus Jakarta Sans', sans-serif;
-  font-weight: 600;
-  margin-top: 2.5rem;
-}
-
-.page-content-inner p,
-.page-content-inner li {
-  color: #9ca3af;
-  line-height: 1.8;
-}
-
-.page-content-inner a {
-  color: #14B8A6;
-}
-
-.page-content-inner a:hover {
-  color: #2DD4BF;
-}
-
-@media (max-width: 640px) {
-  .page-hero {
-    padding: 100px 20px 40px;
-  }
-  .page-content {
-    padding: 30px 20px 60px;
-  }
-}
-</style>
-
-  </div>
-
-  <!-- Footer --><style>
-  .fixed-bottom {
-    position: absolute !important;
-    margin-top: 5% !important;
-    right: 0 !important;
-    left: 0 !important;
-    bottom: auto;
-  }
-</style>
-
-<footer class="fixed-bottom">
-  <div class="container mt-0">
-    © 2026 Masoud  Khani. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>.
-
-  </div>
-</footer>
 
   <!-- JavaScripts -->
   <!-- jQuery -->
@@ -445,10 +216,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha256-fgLAgv7fyCGopR/gBNq2iW3ZKIdqIcyshnUULC4vex8=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/js/mdb.min.js" integrity="sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA=" crossorigin="anonymous"></script>
 
-  <!-- Masonry & imagesLoaded -->
-  <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
-  <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
-  <script defer src="/assets/js/masonry.js" type="text/javascript"></script>
+  
   
   <!-- Medium Zoom JS -->
   <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.8/dist/medium-zoom.min.js" integrity="sha256-7PhEpEWEW0XXQ0k6kQrPKwuoIomz8R8IYyuU1Qew4P8=" crossorigin="anonymous"></script>
@@ -552,9 +320,7 @@
 </script>
 
 
-  <!-- Particles.js -->
-  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-  <script src="/assets/js/particles-config.js"></script>
+  <script defer src="/assets/js/attention-field.js?v=1788878472"></script>
+  <script defer src="/assets/js/research-motion.js?v=1788878472"></script>
 </body>
-
 </html>
