@@ -52,3 +52,10 @@ Aligned the Research catalog and all six project pages with the editorial design
 
 ### Social determinants of health
 Added a dedicated SDOH / health equity research project, ordered after clinical risk and SPT. Includes an original conceptual four-stage schematic, the first-author pancreatic cancer care-utilization study, and links to related nutrition, dysphagia, dental trauma, and fall-utilization publications. Checked pancreatic cancer details against the PLOS article (10.1371/journal.pone.0320518); distinguishes observational ZIP-code associations from individual causation. Build and 25-page link checks pass.
+
+### CPS-Net publication — September 17, 2026
+Added CPS-Net (Journal of Medical Systems 50, article 131; published September 15, 2026; DOI 10.1007/s10916-026-02460-8) to the bibliography, homepage feature and About copy, Research catalog, online CV publication section, news, and a shared footer link across the site. Created a detailed research page, an original interactive workflow schematic, and a homepage illustration. Explicit image IDs preserve existing featured-research artwork after insertion.
+
+Source: https://link.springer.com/article/10.1007/s10916-026-02460-8. Checked authors, contribution statement, methods, cohort/test split, exact-code top-k results, hierarchical baseline, clinical-relevance definition, and limitations. Distinguishes 94.17% clinical relevance from 48.8% top-1 exact-code accuracy; identifies retrospective single-center evaluation and LLM-judged explanation comparisons. Adapted explanation and schematic credit the authors and CC BY 4.0 license. No résumé PDF or teaching-history claims were changed.
+
+Validation: Jekyll build passed; 28 generated pages checked for internal links, fragments, duplicate IDs and image descriptions. Confirmed CPS-Net coverage on home, Research, Publications, CV, Teaching (footer), and News; all previous homepage illustrations still map correctly. Browser checked schematic selection and results table.

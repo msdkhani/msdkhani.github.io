@@ -180,5 +180,31 @@
         "care"
       ]
     ]
+  },
+  "8": {
+    "kicker": "Prediction through consultation.",
+    "image": 8,
+    "steps": [
+      [
+        "Patient history",
+        "Clinical events become time-ordered tokens. Token identity, event type, and elapsed time inform the transformer representation.",
+        "tokens"
+      ],
+      [
+        "Specialist models",
+        "One primary-care, 10 specialty, and 30 subspecialty transformers learn progressively more specific prediction tasks.",
+        "matrix"
+      ],
+      [
+        "Agent consultation",
+        "Language-model agents query their paired transformers, explain referrals, and consult peers using shared case memory, without a central supervisor.",
+        "agents"
+      ],
+      [
+        "Ranked predictions",
+        "A subspecialist concludes with a primary prediction, alternatives, and a rationale. The recorded consultation makes the decision path available for review.",
+        "bars"
+      ]
+    ]
   }
 }

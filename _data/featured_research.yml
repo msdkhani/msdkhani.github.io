@@ -1,4 +1,13 @@
+- title: "CPS-Net: learning to consult across specialties"
+  image: 8
+  area: Multi-agent clinical AI
+  year: 2026
+  venue: Journal of Medical Systems · Research article
+  summary: Specialty-trained transformers and collaborating language-model agents predict disease through an auditable referral workflow.
+  url: /projects/cps-net/
+  diagram_alt: Primary care, specialty, and subspecialty agents collaborate through shared case memory.
 - title: Understanding how fall risk changes over time
+  image: 1
   area: Explainable AI
   year: 2026
   venue: GeroScience · Research article
@@ -6,6 +15,7 @@
   url: https://doi.org/10.1007/s11357-026-02117-x
   diagram_alt: Seven observation windows separate short-term and long-term clinical predictors.
 - title: Learning the sequence of disease
+  image: 2
   area: Disease trajectories
   year: 2026
   venue: Neural Computing and Applications · Research article
@@ -13,6 +23,7 @@
   url: https://doi.org/10.1007/s00521-025-11695-4
   diagram_alt: A causal attention matrix connects earlier diagnoses to later disease states.
 - title: Language models for cognitive impairment detection
+  image: 3
   area: Clinical language models
   year: 2025
   venue: Frontiers in Artificial Intelligence · Research article
@@ -20,6 +31,7 @@
   url: https://doi.org/10.3389/frai.2025.1669896
   diagram_alt: Language sequences are represented as embeddings for cognitive impairment classification.
 - title: MCWs — making sense of human neural recordings
+  image: 4
   area: Neural signal processing
   year: 2025
   venue: bioRxiv · Preprint

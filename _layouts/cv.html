@@ -11,7 +11,7 @@ layout: default
         {% case entry.type %}{% when 'list' %}{% include cv/list.html %}{% when 'map' %}{% include cv/map.html %}{% when 'nested_list' %}{% include cv/nested_list.html %}{% when 'time_table' %}{% include cv/time_table.html %}{% else %}{{ entry.contents }}{% endcase %}
       </div></section>
       {% endfor %}
-      <section class="cv-card" id="cv-publications"><p class="eyebrow cv-section-number">Research archive</p><h2 class="cv-card-title">Publications</h2><p class="cv-archive-description">Journal articles, conference contributions, preprints, and thesis work.</p><a class="action-secondary" href="{{ '/publications/' | relative_url }}">View publications</a></section>
+      <section class="cv-card" id="cv-publications"><p class="eyebrow cv-section-number">Research archive</p><h2 class="cv-card-title">Publications</h2><p class="cv-archive-description">Latest: <a href="{{ '/projects/cps-net/' | relative_url }}">CPS-Net: specialty-aware disease prediction</a> · <em>Journal of Medical Systems</em>, 50, 131 (2026). Coauthor; contributions include methodology, development, validation, formal analysis, writing, and visualization.</p><p class="cv-archive-description">Journal articles, conference contributions, preprints, and thesis work.</p><a class="action-secondary" href="{{ '/publications/' | relative_url }}">View publications</a></section>
     </div>
   </div>
 </div>
