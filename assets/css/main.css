@@ -3915,5 +3915,44 @@ html[data-theme=light] .teaching-serif {
     padding-block: 50px;
   }
 }
+.footer-study {
+  display: block;
+  width: 100%;
+  padding: 25px 0;
+  margin-bottom: 25px;
+  border-block: 1px solid var(--global-divider-color);
+  font-size: 13px;
+  color: var(--global-text-color);
+}
+
+.footer-study span {
+  display: block;
+  font-size: 10px;
+  color: var(--global-text-color-light);
+  margin-top: 8px;
+}
+
+.project-prose table {
+  width: 100%;
+  margin-block: 30px;
+  font-size: 12px;
+  border-collapse: collapse;
+}
+
+.project-prose th, .project-prose td {
+  padding: 14px 10px;
+  border-bottom: 1px solid var(--global-divider-color);
+}
+
+.project-prose th {
+  font-weight: 500;
+}
+
+@media (max-width: 540px) {
+  .project-prose th, .project-prose td {
+    padding: 12px 5px;
+    font-size: 10px;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */
